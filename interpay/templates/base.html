@@ -1,0 +1,121 @@
+{% load i18n %}
+{#{% get_current_language as LANGUAGE_CODE %}#}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block css %}
+        <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../static/jquery/jquery.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.css" %}">
+        <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% endblock css %}
+    <meta charset="UTF-8">
+    <title>{% block title %}Home Page - InterPay Iran{% endblock %}</title>
+
+</head>
+<script>
+    document.getElementsByClassName("sidebar-ent-items").onclick(function () {
+        if (this.attr("color").val() == "#585858")
+            this.setAttr("color", "#2b7dbc");
+        if (this.attr("color").val() == "#2b7dbc")
+            this.setAttr("color", "#585858");
+    });
+</script>
+<body style="background-color: #f9f9f9">
+<header>
+    <div id="nav" class="navbar navbar-default">
+        <div class="navbar-container" id="navbar-container">
+            <div style="float: left; width: 20%" class="navbar-header pull-left" id="interpay-logo">
+                <a class="navbar-brand">
+                    <img id="LOGO" src="../media/logo.png" style="width: 14%">
+                </a>
+            </div>
+            <div style="float: right; " id="welcome-btn" class="navbar-header pull-right">
+                Welcome
+                <i class="fa fa-sort-down" aria-hidden="true"></i>
+                <br> {{ user.name }}
+            </div>
+            <div style="float: right; width: 7%;padding: 10px;" id="translation-link">
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a style="color: white" href="http://127.0.0.1:8000/fa-ir/">فارسی</a>
+                {% else %}
+                    <a style="color: white" href="http://127.0.0.1:8000/">English</a>
+                {% endifequal %}
+            </div>
+
+        </div>
+    </div>
+</header>
+{% ifequal LANGUAGE_CODE  'en-gb' %}
+    <div id="sidebar" class="pull-left">
+{% else %}
+    <div id="sidebar" class="pull-right">
+{% endifequal %}
+<div id="sidebar-content">
+    <ul id="sidebar-entries">
+        <li class="sidebar-entry">
+            <a href="">
+                <i class="fa fa-home sidebar-ent-items" aria-hidden="true"> {% trans "Home" %}</i>
+            </a>
+        </li>
+        <li class="sidebar-entry">
+            {% ifequal LANGUAGE_CODE  'en-gb' %}
+                <a href="/wallets">
+            {% else %}
+                <a href="/fa-ir/wallets">
+            {% endifequal %}
+
+            <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"> {% trans "Wallets" %}</i>
+
+            </a>
+        </li>
+        <li class="sidebar-entry">
+            {% ifequal LANGUAGE_CODE  'en-gb' %}
+                <a href="/trans-history">
+            {% else %}
+                <a href="/fa-ir/trans-history">
+            {% endifequal %}
+            <i class="fa fa-history sidebar-ent-items" aria-hidden="true"> {% trans "Transaction History" %}</i>
+
+            </a>
+        </li>
+        <li class="sidebar-entry">
+            {% ifequal LANGUAGE_CODE  'en-gb' %}
+                <a href="/reports">
+            {% else %}
+                <a href="/fa-ir/reports">
+            {% endifequal %}
+
+            <i class="fa fa-file-text-o sidebar-ent-items" aria-hidden="true"> {% trans "Reports" %}</i>
+
+            </a>
+        </li>
+        <li class="sidebar-entry">
+            {% ifequal LANGUAGE_CODE  'en-gb' %}
+                <a href="/general">
+            {% else %}
+                <a href="/fa-ir/general">
+            {% endifequal %}
+
+            <i class="fa fa-bullseye sidebar-ent-items" aria-hidden="true"> {% trans "General" %}</i>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="maincontent">
+    <div id="homepage-content">
+        {% block maincontent %}
+        {% endblock %}
+    </div>
+</div>
+<footer id="footer" class="footer">
+    <div id="footer-content">All rights reserved.</div>
+</footer>
+</body>
+</html>

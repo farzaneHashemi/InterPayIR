@@ -1,0 +1,69 @@
+.maincontent {
+    margin-left: 20%;
+}
+
+#homepage-content {
+    padding: 20px;
+}
+
+#nav {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    min-height: 45px;
+    position: relative;
+    background: #438eb9;
+    padding: 0 0;
+}
+
+#navbar-container {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#welcome-btn {
+    background: #2e6589;
+    padding: 10px;
+    margin-right: 10px;
+    width: 13%;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+#sidebar {
+    width: 20%;
+    background: #efefef;
+    border: 1px solid #ccc;
+    border-width: 0 1px 1px 0;
+}
+
+#sidebar-entries {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.sidebar-entry {
+    padding: 5px;
+}
+
+.sidebar-ent-items {
+    color: #585858
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #efefef;
+    text-align: center;
+    font-size: x-small;
+    color: #585858;
+}
+
+#footer-content {
+    padding-top: 7px;
+}
