@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-04 16:20+0430\n"
+"POT-Creation-Date: 2016-09-14 14:55+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\interpay\templates\base.html:55
+#: .\interpay\templates\base.html:115
 msgid "Home"
-msgstr "خانه"
+msgstr "صفحه ی اصلی"
 
-#: .\interpay\templates\base.html:64
+#: .\interpay\templates\base.html:125
 msgid "Wallets"
 msgstr "کیف پول من"
 
-#: .\interpay\templates\base.html:70
+#: .\interpay\templates\base.html:135
 msgid "Transaction History"
 msgstr "پیشینه ی تراکنش ها"
 
-#: .\interpay\templates\base.html:76
+#: .\interpay\templates\base.html:146
 msgid "Reports"
 msgstr "گزارش ها"
 
-#: .\interpay\templates\base.html:82
+#: .\interpay\templates\base.html:157
 msgid "General"
 msgstr "عمومی"
 
-#: .\interpay\templates\home.html:25
+#: .\interpay\templates\base.html:165
+msgid "Name"
+msgstr "نام"
+
+#: .\interpay\templates\base.html:166
+msgid "Login ID"
+msgstr "شناسه ورود"
+
+#: .\interpay\templates\base.html:167
+msgid "InterPay ID"
+msgstr ""
+
+#: .\interpay\templates\base.html:170
+msgid "Logout"
+msgstr "خروج"
+
+#: .\interpay\templates\home.html:18
 msgid "Welcome to interpay"
 msgstr "به interpay خوش آمدید"
 
-#: .\interpay\templates\home.html:26
-msgid "hello world"
-msgstr ""
+#: .\interpay\templates\wallets.html:29
+#, fuzzy
+#| msgid "Wallets"
+msgid "Wallet Code"
+msgstr "کیف پول من"
 
-#: .\interpay\views.py:17
-msgid "Welcome to my site."
-msgstr ""
+#: .\interpay\templates\wallets.html:32
+#, fuzzy
+#| msgid "Wallets"
+msgid "Wallet Type"
+msgstr "نوع ذخیره ارز"
 
-#: .\interpay\views.py:24
-msgid "hello"
-msgstr ""
+#: .\interpay\templates\wallets.html:35
+msgid "Currency Name"
+msgstr "نام واحد ارز"
+
+#: .\interpay\templates\wallets.html:38
+msgid "Currenncy Symbol"
+msgstr "نماد ارز"
+
+#: .\interpay\templates\wallets.html:41
+msgid "Balance"
+msgstr "مانده حساب"
+
+#: .\interpay\templates\wallets.html:44
+msgid "Wallet Description"
+msgstr "توضیحات"

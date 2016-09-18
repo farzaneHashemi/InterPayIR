@@ -1,121 +1,199 @@
 {% load i18n %}
-{#{% get_current_language as LANGUAGE_CODE %}#}
 {% load static %}
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% block style %}
+        <style>
+            {% ifequal LANGUAGE_CODE 'fa-ir' %}
+                .content {
+                    margin-left: 0 !important;
+                    margin-right: 20% !important;
+                    direction: rtl;
+                }
+
+                #welcome-btn {
+                    margin-left: 10px;
+                    margin-right: 0 !important;
+                }
+
+                #sidebar-entries {
+                    padding-right: 10px;
+                    padding-left: 0 !important;
+                }
+
+                .sidebar-entry {
+                    text-align: -webkit-right;
+                    direction: rtl;
+                }
+
+                #logout {
+                    float: left !important;
+                }
+
+                #name {
+                    float: right !important;
+                }
+
+                #interpay-id {
+                    float: right !important;
+                }
+
+                #interpay-logo {
+                    float: right !important;
+                }
+
+                #welcome-btn {
+                    float: left !important;
+                    direction: rtl;
+                }
+
+                #translation-link {
+                    float: left !important;
+                }
+            {% endifequal %}
+        </style>
+    {% endblock %}
     {% block css %}
-        <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="../static/jquery/jquery.js"></script>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}">
         <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.css" %}">
         <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.min.css" %}">
-        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     {% endblock css %}
-    <meta charset="UTF-8">
+    {% block js %}
+        <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../static/jquery/jquery.js"></script>
+    {% endblock %}
+    {% block CSS %}
+    {% endblock %}
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}Home Page - InterPay Iran{% endblock %}</title>
 
 </head>
-<script>
-    document.getElementsByClassName("sidebar-ent-items").onclick(function () {
-        if (this.attr("color").val() == "#585858")
-            this.setAttr("color", "#2b7dbc");
-        if (this.attr("color").val() == "#2b7dbc")
-            this.setAttr("color", "#585858");
-    });
-</script>
-<body style="background-color: #f9f9f9">
-<header>
-    <div id="nav" class="navbar navbar-default">
-        <div class="navbar-container" id="navbar-container">
-            <div style="float: left; width: 20%" class="navbar-header pull-left" id="interpay-logo">
-                <a class="navbar-brand">
-                    <img id="LOGO" src="../media/logo.png" style="width: 14%">
-                </a>
-            </div>
-            <div style="float: right; " id="welcome-btn" class="navbar-header pull-right">
-                Welcome
-                <i class="fa fa-sort-down" aria-hidden="true"></i>
-                <br> {{ user.name }}
-            </div>
-            <div style="float: right; width: 7%;padding: 10px;" id="translation-link">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
-                    <a style="color: white" href="http://127.0.0.1:8000/fa-ir/">فارسی</a>
-                {% else %}
-                    <a style="color: white" href="http://127.0.0.1:8000/">English</a>
-                {% endifequal %}
-            </div>
+{#<script>#}
+{#    document.getElementsByClassName("sidebar-ent-items").onclick(function () {#}
+{#        if (this.attr("color").val() == "#585858")#}
+{#            this.setAttr("color", "#2b7dbc");#}
+{#        if (this.attr("color").val() == "#2b7dbc")#}
+{#            this.setAttr("color", "#585858");#}
+{#    });#}
+{#</script>#}
+<body style="background: #f9f9f9 url(/templates/b.jpg) repeat-y 50% 0;">
+<div class="container-fluid" style="padding-left: 0;!important; padding-right: 0;!important;">
+    <header>
+        <div id="nav" class="navbar navbar-default">
+            <div class="navbar-container" id="navbar-container">
+                <div style="float: left; width: 20%" class="navbar-header pull-left" id="interpay-logo">
+                    <a class="navbar-brand">
+                        <img id="LOGO" src="{{ MEDIA_ROOT }}ax.jpg" style="width: 14%">
 
+                    </a>
+                </div>
+                <div style="float: right;" id="welcome-btn" class="navbar-header ">
+                    Welcome
+                    <i class="fa fa-sort-down" aria-hidden="true"></i>
+                    <br> {{ user.name }}
+                </div>
+                <div style="float: right; width: 7%;padding: 10px;" id="translation-link">
+                    {% ifequal LANGUAGE_CODE  'en-gb' %}
+                        <a style="color: white" href="http://127.0.0.1:8000/fa-ir/">فارسی</a>
+                    {% else %}
+                        <a style="color: white" href="http://127.0.0.1:8000/"> English</a>
+                    {% endifequal %}
+                </div>
+
+            </div>
         </div>
+    </header>
+    {% ifequal LANGUAGE_CODE  'en-gb' %}
+        <div id="sidebar" class="pull-left">
+    {% else %}
+        <div id="sidebar" class="pull-right">
+    {% endifequal %}
+    <div id="sidebar-content">
+        <ul id="sidebar-entries">
+            <li class="sidebar-entry">
+                <a href="">
+                    <i class="fa fa-home sidebar-ent-items" aria-hidden="true"> {% trans "Home" %}</i>
+                </a>
+            </li>
+            <li class="sidebar-entry">
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a href="/wallets">
+                {% else %}
+                    <a href="/fa-ir/wallets">
+                {% endifequal %}
+
+                <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"> {% trans "Wallets" %}</i>
+
+                </a>
+            </li>
+            <li class="sidebar-entry">
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a href="/trans-history">
+                {% else %}
+                    <a href="/fa-ir/trans-history">
+                {% endifequal %}
+                <i class="fa fa-history sidebar-ent-items" aria-hidden="true"> {% trans "Transaction History" %}</i>
+
+                </a>
+            </li>
+            <li class="sidebar-entry">
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a href="/reports">
+                {% else %}
+                    <a href="/fa-ir/reports">
+                {% endifequal %}
+
+                <i class="fa fa-file-text-o sidebar-ent-items" aria-hidden="true"> {% trans "Reports" %}</i>
+
+                </a>
+            </li>
+            <li class="sidebar-entry">
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a href="/general">
+                {% else %}
+                    <a href="/fa-ir/general">
+                {% endifequal %}
+
+                <i class="fa fa-bullseye sidebar-ent-items" aria-hidden="true"> {% trans "General" %}</i>
+                </a>
+            </li>
+        </ul>
     </div>
-</header>
-{% ifequal LANGUAGE_CODE  'en-gb' %}
-    <div id="sidebar" class="pull-left">
-{% else %}
-    <div id="sidebar" class="pull-right">
-{% endifequal %}
-<div id="sidebar-content">
-    <ul id="sidebar-entries">
-        <li class="sidebar-entry">
-            <a href="">
-                <i class="fa fa-home sidebar-ent-items" aria-hidden="true"> {% trans "Home" %}</i>
+    </div>
+    <div class="content">
+        <div id="info-bar">
+            <span id="name">{% trans "Name" %} : {{ user.name }}</span>
+            <span id="login-id">{% trans "Login ID" %}: {{ user.id }}</span>
+            <span id="interpay-id">{% trans "InterPay ID" %}: </span>
+        <span id="logout">
+            <a id="logout-link" href="">
+                <i class="fa fa-power-off" aria-hidden="true"> {% trans "Logout" %}</i>
             </a>
-        </li>
-        <li class="sidebar-entry">
-            {% ifequal LANGUAGE_CODE  'en-gb' %}
-                <a href="/wallets">
-            {% else %}
-                <a href="/fa-ir/wallets">
-            {% endifequal %}
+        </span>
+        </div>
+        <section id="main-content-section">
+            <div id="cont-wrapper" class="">
+                <div id="cont-header" class="col-xs-12">
+                    {% block cont-header %}
+                    {% endblock %}
+                </div>
+                <div id="cont-body" class="col-xs-12">
+                    {% block cont-body %}
+                    {% endblock %}
+                </div>
 
-            <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"> {% trans "Wallets" %}</i>
+            </div>
+        </section>
 
-            </a>
-        </li>
-        <li class="sidebar-entry">
-            {% ifequal LANGUAGE_CODE  'en-gb' %}
-                <a href="/trans-history">
-            {% else %}
-                <a href="/fa-ir/trans-history">
-            {% endifequal %}
-            <i class="fa fa-history sidebar-ent-items" aria-hidden="true"> {% trans "Transaction History" %}</i>
-
-            </a>
-        </li>
-        <li class="sidebar-entry">
-            {% ifequal LANGUAGE_CODE  'en-gb' %}
-                <a href="/reports">
-            {% else %}
-                <a href="/fa-ir/reports">
-            {% endifequal %}
-
-            <i class="fa fa-file-text-o sidebar-ent-items" aria-hidden="true"> {% trans "Reports" %}</i>
-
-            </a>
-        </li>
-        <li class="sidebar-entry">
-            {% ifequal LANGUAGE_CODE  'en-gb' %}
-                <a href="/general">
-            {% else %}
-                <a href="/fa-ir/general">
-            {% endifequal %}
-
-            <i class="fa fa-bullseye sidebar-ent-items" aria-hidden="true"> {% trans "General" %}</i>
-            </a>
-        </li>
-    </ul>
-</div>
-</div>
-<div class="maincontent">
-    <div id="homepage-content">
-        {% block maincontent %}
-        {% endblock %}
+    </div>
+    <footer id="footer" class="footer">
+        <div id="footer-content">All rights reserved.</div>
+    </footer>
     </div>
 </div>
-<footer id="footer" class="footer">
-    <div id="footer-content">All rights reserved.</div>
-</footer>
 </body>
 </html>

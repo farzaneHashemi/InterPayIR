@@ -29,7 +29,6 @@ urlpatterns = [
     url(r'^trans-history/', views.home),
     url(r'^reports/', views.home),
     url(r'^general/', views.home),
-    url(r'^change_lang/', views.change_lang),
 ]
 
 urlpatterns += i18n_patterns(

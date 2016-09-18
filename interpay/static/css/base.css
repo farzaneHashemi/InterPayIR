@@ -1,8 +1,8 @@
-.maincontent {
-    margin-left: 20%;
+.content {
+    margin-left: 18%;
 }
 
-#homepage-content {
+#content {
     padding: 20px;
 }
 
@@ -34,10 +34,9 @@
 }
 
 #sidebar {
-    width: 20%;
-    background: #efefef;
+    width: 18%;
+    background: #e9e9e9 repeat-y 50% ;
     border: 1px solid #ccc;
-    border-width: 0 1px 1px 0;
 }
 
 #sidebar-entries {
@@ -47,6 +46,10 @@
 
 .sidebar-entry {
     padding: 5px;
+    color: #585858;
+    /* background-color: #f9f9f9; */
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .sidebar-ent-items {
@@ -66,4 +69,43 @@
 
 #footer-content {
     padding-top: 7px;
+}
+
+#name {
+    float: left;
+    width: 25%;
+}
+
+#login-id {
+    width: 35%;
+}
+
+#interpay-id {
+    float: left;
+    width: 25%;
+}
+
+#logout {
+    float: right;
+    cursor: pointer;
+    width: 15%;
+    display: inline-block;
+    text-align : center;
+}
+
+#info-bar {
+    padding: 5px;
+    background-color: #c9dedf;
+}
+
+#cont-wrapper {
+    margin: 15px;
+}
+
+#cont-header {
+    margin: 10px;
+}
+
+#cont-body{
+    margin: 10px;
 }

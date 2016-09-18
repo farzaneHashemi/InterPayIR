@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.i18n',
+                "django.template.context_processors.media",
             ],
             # 'loaders': [
             #     'django_jinja.loaders.AppLoader',
@@ -137,15 +138,12 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-
+MEDIA_ROOT = 'C:/Users/Farzane/PycharmProjects/InterPayIR/media/'
+MEDIA_URL = '/media/'
 # LOCALE_PATHS = (
 #     os.path.join("C:/Users/Farzane/PycharmProjects/InterPayIR/", 'locale'),
 # )
 
 LOCALE_PATHS = ("C:/Users/Farzane/PycharmProjects/InterPayIR/locale/",)
-# TEMPLATE_CONTEXT_PROCESSORS = (
-#     # 'django.core.context_processors.auth',
-#     "django.core.context_processors.i18n",
-# )
 
 prefix_default_language = False
