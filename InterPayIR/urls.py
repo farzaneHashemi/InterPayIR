@@ -29,6 +29,7 @@ urlpatterns = [
     url(r'^trans-history/', views.home),
     url(r'^reports/', views.home),
     url(r'^general/', views.home),
+    url(r'^to-en/', views.to_en),
 ]
 
 urlpatterns += i18n_patterns(
@@ -39,4 +40,5 @@ urlpatterns += i18n_patterns(
     url(r'^reports/', views.home),
     url(r'^general/', views.home),
     url(r'^', views.home),
+    url(r'^to-en/', views.to_en),
 )

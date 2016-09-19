@@ -9,14 +9,14 @@
             {% ifequal LANGUAGE_CODE 'fa-ir' %}
                 .content {
                     margin-left: 0 !important;
-                    margin-right: 20% !important;
+                    margin-right: 18% !important;
                     direction: rtl;
                 }
 
-                #welcome-btn {
-                    margin-left: 10px;
-                    margin-right: 0 !important;
-                }
+                {#                #welcome-btn {#}
+                {#                    margin-left: 10px;#}
+                {#                    margin-right: 0 !important;#}
+                {#                }#}
 
                 #sidebar-entries {
                     padding-right: 10px;
@@ -40,18 +40,18 @@
                     float: right !important;
                 }
 
-                #interpay-logo {
-                    float: right !important;
-                }
+                {#                #interpay-logo {#}
+                {#                    float: right !important;#}
+                {#                }#}
 
-                #welcome-btn {
-                    float: left !important;
-                    direction: rtl;
-                }
+                {#                #welcome-btn {#}
+                {#                    float: left !important;#}
+                {#                    direction: rtl;#}
+                {#                }#}
 
-                #translation-link {
-                    float: left !important;
-                }
+                {#                #translation-link {#}
+                {#                    float: left !important;#}
+                {#                }#}
             {% endifequal %}
         </style>
     {% endblock %}
@@ -68,39 +68,65 @@
     {% endblock %}
     {% block CSS %}
     {% endblock %}
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
     <title>{% block title %}Home Page - InterPay Iran{% endblock %}</title>
 
 </head>
-{#<script>#}
-{#    document.getElementsByClassName("sidebar-ent-items").onclick(function () {#}
-{#        if (this.attr("color").val() == "#585858")#}
-{#            this.setAttr("color", "#2b7dbc");#}
-{#        if (this.attr("color").val() == "#2b7dbc")#}
-{#            this.setAttr("color", "#585858");#}
-{#    });#}
-{#</script>#}
+<script>
+    {#    $(document).ready(function () {#}
+    {#        var v = "{{ request.path }}";#}
+    {#        var n = v.replace("/fa-ir/", "/");#}
+    {#        console.log(v);#}
+    {#        console.log(n);#}
+    {#        console.log(window.location.href.substring(21));#}
+    {#        console.log(location.protocol);#}
+    {#        return (window.location.href.substring(6))#}
+    {##}
+    {#        $(this).css("href", 'http://127.0.0.1:8000');#}
+    {#    });#}
+
+    function to_en() {
+        console.log("before", window.location.href);
+        location.href = window.location.href.replace("/fa-ir/", "/");
+        console.log("after", window.location.href);
+        {#        return (window.location.href.substring(6))#}
+        {#        window.open(url);#}
+        {#        console.log(url);#}
+        {#        $.get('YOUR_VIEW_HERE/' + pk + '/', function (data) {#}
+        alert("counter updated!");
+        {#        });#}
+    }
+
+
+    {#    document.getElementsByClassName("sidebar-ent-items").onclick(function () {#}
+    {#        if (this.attr("color").val() == "#585858")#}
+    {#            this.setAttr("color", "#2b7dbc");#}
+    {#        if (this.attr("color").val() == "#2b7dbc")#}
+    {#            this.setAttr("color", "#585858");#}
+    {#    });#}
+</script>
 <body style="background: #f9f9f9 url(/templates/b.jpg) repeat-y 50% 0;">
 <div class="container-fluid" style="padding-left: 0;!important; padding-right: 0;!important;">
     <header>
         <div id="nav" class="navbar navbar-default">
             <div class="navbar-container" id="navbar-container">
-                <div style="float: left; width: 20%" class="navbar-header pull-left" id="interpay-logo">
+                <div class="navbar-header pull-left" id="interpay-logo">
                     <a class="navbar-brand">
-                        <img id="LOGO" src="{{ MEDIA_ROOT }}ax.jpg" style="width: 14%">
+                        <img id="LOGO" src="/media/logo.png" style="width: 14%">
 
                     </a>
                 </div>
                 <div style="float: right;" id="welcome-btn" class="navbar-header ">
-                    Welcome
+                    My Profile
                     <i class="fa fa-sort-down" aria-hidden="true"></i>
                     <br> {{ user.name }}
                 </div>
-                <div style="float: right; width: 7%;padding: 10px;" id="translation-link">
+                <div id="translation-link">
                     {% ifequal LANGUAGE_CODE  'en-gb' %}
-                        <a style="color: white" href="http://127.0.0.1:8000/fa-ir/">فارسی</a>
+                        <a id="to-fa-link" href='/fa-ir{{ request.path }}'>فارسی</a>
                     {% else %}
-                        <a style="color: white" href="http://127.0.0.1:8000/"> English</a>
+                        <a id="to-en-link" class="trans-link"
+                            href="{{ request.path }}">English</a>
                     {% endifequal %}
                 </div>
 
@@ -115,8 +141,12 @@
     <div id="sidebar-content">
         <ul id="sidebar-entries">
             <li class="sidebar-entry">
-                <a href="">
-                    <i class="fa fa-home sidebar-ent-items" aria-hidden="true"> {% trans "Home" %}</i>
+                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    <a href="/home">
+                {% else %}
+                    <a href="/fa-ir/home">
+                {% endifequal %}
+                <i class="fa fa-home sidebar-ent-items" aria-hidden="true"> {% trans "Home" %}</i>
                 </a>
             </li>
             <li class="sidebar-entry">
@@ -180,7 +210,9 @@
                 <div id="cont-header" class="col-xs-12">
                     {% block cont-header %}
                     {% endblock %}
+                    <hr>
                 </div>
+
                 <div id="cont-body" class="col-xs-12">
                     {% block cont-body %}
                     {% endblock %}

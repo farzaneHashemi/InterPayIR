@@ -68,6 +68,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.i18n',
                 "django.template.context_processors.media",
+
             ],
             # 'loaders': [
             #     'django_jinja.loaders.AppLoader',

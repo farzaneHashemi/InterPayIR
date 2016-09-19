@@ -41,3 +41,19 @@
     margin-right: 0 !important;
 
 }
+
+#tab-wrapper {
+    width: 970px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    #tab-wrapper {
+        width: 700px;
+    }
+
+    #wal-tab-searchbar {
+        background-color: red;
+
+    }
+}

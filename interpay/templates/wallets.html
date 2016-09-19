@@ -22,11 +22,10 @@
             Wallet Info
         </h3>
     </div>
-    <hr>
 {% endblock %}
 {% block cont-body %}
     <div id="hi" class="row">
-        <div class="row tab-wrapper" style="width: 970px; ">
+        <div class="row tab-wrapper" id="tab-wrapper">
             <div id="wal-tab-searchbar" class="row ">
                 <span id="display-records" class="col-sm-6">
                     <i class="fa fa-eye" aria-hidden="true">
@@ -80,7 +79,7 @@
                     <td class="table-cell">d</td>
                     <td class="table-cell">f</td>
                     <td class="table-cell">g</td>
-                    <td class="table-cell">gh</td>
+                    <td class="table-cell">{{ request.path }}</td>
                     <td class="table-cell">tt</td>
                 </tr>
                 {#                {% endfor %}#}
@@ -88,8 +87,8 @@
                 </tbody>
             </table>
             <div id="wal-tab-footer" class="row" style="margin-left: 0 !important;margin-right: 0 !important;">
-                <h5 style="padding-left: 20px" class="col-sm-9">Showing {{ 1 }} to {{ x }} of entries</h5>
-                <h5 style="padding-left: 20px;font-style: italic" class="col-sm-3"><b>My total stock in USD ~ {{ 1000 }}</b></h5>
+                <h5 style="padding-left: 20px" class="col-sm-8">Showing {{ 1 }} to {{ x }} of entries</h5>
+                <h5 style="padding-left: 20px;font-style: italic" class="col-sm-4"><b>My total stock in USD ~ {{ 1000 }}</b></h5>
             </div>
         </div>
     <hr>
