@@ -19,22 +19,7 @@
     font-size: 13px;
 }
 
-#wal-tab-footer {
-    border-top: 1px solid #DDD;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #eff3f8;
-    border-bottom: 1px solid #DDD;
-}
-
-#display-records {
-    padding-left: 15px;
-}
-
-#search {
-}
-
-#wal-tab-searchbar {
+#trans-his-tab-searchbar {
     background-color: #eff3f8;
     padding: 10px 20px 20px;
     margin-left: 0 !important;
@@ -42,19 +27,19 @@
 
 }
 
+#trans-his-tab-footer {
+    border-top: 1px solid #DDD;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #eff3f8;
+    border-bottom: 1px solid #DDD;
+}
+
 #tab-wrapper {
     width: 970px;
 
 }
 
-@media only screen and (max-device-width: 480px) {
-
-    #tab-wrapper {
-        width: 700px;
-    }
-
-    #wal-tab-searchbar {
-        background-color: red;
-
-    }
+#display-records {
+    padding-left: 15px;
 }

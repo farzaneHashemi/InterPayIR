@@ -26,19 +26,17 @@ urlpatterns = [
     url(r'^$', views.home),
     url(r'^home/', views.home),
     url(r'^wallets/', views.wallets),
-    url(r'^trans-history/', views.home),
+    url(r'^trans-history/', views.trans_history),
     url(r'^reports/', views.home),
     url(r'^general/', views.home),
-    url(r'^to-en/', views.to_en),
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^home/', views.home),
     url(r'^wallets/', views.wallets),
-    url(r'^trans-history/', views.home),
+    url(r'^trans-history/', views.trans_history),
     url(r'^reports/', views.home),
     url(r'^general/', views.home),
     url(r'^', views.home),
-    url(r'^to-en/', views.to_en),
 )
