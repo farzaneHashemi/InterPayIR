@@ -3,7 +3,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head rel="icon" href="InterPay/media/logo.png">
     {% block style %}
         <style>
             {% ifequal LANGUAGE_CODE 'fa-ir' %}
@@ -73,18 +73,6 @@
 
 </head>
 <script>
-    {#    $(document).ready(function () {#}
-    {#        var v = "{{ request.path }}";#}
-    {#        var n = v.replace("/fa-ir/", "/");#}
-    {#        console.log(v);#}
-    {#        console.log(n);#}
-    {#        console.log(window.location.href.substring(21));#}
-    {#        console.log(location.protocol);#}
-    {#        return (window.location.href.substring(6))#}
-    {##}
-    {#        $(this).css("href", 'http://127.0.0.1:8000');#}
-    {#    });#}
-
     function to_en() {
         var en_url = window.location.href.replace("/fa-ir/", "/");
         window.location.assign(en_url);
