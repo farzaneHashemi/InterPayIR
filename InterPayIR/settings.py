@@ -116,7 +116,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'fa-IR'
-print(LANGUAGE_CODE + " here")
 ugettext = lambda s: s
 
 # TIME_ZONE = 'UTC'
@@ -148,3 +147,5 @@ MEDIA_URL = '/media/'
 LOCALE_PATHS = ("C:/Users/Farzane/PycharmProjects/InterPayIR/locale/",)
 
 prefix_default_language = False
+
+LOGIN_URL = '/login/'

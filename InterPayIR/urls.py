@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^general/', views.home, name='general'),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
+    url(r'^logout/$', views.user_logout, name='logout'),
 
 ]
 
@@ -45,4 +46,5 @@ urlpatterns += i18n_patterns(
     url(r'^general/', views.home),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
+    url(r'^logout/$', views.user_logout, name='logout'),
 )

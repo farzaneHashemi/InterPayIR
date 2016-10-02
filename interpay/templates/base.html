@@ -90,7 +90,8 @@
                     </a>
                 </div>
                 <div style="float: right;" id="welcome-btn" class="navbar-header ">
-                    My Profile
+                    {{ user.username }} Profile
+
                     <i class="fa fa-sort-down" aria-hidden="true"></i>
                     <br> {{ user.name }}
                 </div>
@@ -168,11 +169,11 @@
     </div>
     <div class="content">
         <div id="info-bar">
-            <span id="name">{% trans "Name" %} : {{ user.name }}</span>
+            <span id="name">{% trans "Name" %} : {{ user.first_name }} {{ user.last_name }}</span>
             <span id="login-id">{% trans "Login ID" %}: {{ user.id }}</span>
             <span id="interpay-id">{% trans "InterPay ID" %}: </span>
         <span id="logout">
-            <a id="logout-link" href="">
+            <a id="logout-link" href="/logout">
                 <i class="fa fa-power-off" aria-hidden="true"> {% trans "Logout" %}</i>
             </a>
         </span>
