@@ -18,13 +18,12 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from interpay import views
 from django.conf.urls.i18n import i18n_patterns
-from django.utils.translation import ugettext_lazy as _
-
 urlpatterns = [
     url(r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'^accounts/', include('allauth.urls')),
 
-    url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_page),
+    url(r'^admin/', admin.site.urls),
     url(r'^home/', views.home),
     url(r'^wallets/', views.wallets),
     url(r'^trans-history/', views.trans_history),
@@ -34,7 +33,10 @@ urlpatterns = [
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
 
+
 ]
+from django.utils.translation import ugettext_lazy as _
+
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),

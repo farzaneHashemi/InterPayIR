@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 
 
 def main_page(request):
+    if request.user.is_authenticated():
+        return home(request)
     return render(request, 'main_page.html')
 
 
@@ -23,12 +25,17 @@ def register(request):
             user.save()
 
             profile = registration_form.save(commit=False)
+            profile.email = user_form.cleaned_data['email']
             profile.user = user
 
             if 'picture' in request.FILES:
                 profile.picture = request.FILES['picture']
             profile.save()
             registered = True
+
+            new_user = authenticate(username=user_form.cleaned_data['username'],
+                                    password=user_form.cleaned_data['password'], )
+            login(request, new_user)
 
         else:
             print user_form.errors, registration_form.errors
@@ -45,6 +52,7 @@ def user_login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
+        print(username)
 
         user = authenticate(username=username, password=password)
 
