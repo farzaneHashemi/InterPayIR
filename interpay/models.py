@@ -1,21 +1,46 @@
+from django.contrib.auth.base_user import BaseUserManager
+from django.core.mail import send_mail
+from django.core.validators import RegexValidator, int_list_validator
+from django.utils.encoding import force_text
+from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 from django.db import models
 from django.forms import ChoiceField
 from django_countries.fields import CountryField
 from datetime import datetime
+import unicodedata
 
 
+class Manager(BaseUserManager):
+    def create_user(self, USERNAME_FIELD, email, password):
+        email = self.normalize_email(email)
+        username = self.model.normalize_username(USERNAME_FIELD)
+        user = self.model(username=username, email=email)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
 
-# Create your models here.
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, related_name="UserProfile")
-    # name = models.CharField(max_length=30, null=False, blank=False)
+    password = models.CharField(max_length=10, null=False, blank=False)
     picture = models.ImageField(upload_to='userProfiles/', null=True, blank=True)
-    date_of_birth = models.DateTimeField(null=False, blank=False, default=datetime.today())
+    date_of_birth = models.DateTimeField(null=False, blank=False)
+    date_joined = models.DateTimeField(default=datetime.now())
     country = CountryField(default="Iran")
-    national_code = models.IntegerField(null=False, blank=False)
+    national_code = models.CharField(max_length=10,null=False, blank=False)
     email = models.EmailField()
+    is_active = models.BooleanField(default=False)
+
+    USERNAME_FIELD = 'username'
+
+    objects = Manager()
+
+    def email_user(self, subject, message, from_email=None, **kwargs):
+        """
+        Sends an email to this User.
+        """
+        send_mail(subject, message, from_email, [self.email], **kwargs)
 
     def __str__(self):
         return '{}'.format(self.user.username)
