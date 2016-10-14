@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-14 14:55+0430\n"
+"POT-Creation-Date: 2016-10-13 23:59+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,70 +17,161 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\interpay\templates\base.html:115
-msgid "Home"
-msgstr "صفحه ی اصلی"
+#: .\interpay\templates\base.html:56
+msgid "Home Page "
+msgstr "صفحه اصلی"
 
-#: .\interpay\templates\base.html:125
+#: .\interpay\templates\base.html:77
+msgid "'s Profile"
+msgstr "پروفایل "
+
+#: .\interpay\templates\base.html:108
+msgid "Home"
+msgstr "صفحه اصلی"
+
+#: .\interpay\templates\base.html:118
 msgid "Wallets"
 msgstr "کیف پول من"
 
-#: .\interpay\templates\base.html:135
-msgid "Transaction History"
-msgstr "پیشینه ی تراکنش ها"
+#: .\interpay\templates\base.html:128
+msgid " Transaction History"
+msgstr "پیشینه تراکنش"
 
-#: .\interpay\templates\base.html:146
-msgid "Reports"
-msgstr "گزارش ها"
+#: .\interpay\templates\base.html:139
+msgid " Reports"
+msgstr "گزارش های مالی"
 
-#: .\interpay\templates\base.html:157
-msgid "General"
-msgstr "عمومی"
+#: .\interpay\templates\base.html:150
+msgid " General"
+msgstr "اطلاعات عمومی حساب"
 
-#: .\interpay\templates\base.html:165
+#: .\interpay\templates\base.html:159
 msgid "Name"
-msgstr "نام"
+msgstr "نام "
 
-#: .\interpay\templates\base.html:166
+#: .\interpay\templates\base.html:160
 msgid "Login ID"
 msgstr "شناسه ورود"
 
-#: .\interpay\templates\base.html:167
+#: .\interpay\templates\base.html:161
 msgid "InterPay ID"
-msgstr ""
+msgstr "شناسه interpay"
 
-#: .\interpay\templates\base.html:170
+#: .\interpay\templates\base.html:164
 msgid "Logout"
-msgstr "خروج"
+msgstr " خروج "
 
-#: .\interpay\templates\home.html:18
+#: .\interpay\templates\general.html:9 .\interpay\templates\general.html:16
+msgid "General"
+msgstr "اطلاعات عمومی حساب"
+
+#: .\interpay\templates\general.html:21 .\interpay\templates\reports.html:27
+msgid ""
+"This page is still under construction ... . we will be at your service soon."
+msgstr "این صفحه همچنان در دست آماده سازی است. از شکیبایی شما سپاسگزاریم."
+
+#: .\interpay\templates\home.html:20
 msgid "Welcome to interpay"
 msgstr "به interpay خوش آمدید"
 
-#: .\interpay\templates\wallets.html:29
-#, fuzzy
-#| msgid "Wallets"
-msgid "Wallet Code"
+#: .\interpay\templates\home.html:26
+msgid ""
+"Interpay is an online electronic service which provides a safe and secure "
+"platform for business transactions and e-commerce. No matter you are the "
+"merchant or the consumer, we will bring you an enjoyable experience of "
+"transaction."
+msgstr ""
+"اینترپی یک بستر آنلاین است که به شما اجازه می دهد تا در محیطی امن و به راحتی "
+"تراکنش های مالی و خریدهای اینترتی خود را انجام دهید."
+
+#: .\interpay\templates\reports.html:11
+msgid "Reports"
+msgstr "گزارش مالی"
+
+#: .\interpay\templates\reports.html:22
+msgid "Wallet Report"
 msgstr "کیف پول من"
 
-#: .\interpay\templates\wallets.html:32
+#: .\interpay\templates\trans_history.html:10
+msgid "Transaction History "
+msgstr "پیشینه تراکنش"
+
+#: .\interpay\templates\trans_history.html:20
+msgid "Transaction History"
+msgstr "پیشینه تراکنش"
+
+#: .\interpay\templates\trans_history.html:66
+msgid "Transaction Date"
+msgstr "تاریخ تراکنش"
+
+#: .\interpay\templates\trans_history.html:69
+msgid "Bank Name"
+msgstr "بانک"
+
+#: .\interpay\templates\trans_history.html:72
+msgid "Wallet Holder Name"
+msgstr "صاحب حساب"
+
+#: .\interpay\templates\trans_history.html:75
+msgid "Activity"
+msgstr "نوع فعالیت "
+
+#: .\interpay\templates\trans_history.html:78
+msgid "Index Number"
+msgstr "شماره در لیست"
+
+#: .\interpay\templates\trans_history.html:81
+msgid "Interpay ID"
+msgstr "شناسه interpay"
+
+#: .\interpay\templates\trans_history.html:84
+msgid "Transaction Desc."
+msgstr "توضیحات"
+
+#: .\interpay\templates\trans_history.html:87
+msgid "Amount"
+msgstr "مقدار"
+
+#: .\interpay\templates\trans_history.html:110
+#: .\interpay\templates\wallets.html:91
+msgid "My total stock in"
+msgstr "کل نقدینگی من در واحد "
+
+#: .\interpay\templates\trans_history.html:110
+#: .\interpay\templates\wallets.html:91
+msgid "USD"
+msgstr "دلار"
+
+#: .\interpay\templates\wallets.html:11
 #, fuzzy
-#| msgid "Wallets"
+#| msgid "Wallet Info"
+msgid "Wallet Info "
+msgstr "کیف پول من"
+
+#: .\interpay\templates\wallets.html:22
+msgid "Wallet Info"
+msgstr "کیف پول من"
+
+#: .\interpay\templates\wallets.html:54
+msgid "Wallet Code"
+msgstr "شماره حساب"
+
+#: .\interpay\templates\wallets.html:57
 msgid "Wallet Type"
-msgstr "نوع ذخیره ارز"
+msgstr "نوع حساب"
 
-#: .\interpay\templates\wallets.html:35
+#: .\interpay\templates\wallets.html:60
 msgid "Currency Name"
-msgstr "نام واحد ارز"
+msgstr "نام ارز"
 
-#: .\interpay\templates\wallets.html:38
+#: .\interpay\templates\wallets.html:63
 msgid "Currenncy Symbol"
-msgstr "نماد ارز"
+msgstr "نماد واحد ارز"
 
-#: .\interpay\templates\wallets.html:41
+#: .\interpay\templates\wallets.html:66
 msgid "Balance"
-msgstr "مانده حساب"
+msgstr "مانده ارز"
 
-#: .\interpay\templates\wallets.html:44
+#: .\interpay\templates\wallets.html:69
 msgid "Wallet Description"
 msgstr "توضیحات"

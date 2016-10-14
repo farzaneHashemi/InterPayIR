@@ -1,5 +1,5 @@
 .content {
-    margin-left: 18%;
+    margin-left: 15%;
 }
 
 .sidebar-links {
@@ -55,9 +55,11 @@
 }
 
 #sidebar {
-    width: 18%;
+    width: 15%;
     background: #e9e9e9 repeat-y 50%;
     border: 1px solid #ccc;
+    height: 100%;
+    /*position: fixed;*/
 }
 
 #sidebar-entries {
@@ -141,4 +143,9 @@
 
 @media only screen and (max-device-width: 480px) {
 
+}
+
+
+.page-title {
+    color: rgb(46, 98, 164);
 }

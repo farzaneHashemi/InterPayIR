@@ -1,11 +1,13 @@
-{% extends "base.html" %}
-{% load i18n %}
+{% extends 'base.html' %}
 {% load staticfiles %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    {% block CSS %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    {% endblock %}
     <meta charset="UTF-8">
     <title>{% block title %}
         Home Page
@@ -13,15 +15,15 @@
 </head>
 <body>
 {% block cont-header %}
-    <div id="welcome-msg">
+    <div id="welcome-msg" >
 
-        <h3> {% trans "Welcome to interpay" %}</h3>
+        <h3 class="page-title"> {% trans "Welcome to interpay" %}</h3>
     </div>
 {% endblock %}
 {% block cont-body %}
     <div id="interpay-desc">
         <p>
-            interpay is an online service which helps you to donate any amount of money to charity .......
+            {% trans 'Interpay is an online electronic service which provides a safe and secure platform for business transactions and e-commerce. No matter you are the merchant or the consumer, we will bring you an enjoyable experience of transaction.' %}
         </p>
     </div>
 {% endblock %}

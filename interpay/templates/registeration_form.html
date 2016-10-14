@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.css" %}">
     <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static 'css/registeration_form.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon .ico' %}"/>
     {% block CSS %}
     {% endblock %}
 
@@ -78,7 +79,6 @@
             <strong>thank you for registering!</strong>
             <a href="/home">Return to the homepage.</a><br/>
         {% else %}
-
             <div class="row">
                 {% block main-cont %}
                     <div class="col-xs-12" id="reg-wrap-wrap-div">
@@ -87,8 +87,14 @@
                             <div id="reg-top-icon" style="margin: 5px;font-size: larger">
                                 <i class="fa fa-users" aria-hidden="true"
                                    style="padding-right: 5px"></i>
-                                    New User
-                                    Registration</div>
+                                New User
+                                Registration
+                            </div>
+
+                            {% block message %}
+
+                            {% endblock %}
+
                             <hr>
                             <form id="user_form" method="post" action="/register/"
                                   enctype="multipart/form-data"> {% csrf_token %}
@@ -103,6 +109,10 @@
 
                             <div></div>
                             <div></div>
+                        </div>
+                        <div class="login-register-div">
+                            <h6>Already have an account?</h6>
+                            <a class="register-login-link" href="/login/">Sign In!</a>
                         </div>
                     </div>
                 {% endblock %}

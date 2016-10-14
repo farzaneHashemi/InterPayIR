@@ -71,3 +71,15 @@ span.helptext {
 #footer-content {
     padding-top: 7px;
 }
+
+.form-msg {
+    padding: 10px 5px;
+    color: red;
+    font-size: small;
+    margin-top: 5px
+}
+
+.login-register-div {
+    margin-bottom: 30px;
+    margin-top: 15tpx;
+}

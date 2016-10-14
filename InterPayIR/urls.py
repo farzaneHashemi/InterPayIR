@@ -19,7 +19,7 @@ from django.contrib import admin
 from interpay import views
 from django.conf.urls.i18n import i18n_patterns
 from django.views.generic.base import TemplateView
-
+admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
@@ -35,19 +35,17 @@ urlpatterns = [
     # url(r'^login/$', views.user_login, name='login'),
     # url(r'^logout/$', views.user_logout, name='logout'),
 
-    url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_page),
     url(r'^home/', views.home),
     url(r'^wallets/', views.wallets),
     url(r'^trans-history/', views.trans_history),
     url(r'^reports/', views.reports, name='reports'),
-    url(r'^general/', views.home, name='general'),
+    url(r'^general/', views.general, name='general'),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
 
 ]
-
 
 urlpatterns += i18n_patterns(
     # url(r'^accounts/', include('registration.backends.hmac.urls')),
@@ -62,14 +60,15 @@ urlpatterns += i18n_patterns(
     # url(r'^register/$', views.register, name='register'),
     # url(r'^login/$', views.user_login, name='login'),
     # url(r'^logout/$', views.user_logout, name='logout'),
-
+    # url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', admin.site.urls),
+
     url(r'^$', views.main_page),
     url(r'^home/', views.home),
     url(r'^wallets/', views.wallets),
     url(r'^trans-history/', views.trans_history),
     url(r'^reports/', views.reports, name='reports'),
-    url(r'^general/', views.home, name='general'),
+    url(r'^general/', views.general, name='general'),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),

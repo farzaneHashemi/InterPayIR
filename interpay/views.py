@@ -100,7 +100,6 @@ def user_login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        print(username)
 
         user = authenticate(username=username, password=password)
 
@@ -112,10 +111,11 @@ def user_login(request):
                 return HttpResponse("Your account is disabled.")
         else:
             print "Invalid login details: {0}, {1}".format(username, password)
-            return HttpResponse("Invalid login details supplied.")
+            msg = "Username or Password is not valid. please try again."
+            return render(request, 'index.html', {'msg': msg})
 
     else:
-        return render(request, 'login.html', {})
+        return render(request, 'index.html', {})
 
 
 @login_required
@@ -146,3 +146,8 @@ def trans_history(request):
 @login_required()
 def reports(request):
     return render(request, "reports.html")
+
+
+@login_required()
+def general(request):
+    return render(request, "general.html")

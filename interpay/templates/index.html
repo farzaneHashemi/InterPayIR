@@ -45,6 +45,13 @@
                                                           aria-hidden="true"></i>
                             Login to Interpay
                         </div>
+                        <div>{% block message %}
+                            {% if msg %}
+{#                                TODO this style should be omitted and implemented via registration-form.css #}
+                                <div class="form-msg" style="padding: 10px 5px;color: red;font-size: small;margin-top: 5px"><i class="fa fa-exclamation-triangle" style="color: red"
+                        aria-hidden="true"></i> {{ msg }}</div>
+                            {% endif %}
+                        {% endblock %}</div>
                         <hr>
                         <form id="login_form" method="post" action="/login/">
                             {% csrf_token %}
