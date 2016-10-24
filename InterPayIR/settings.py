@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'session_security',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'session_security.middleware.SessionSecurityMiddleware',
 ]
+
+# AUTO_LOGOUT_DELAY = 30
+SESSION_COOKIE_AGE = 30*60
+SESSION_SAVE_EVERY_REQUEST = True
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+# SESSION_IDLE_TIMEOUT = 20
+SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
+SESSION_SECURITY_WARN_AFTER = 25*60
+SESSION_SECURITY_EXPIRE_AFTER = 30*60
 
 ROOT_URLCONF = 'InterPayIR.urls'
 
@@ -149,19 +161,16 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_ROOT = 'C:/Users/Farzane/PycharmProjects/InterPayIR/media/'
+MEDIA_ROOT = ''
 MEDIA_URL = '/media/'
-# LOCALE_PATHS = (
-#     os.path.join("C:/Users/Farzane/PycharmProjects/InterPayIR/", 'locale'),
-# )
 
-LOCALE_PATHS = ("C:/Users/Farzane/PycharmProjects/InterPayIR/locale/",)
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 prefix_default_language = False
 
 LOGIN_URL = '/login/'
 # LOGIN_REDIRECTED_URL = '/'
 
-SITE_ID = 1
-
-ACCOUNT_ACTIVATION_DAYS = 1
+# SITE_ID = 1

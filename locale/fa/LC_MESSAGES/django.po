@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-13 23:59+0330\n"
+"POT-Creation-Date: 2016-10-15 17:09+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\interpay\templates\base.html:56
+#: .\interpay\templates\base.html:57
 msgid "Home Page "
 msgstr "صفحه اصلی"
 
-#: .\interpay\templates\base.html:77
+#: .\interpay\templates\base.html:78
 msgid "'s Profile"
 msgstr "پروفایل "
 
-#: .\interpay\templates\base.html:108
+#: .\interpay\templates\base.html:109
 msgid "Home"
 msgstr "صفحه اصلی"
 
-#: .\interpay\templates\base.html:118
+#: .\interpay\templates\base.html:119
 msgid "Wallets"
 msgstr "کیف پول من"
 
-#: .\interpay\templates\base.html:128
+#: .\interpay\templates\base.html:129
 msgid " Transaction History"
 msgstr "پیشینه تراکنش"
 
-#: .\interpay\templates\base.html:139
+#: .\interpay\templates\base.html:140
 msgid " Reports"
 msgstr "گزارش های مالی"
 
-#: .\interpay\templates\base.html:150
+#: .\interpay\templates\base.html:151
 msgid " General"
 msgstr "اطلاعات عمومی حساب"
 
-#: .\interpay\templates\base.html:159
+#: .\interpay\templates\base.html:160
 msgid "Name"
 msgstr "نام "
 
-#: .\interpay\templates\base.html:160
+#: .\interpay\templates\base.html:161
 msgid "Login ID"
 msgstr "شناسه ورود"
 
-#: .\interpay\templates\base.html:161
+#: .\interpay\templates\base.html:162
 msgid "InterPay ID"
 msgstr "شناسه interpay"
 
-#: .\interpay\templates\base.html:164
+#: .\interpay\templates\base.html:165
 msgid "Logout"
 msgstr " خروج "
 
@@ -83,6 +83,46 @@ msgid ""
 msgstr ""
 "اینترپی یک بستر آنلاین است که به شما اجازه می دهد تا در محیطی امن و به راحتی "
 "تراکنش های مالی و خریدهای اینترتی خود را انجام دهید."
+
+#: .\interpay\templates\index.html:37
+#, fuzzy
+#| msgid "Welcome to interpay"
+msgid "Welcome to Interpay Iran"
+msgstr "به interpay خوش آمدید"
+
+#: .\interpay\templates\index.html:42
+#, fuzzy
+#| msgid "Welcome to interpay"
+msgid "Login to Interpay"
+msgstr "به interpay خوش آمدید"
+
+#: .\interpay\templates\index.html:69
+msgid "Don't have an account yet?"
+msgstr ""
+
+#: .\interpay\templates\index.html:70
+msgid "Create One!"
+msgstr "یک حساب جدید بسازید"
+
+#: .\interpay\templates\registeration_form.html:79
+msgid "Thank You for Registering!"
+msgstr "حساب کاربری شما با موفقیت ساخته شد!"
+
+#: .\interpay\templates\registeration_form.html:80
+msgid "Launch to your homepage"
+msgstr "صفحه اصلی خود را ببینید"
+
+#: .\interpay\templates\registeration_form.html:93
+msgid "New User Registration"
+msgstr "ساخت حساب کاربری"
+
+#: .\interpay\templates\registeration_form.html:113
+msgid "Already have an account?"
+msgstr ""
+
+#: .\interpay\templates\registeration_form.html:114
+msgid "Sign In!"
+msgstr "ورود به سایت"
 
 #: .\interpay\templates\reports.html:11
 msgid "Reports"

@@ -29,7 +29,7 @@ class UserProfile(models.Model):
     date_joined = models.DateTimeField(default=datetime.now())
     country = CountryField(default="Iran")
     national_code = models.CharField(max_length=10,null=False, blank=False)
-    email = models.EmailField()
+    email = models.EmailField(null=False, blank=False)
     is_active = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'

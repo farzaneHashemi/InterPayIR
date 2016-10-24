@@ -7,6 +7,7 @@ from django.core.urlresolvers import reverse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from interpay.models import UserProfile
+from django.utils import translation
 
 
 def main_page(request):
@@ -71,7 +72,7 @@ def register(request):
             user_profile.email = user_form.cleaned_data['email']
             # user_profile.date_of_birth = user_profile.cleaned_data['date_of_birth']
             user_profile.password = user.password
-            print(user.is_active, "ine")
+            # print(user.is_active, "ine")
             if user.is_active:
                 user_profile.is_active = True
             user_profile.user = user
@@ -91,9 +92,22 @@ def register(request):
     else:
         user_form = UserForm()
         registration_form = RegistrationForm()
-
-    return render(request, 'registeration_form.html',
-                  {'user_form': user_form, 'profile_form': registration_form, 'registered': registered})
+    # print(request.LANGUAGE_CODE, " reg")
+    if request.LANGUAGE_CODE == 'en-gb':
+        # print(request.LANGUAGE_CODE, " register")
+        thanks_msg = "Thank You for Registering!"
+        redirect_to_home_msg = 'Launch to your homepage'
+        # dict = {thanks_msg, redirect_to_home_msg}
+        return render(request, 'registeration_form.html',
+                      {'user_form': user_form, 'profile_form': registration_form, 'registered': registered,
+                       'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg})
+    else:
+        thanks_msg = "???? ?????? ??? ?? ?????? ????? ??."
+        redirect_to_home_msg = '???? ???? ??? ?? ??????.'
+        # dict = {thanks_msg, redirect_to_home_msg}
+        return render(request, 'registeration_form.html',
+                      {'user_form': user_form, 'profile_form': registration_form, 'registered': registered,
+                       'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg})
 
 
 def user_login(request):
@@ -106,14 +120,25 @@ def user_login(request):
         if user:
             if user.is_active:
                 login(request, user, None)
-                return HttpResponseRedirect('/home/')
+                if request.LANGUAGE_CODE == 'en-gb':
+                    return HttpResponseRedirect('/home/')
+                else:
+                    return HttpResponseRedirect('/fa-ir' + request.path)
             else:
-                return HttpResponse("Your account is disabled.")
+                if request.LANGUAGE_CODE == 'en-gb':
+                    en_acc_disabled_msg = "Your account is disabled."
+                    return render(request, 'index.html', {'msg': en_acc_disabled_msg})
+                else:
+                    fa_acc_disabled_msg = u'???? ?????? ??? ????? ??? ???.'
+                    return render(request, 'index.html', {'msg': fa_acc_disabled_msg})
         else:
             print "Invalid login details: {0}, {1}".format(username, password)
-            msg = "Username or Password is not valid. please try again."
-            return render(request, 'index.html', {'msg': msg})
-
+            if request.LANGUAGE_CODE == 'en-gb':
+                en_wrong_info_msg = "Username or Password is not valid. please try again."
+                return render(request, 'index.html', {'msg': en_wrong_info_msg})
+            else:
+                fa_wrong_info_msg = u'??? ?????? ?? ??? ???? ???? ??? ?????? ???.'
+                return render(request, 'index.html', {'msg': fa_wrong_info_msg})
     else:
         return render(request, 'index.html', {})
 

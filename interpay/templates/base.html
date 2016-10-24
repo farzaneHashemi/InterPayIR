@@ -2,6 +2,8 @@
 {% load static %}
 {% load staticfiles %}
 <!DOCTYPE html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+{% include 'session_security/all.html' %}
 <html lang="en">
 <head rel="icon" href="/static/images/logo.png">
     {% block style %}
@@ -46,8 +48,8 @@
         <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon .ico' %}"/>
     {% endblock css %}
     {% block js %}
-{#        <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>#}
-{#        <script type="text/javascript" src="../static/jquery/jquery.js"></script>#}
+        {#        <script type="text/javascript" src="../static/jquery/jquery-1.10.2.min.js"></script>#}
+        {#        <script type="text/javascript" src="../static/jquery/jquery.js"></script>#}
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     {% endblock %}

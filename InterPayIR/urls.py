@@ -23,6 +23,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
+    url(r'session_security/', include('session_security.urls')),
     # url(r'^accounts/', include('registration.backends.hmac.urls')),
 
     # url(r'^$', TemplateView.as_view(template_name="main_page.html")),
@@ -62,6 +63,7 @@ urlpatterns += i18n_patterns(
     # url(r'^logout/$', views.user_logout, name='logout'),
     # url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'^admin/', admin.site.urls),
+    url(r'session_security/', include('session_security.urls')),
 
     url(r'^$', views.main_page),
     url(r'^home/', views.home),
