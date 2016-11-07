@@ -1,3 +1,4 @@
+suds
 Django==1.10.1
 django-allauth==0.27.0
 django-autoslug==1.9.3

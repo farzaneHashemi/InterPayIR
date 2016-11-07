@@ -44,6 +44,12 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'session_security',
+    # 'django_otp',
+    # 'django_otp.plugins.otp_static',
+    # 'django_otp.plugins.otp_totp',
+    # 'two_factor',
+    # 'otp_yubikey',
+    'django_twilio',
 ]
 
 MIDDLEWARE = [
@@ -53,20 +59,24 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    # 'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'session_security.middleware.SessionSecurityMiddleware',
+    # twilio stuff
+    # 'django_otp.middleware.OTPMiddleware',
+    # 'two_factor.middleware.threadlocals.ThreadLocals',
 ]
 
 # AUTO_LOGOUT_DELAY = 30
-SESSION_COOKIE_AGE = 30*60
+SESSION_COOKIE_AGE = 30 * 60
 SESSION_SAVE_EVERY_REQUEST = True
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 # SESSION_IDLE_TIMEOUT = 20
 SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
-SESSION_SECURITY_WARN_AFTER = 25*60
-SESSION_SECURITY_EXPIRE_AFTER = 30*60
+SESSION_SECURITY_WARN_AFTER = 28 * 60
+SESSION_SECURITY_EXPIRE_AFTER = 30 * 60
 
 ROOT_URLCONF = 'InterPayIR.urls'
 
@@ -161,7 +171,7 @@ LANGUAGES = (
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_ROOT = ''
+MEDIA_ROOT = 'media/'
 MEDIA_URL = '/media/'
 
 LOCALE_PATHS = (
@@ -170,7 +180,21 @@ LOCALE_PATHS = (
 
 prefix_default_language = False
 
-LOGIN_URL = '/login/'
+# LOGIN_URL = '/login/'
+LOGIN_URL = 'two_factor:login'
+LOGOUT_URL = '/login/'
 # LOGIN_REDIRECTED_URL = '/'
 
-# SITE_ID = 1
+SITE_ID = 1
+
+# TWO_FACTOR_PATCH_ADMIN = True
+# TWO_FACTOR_CALL_GATEWAY = None
+# TWO_FACTOR_SMS_GATEWAY = 'two_factor.gateways.twilio.gateway.Twilio'
+# TWO_FACTOR_QR_FACTORY = 'qrcode.image.pil.PilImage'
+# TWO_FACTOR_TOTP_DIGITS = 6
+# PHONENUMBER_DEFAULT_REGION = None
+TWILIO_ACCOUNT_SID = 'AC64577be90f18648840b838dbfc375d0d'
+TWILIO_AUTH_TOKEN = 'b01bb07143fe36e7d4ab7c7e9a30a71d'
+TWILIO_DEFAULT_CALLERID = 555222
+DJANGO_TWILIO_FORGERY_PROTECTION = False
+DJANGO_TWILIO_BLACKLIST_CHECK = False

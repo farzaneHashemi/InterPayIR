@@ -1,13 +1,17 @@
+from dircache import cache
+import random
 from django.http import HttpResponseRedirect, HttpResponse
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
 from django.views import View
 from django.views.generic import TemplateView, CreateView
+from twilio.rest import TwilioRestClient
 from interpay.forms import RegistrationForm, UserForm
 from django.core.urlresolvers import reverse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from interpay.models import UserProfile
 from django.utils import translation
+from InterPayIR import settings
 
 
 def main_page(request):
@@ -79,6 +83,8 @@ def register(request):
 
             if 'picture' in request.FILES:
                 user_profile.picture = request.FILES['picture']
+            if 'national_card_photo' in request.FILES:
+                user_profile.national_card_photo = request.FILES['national_card_photo']
             user_profile.save()
             registered = True
 
@@ -176,3 +182,38 @@ def reports(request):
 @login_required()
 def general(request):
     return render(request, "general.html")
+
+
+# def _get_pin(length=5):
+#     """ Return a numeric PIN with length digits """
+#     return random.sample(range(10 ** (length - 1), 10 ** length), 1)[0]
+#
+#
+# def _verify_pin(mobile_number, pin):
+#     """ Verify a PIN is correct """
+#     return pin == cache.get(mobile_number)
+#
+#
+# def ajax_send_pin(request):
+#     """ Sends SMS PIN to the specified number """
+#     mobile_number = request.POST.get('mobile_number', "")
+#     if not mobile_number:
+#         return HttpResponse("No mobile number", mimetype='text/plain', status=403)
+#
+#     pin = _get_pin()
+#
+#     # store the PIN in the cache for later verification.
+#     cache.set(mobile_number, pin, 24 * 3600)  # valid for 24 hrs
+#
+#     client = TwilioRestClient(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
+#     message = client.messages.create(
+#         body="%s" % pin,
+#         to=mobile_number,
+#         from_=settings.TWILIO_FROM_NUMBER,
+#     )
+#     return HttpResponse("Message %s sent" % message.sid, mimetype='text/plain', status=200)
+
+# from InterPayIR.SMS import api
+# def send_sms(request):
+#     p = api.ParsGreenSmsServiceClient()
+#     return api.ParsGreenSmsServiceClient.sendSms(p)

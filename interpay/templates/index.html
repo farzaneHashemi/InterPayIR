@@ -13,6 +13,21 @@
 
 </head>
 <body>
+<script>
+    function send_pin() {
+        $.ajax({
+            url: "{% url 'ajax_send_pin' %}",
+            type: "POST",
+            data: {mobile_number: $("#mobile_number").val()},
+        })
+                .done(function (data) {
+                    alert("PIN sent via SMS!");
+                })
+                .fail(function (jqXHR, textStatus, errorThrown) {
+                    alert(errorThrown + ' : ' + jqXHR.responseText);
+                });
+    }
+</script>
 <header>
     <div class="top-bar">
         <div class="container" style="color: white;">
@@ -61,6 +76,10 @@
                                                           id="password" value=""
                                                           placeholder="Password" size="50"/>
                             </div>
+                            {#                            <input type="text" id="mobile_number" name="mobile_number" placeholder="111-111-1111"#}
+                            {#                                   required>#}
+                            {#                            <button class="btn" type="button" onClick="send_pin()"><i class="icon-share"></i> Get PIN#}
+                            {#                            </button>#}
                             <div id="lgn-btn-div" style="text-align: center"><input
                                     id="submit-btn"
                                     class="btn btn-info" type="submit"

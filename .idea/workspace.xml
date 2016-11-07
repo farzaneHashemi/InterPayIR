@@ -2,476 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df353b1f-be6e-4674-9aea-61b3770beeb4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\InterPayIR.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\dictionaries\Farzane.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\InterPayIR\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\InterPayIR\settings.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\InterPayIR\urls.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\InterPayIR\wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\admin.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\apps.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\migrations\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\models.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\.hound.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\CNAME" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\ISSUE_TEMPLATE.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\css\bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\dist\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\.htmlhintrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\CNAME" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\browser-bugs.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\browser-features.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\core-team.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\nav.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\showcase.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_data\translations.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\ads.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\callout-warning-color-assistive-technologies.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\footer.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\header.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\nav-docs.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\nav-home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_includes\page-headers.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_layouts\default.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_layouts\docs.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_layouts\home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_layouts\simple.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_plugins\bridge.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_plugins\bugify.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_plugins\callout.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_plugins\highlight_alt.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\_plugins\markdown-block.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\about\brand.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\about\history.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\about\license.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\about\team.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\about\translations.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\brand\bootstrap-outline.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\brand\bootstrap-punchout.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\brand\bootstrap-solid.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\css\docs-flexbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\css\docs-flexbox.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\css\docs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\css\docs.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\bs-themes.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\components.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\devices.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\expo-lyft.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\expo-newsweek.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\expo-riot.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\expo-vogue.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\img\sass.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\docs.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\src\application.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\anchor.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\clipboard.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\holder.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\jekyll-search.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\js\vendor\tether.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_ads.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_anchor.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_booticon.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_brand.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_browser-bugs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_callouts.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_clipboard-js.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_component-examples.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_content.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_examples.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_featured-sites.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_featurettes.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_footer.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_masthead.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_page-header.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_responsive-tests.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_sidebar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_skiplink.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_syntax.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\_team.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\docs.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\assets\scss\flex-grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\browser-bugs.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\alerts.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\breadcrumb.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\button-group.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\buttons.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\card.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\carousel.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\collapse.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\dropdowns.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\forms.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\input-group.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\jumbotron.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\list-group.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\modal.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\navbar.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\navs.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\pagination.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\popovers.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\progress.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\scrollspy.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\tag.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\tooltips.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\components\utilities.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\code.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\figures.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\images.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\reboot.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\tables.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\content\typography.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\css\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\css\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\css\bootstrap.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\dist\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\album\album.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\album\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\blog\blog.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\blog\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\carousel\carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\carousel\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\cover\cover.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\cover\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\dashboard\dashboard.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\dashboard\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\grid\grid.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\grid\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\jumbotron\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\jumbotron\jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\justified-nav\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\justified-nav\justified-nav.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\narrow-jumbotron\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\narrow-jumbotron\narrow-jumbotron.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar-top-fixed\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar-top-fixed\navbar-top-fixed.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar-top\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar-top\navbar-top.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\navbar\navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\offcanvas\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\offcanvas\offcanvas.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\offcanvas\offcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\album.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\blog.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\carousel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\cover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\dashboard.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\equal-height-columns.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\grid.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\jumbotron-narrow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\jumbotron.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\justified-nav.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\navbar-fixed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\navbar-static.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\non-responsive.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\offcanvas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\sign-in.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\starter-template.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\sticky-footer-navbar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\sticky-footer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\screenshots\theme.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\signin\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\signin\signin.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\starter-template\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\starter-template\starter-template.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\sticky-footer-navbar\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\sticky-footer-navbar\sticky-footer-navbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\sticky-footer\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\sticky-footer\sticky-footer.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\tooltip-viewport\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\tooltip-viewport\tooltip-viewport.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\examples\tooltip-viewport\tooltip-viewport.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\extend\approach.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\extend\icon-fonts.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\extend\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\accessibility.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\best-practices.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\browsers-devices.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\build-tools.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\contents.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\download.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\flexbox.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\introduction.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\javascript.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\getting-started\options.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\layout\flexbox-grid.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\layout\grid.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\layout\media-object.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\layout\overview.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\layout\responsive-utilities.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\migration.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\docs\search.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\bs-sass-compile\libsass.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\bs-sass-compile\sass.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\change-version.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\configBridge.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\gcp-key.json.enc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\npm-shrinkwrap.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\postcss.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\sauce_browsers.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\grunt\upload-preview.sh" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\.eslintrc.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\.jscsrc" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\alert.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\button.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\carousel.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\collapse.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\dropdown.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\modal.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\popover.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\scrollspy.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\tab.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\tooltip.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\util.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\dist\util.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\src\util.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\alert.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\button.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\modal.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\phantom.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\popover.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\tab.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\unit\tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\vendor\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\vendor\qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\vendor\qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\vendor\tether.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\alert.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\button.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\carousel.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\collapse.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\dropdown.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\modal.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\popover.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\scrollspy.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\tab.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\js\tests\visual\tooltip.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\nuget\MyGet.ps1" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\nuget\bootstrap.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\nuget\bootstrap.sass.nuspec" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\package.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\sache.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\.scss-lint.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_alert.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_breadcrumb.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_button-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_card.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_custom-forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_custom.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_dropdown.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_images.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_input-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_reboot.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_tags.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\bootstrap-flex.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\bootstrap-grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\bootstrap-reboot.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_alert.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_breakpoints.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_cards.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_hover.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_lists.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_navbar-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_pulls.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_tag.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_text-hide.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\mixins\_text-truncate.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_background.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_display.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_flex.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_pulls.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_screenreaders.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_spacing.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_text.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bootstrap\scss\utilities\_visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\css\font-awesome.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\fonts\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\animated.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\core.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\icons.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\larger.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\list.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\path.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\bower_components\font-awesome\scss\font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\css\base.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\css\home.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\jquery-1.10.2.min.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\css\jquery.contextmenu.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\css\jquery.mCustomScrollbar.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\jquery.contextmenu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\jquery.i18n.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\jquery.mCustomScrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\jquery.mousewheel.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\static\jquery\plugins\jquery.tools.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\templates\base.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\templates\home.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\templates\reports.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\templates\trans_history.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\templates\wallets.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\tests.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\interpay\views.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\locale\fa\LC_MESSAGES\django.mo" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\locale\fa\LC_MESSAGES\django.po" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\locale\fa\LC_MESSAGES\django.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\manage.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Farzane\PycharmProjects\InterPayIR\InterPayIR\templates\b.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locale/fa/LC_MESSAGES/django.mo" afterPath="$PROJECT_DIR$/locale/fa/LC_MESSAGES/django.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/static/css/base.css" afterPath="$PROJECT_DIR$/interpay/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/base.html" afterPath="$PROJECT_DIR$/interpay/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/locale/fa/LC_MESSAGES/django.po" afterPath="$PROJECT_DIR$/locale/fa/LC_MESSAGES/django.po" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/index.html" afterPath="$PROJECT_DIR$/interpay/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/models.py" afterPath="$PROJECT_DIR$/interpay/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/static/css/registeration_form.css" afterPath="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/registeration_form.html" afterPath="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/views.py" afterPath="$PROJECT_DIR$/interpay/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="InterPayIR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -495,24 +31,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InterPayIR/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.48253274">
-              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interpay/views.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+              <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registeration_form.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/static/css/registeration_form.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interpay/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.2325">
+              <caret line="195" column="1" selection-start-line="195" selection-start-column="1" selection-end-line="195" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registeration_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.346153">
+              <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="57" selection-end-column="77" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -531,7 +153,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/InterPayIR" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -549,7 +171,6 @@
         <option value="$PROJECT_DIR$/interpay/templates/register.html" />
         <option value="$PROJECT_DIR$/interpay/static/css/registration_form.css" />
         <option value="$PROJECT_DIR$/interpay/templates/main_page.html" />
-        <option value="$PROJECT_DIR$/interpay/forms.py" />
         <option value="$PROJECT_DIR$/interpay/static/css/home.css" />
         <option value="$PROJECT_DIR$/interpay/templates/home.html" />
         <option value="$PROJECT_DIR$/interpay/templates/reports.html" />
@@ -559,24 +180,26 @@
         <option value="$PROJECT_DIR$/interpay/templates/general.html" />
         <option value="$PROJECT_DIR$/interpay/templates/wallets.html" />
         <option value="$PROJECT_DIR$/interpay/templates/trans_history.html" />
-        <option value="$PROJECT_DIR$/interpay/models.py" />
         <option value="$PROJECT_DIR$/interpay/static/css/index.css" />
         <option value="$PROJECT_DIR$/locale/fa/LC_MESSAGES/django.po" />
-        <option value="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
-        <option value="$PROJECT_DIR$/interpay/templates/index.html" />
         <option value="$PROJECT_DIR$/interpay/tset.py" />
         <option value="$PROJECT_DIR$/InterPayIR/middleware.py" />
         <option value="$PROJECT_DIR$/InterPayIR/middleware/__init__.py" />
         <option value="$PROJECT_DIR$/InterPayIR/middleware/AutoLogoutMiddleware.py" />
-        <option value="$PROJECT_DIR$/InterPayIR/urls.py" />
         <option value="$PROJECT_DIR$/InterPayIR/middleware/middleware.py" />
-        <option value="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
         <option value="$PROJECT_DIR$/interpay/static/css/base.css" />
-        <option value="$PROJECT_DIR$/interpay/templates/base.html" />
-        <option value="$PROJECT_DIR$/interpay/views.py" />
         <option value="$USER_HOME$/interpay-venv/Lib/site-packages/django/contrib/auth/__init__.py" />
         <option value="$USER_HOME$/interpay-venv/Lib/site-packages/session_security/middleware.py" />
+        <option value="$PROJECT_DIR$/interpay/templates/base.html" />
+        <option value="$PROJECT_DIR$/interpay/forms.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/urls.py" />
+        <option value="$PROJECT_DIR$/interpay/views.py" />
+        <option value="$PROJECT_DIR$/interpay/models.py" />
         <option value="$PROJECT_DIR$/InterPayIR/settings.py" />
+        <option value="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
+        <option value="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
+        <option value="$PROJECT_DIR$/interpay/templates/index.html" />
       </list>
     </option>
   </component>
@@ -592,6 +215,31 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -616,8 +264,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -646,7 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interpay" />
+              <option name="myItemId" value="media" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -660,51 +308,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="interpay" />
+              <option name="myItemId" value="media" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interpay" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="nationalCardScans" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,7 +335,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -736,12 +344,13 @@
     <property name="FullScreen" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="SearchEverywhereHistoryKey" value="preferences&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR" />
-      <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static\images" />
+      <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\media" />
     </key>
@@ -1017,16 +626,16 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15848215" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14955357" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17973857" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24019608" sideWeight="0.50446427" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49019608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5375817" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2875817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20588236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3006536" sideWeight="0.4955357" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19717261" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45751634" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18080357" sideWeight="0.5069307" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33006537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1037,6 +646,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24019608" sideWeight="0.50446427" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.87091506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2875817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43954247" sideWeight="0.4955357" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45751634" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14955357" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49019608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19717261" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18080357" sideWeight="0.5069307" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33006537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1163,91 +793,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://DjangoModelDependency/#InterPayIR">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DjangoModelDependency</ID>
-          <OriginalElement>#InterPayIR</OriginalElement>
-          <nodes>
-            <node x="" y="">interpay.models.UserProfile</node>
-            <node x="" y="">django.contrib.auth.models.Permission</node>
-            <node x="" y="">django.contrib.auth.models.Group</node>
-            <node x="" y="">interpay.models.CommonUser</node>
-            <node x="" y="">django.contrib.auth.models.User</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="408.0" y="242.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8004484">
-          <caret line="464" column="8" selection-start-line="464" selection-start-column="8" selection-end-line="464" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm40/system/extLibs/http_code.jquery.com_ui_1.11.0_jquery-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33187774">
-          <caret line="3725" column="17" selection-start-line="3725" selection-start-column="17" selection-end-line="3725" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/images/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/css/wallets.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/css/reports.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/css/trans_history.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interpay/templates/reports.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.807693">
@@ -1259,32 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/images/favicon .ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.609319">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/trans_history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -1323,37 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/static/css/registeration_form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/tset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9979382">
-          <caret line="90" column="14" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/session_security/static/session_security/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30050504">
           <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46195653">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1387,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1395,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1415,31 +900,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#701#742#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/session_security/templatetags/session_security_tags.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1447,9 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1457,15 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37279597">
           <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1473,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1481,7 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,23 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="492" column="8" selection-start-line="492" selection-start-column="8" selection-end-line="492" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13967611">
-          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1521,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56751466">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1529,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14677104">
           <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1537,9 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0978473">
           <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#309#349#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1547,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26810175">
           <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1555,28 +982,203 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16829745">
           <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django_twilio/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django_twilio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django_twilio/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django_twilio/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django_twilio/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/2. Work/دکتر مروستی/Interpay Iran/پارس گرین/Soap-Python/Soap-Python/parsgreen/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="69" selection-start-line="85" selection-start-column="69" selection-end-line="85" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/trans_history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321918">
+          <caret line="457" column="17" selection-start-line="457" selection-start-column="17" selection-end-line="457" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321918">
+          <caret line="402" column="21" selection-start-line="402" selection-start-column="21" selection-end-line="402" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="57" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
-            <element signature="e#257#273#0" expanded="true" />
-            <element signature="e#818#1553#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/views.py">
+    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="55" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48253274">
-          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="14" selection-start-line="173" selection-start-column="14" selection-end-line="173" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="191" column="36" selection-start-line="191" selection-start-column="36" selection-end-line="191" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/static/css/registeration_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2325">
+          <caret line="195" column="1" selection-start-line="195" selection-start-column="1" selection-end-line="195" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
