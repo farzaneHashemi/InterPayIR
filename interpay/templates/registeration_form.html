@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="{% static "bower_components/font-awesome/css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static 'css/registeration_form.css' %}">
     <link rel="shortcut icon" type="image/png" href="{% static 'images/ipay-favicon.ico' %}"/>
+    <link rel="stylesheet" href="{% static 'css/sweetalert.css' %}"/>
     {% block CSS %}
     {% endblock %}
 
 
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="../static/js/sweetalert.min.js"></script>
 
     {% block JS %}
     {% endblock %}
@@ -81,13 +83,9 @@
         });
 
         $("#mob_no").keydown(function (event) {
-            // Allow: backspace, delete, tab, escape, and enter
             if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 ||
-                        // Allow: Ctrl+A
                     (event.keyCode == 65 && event.ctrlKey === true) ||
-                        // Allow: home, end, left, right
                     (event.keyCode >= 35 && event.keyCode <= 39)) {
-                // let it happen, don't do anything
             }
             else {
                 // Ensure that it is a number and stop the keypress
@@ -96,6 +94,19 @@
                 }
             }
         });
+
+        $("#verification-code").keydown(function (event) {
+            if (event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 ||
+                    (event.keyCode == 65 && event.ctrlKey === true) ||
+                    (event.keyCode >= 35 && event.keyCode <= 39)) {
+            }
+            else {
+                if (event.shiftKey || (event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                    event.preventDefault();
+                }
+            }
+        });
+
         {#        $(function () {#}
         {#            $("#id_date_of_birth").datepicker("show");#}
         {#            $("#format"id_date_of_birth").datepicker("option", "dateFormat", $(this).val());#}
@@ -107,6 +118,17 @@
         {#            console.log("hi");#}
         {#            $("#id_date_of_birth").datepicker("show");#}
         {#        });#}
+
+        $('#continue-btn').attr('disabled', true);
+        $('input').keyup(function () {
+            var disable = false;
+            $('input:text').each(function () {
+                if ($(this).val() == "") {
+                    disable = true;
+                }
+            });
+            $('#continue-btn').prop('disabled', disable);
+        });
     });
 
     function to_en() {
@@ -115,9 +137,42 @@
     }
 
     function id_card_submit_btn() {
-        console.log("hey");
         $('#id_national_card_photo').click();
     }
+
+
+    function send_sms() {
+        {#        $("#submit-btn").click();#}
+    }
+
+    function go() {
+        $("#submit-btn").click();
+        $("div.login-register-div").css({"display": "none"});
+        $("div#registration_form_wrapper").css({"display": "none"});
+        var k =
+                {#                '<p><input id="verification-code" type="text" maxlength="6" class="registration-form-field" placeholder="Enter the code"></p> ' +#}
+                '<p><input id="send-sms-btn" onclick="send_sms()" type="submit" value="Submit and Sign Up" ' +
+                'class="registration-form-field btn btn-success"></p>';
+        var l = '{{ auth_form.as_p }}';
+        $("#authentication_form").html(l + k);
+
+        {#        var registration_form_wrapper = $("div#registration_form_wrapper");#}
+        {#        var authentication_form = $("#authentication_form");#}
+        {#        var xhttp = new XMLHttpRequest();#}
+        {#        xhttp.onreadystatechange = function () {#}
+        {#            if (xhttp.readyState == 4) {#}
+        {#                var s = xhttp.response;#}
+        {#                registration_form_wrapper.css({"display": "none"});#}
+        {#                authentication_form.html(l+k);#}
+        {#                console.log(s);#}
+        {#            }#}
+        {#        };#}
+        {##}
+        {#        xhttp.open("GET", '/sms/', true);#}
+        {#        xhttp.send();#}
+    }
+
+
 </script>
 <header>
     <div class="top-bar">
@@ -125,15 +180,15 @@
             <div id="logo-bar">
                 <img src="/static/images/logo.png" style="width: 10%">
                 <!--The translation part is commented out until it's bug being fixed -->
-                {#                <div id="translation-link">#}
-                {#                    {% ifequal LANGUAGE_CODE  'en-gb' %}#}
-                {#                        <a id="to-fa-link" href='/fa-ir{{ request.path }}'><img src="../static/images/irflag.png"#}
-                {#                                                                                style="width: 50%;cursor: pointer"></a>#}
-                {#                    {% else %}#}
-                {#                        <a id="to-en-link" class="trans-link" onclick="to_en()"><img src="../static/images/ukflag.png"#}
-                {#                                                                                     style="width: 50%;cursor: pointer"></a>#}
-                {#                    {% endifequal %}#}
-                {#                </div>#}
+                <div id="translation-link">
+                    {% ifequal LANGUAGE_CODE 'en-gb' %}
+                        <a id="to-fa-link" href='/fa-ir{{ request.path }}'><img src="../static/images/irflag.png"
+                                                                                style="width: 50%;cursor: pointer"></a>
+                        {% else %}
+                        <a id="to-en-link" class="trans-link" onclick="to_en()"><img src="../static/images/ukflag.png"
+                                                                                     style="width: 50%;cursor: pointer"></a>
+                    {% endifequal %}
+                </div>
             </div>
             {#            <div class="row">#}
             {#                <div id="number" class="col-sm-6 col-xs-4"></div>#}
@@ -161,11 +216,30 @@
                             {#                            <a class="btn-link" href="/fa-ir/home/">#}
                             {#                        {% endifequal %}#}
                             {#                        {% trans 'Launch to your homepage' %}#}
-                        </a><br/>
-
+                        </a>
+                        <br/>
                     </div>
                 </div>
             </div>
+{#        {% elif registered == -1 %}#}
+{#            <div class="row">#}
+{#                <div class="col-xs-12" id="reg-wrap-wrap-div">#}
+{#                    <div class="form-wrapper" style="text-align: center">#}
+{#                        <div id="authentication_form_wrapper">#}
+{#                            <form enctype="multipart/form-data" id="authentication_form" method="post" action="/register/">#}
+{#                                {% csrf_token %}#}
+{#                                {{ auth_form.as_p }}#}
+{#                                <p>#}
+{#                                    <input id="send-sms-btn" onclick="send_sms()" type="submit"#}
+{#                                           value="Submit and Sign Up"#}
+{#                                           class="registration-form-field btn btn-success">#}
+{#                                </p>#}
+{##}
+{#                            </form>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
         {% else %}
             <div class="row">
                 {% block main-cont %}
@@ -180,22 +254,31 @@
                             {% block message %}
                             {% endblock %}
                             <hr>
-                            <form enctype="multipart/form-data" id="registration_form" method="post"
-                                  action="/register/" > {% csrf_token %}
-                                {{ user_form.as_p }}
-                                {{ profile_form.as_p }}
-                                <p>
-                                    <input id="id-card-submit-btn" type="button"
-                                           value="{% trans 'Upload your Identification Card photo' %}"
-                                           class="registration-form-field btn btn-primary"
-                                           onclick="id_card_submit_btn()">
-                                </p>
+                            <div id="registration_form_wrapper">
+                                <form enctype="multipart/form-data" id="registration_form" method="post"
+                                      action="/register/"> {% csrf_token %}
+                                    {{ user_form.as_p }}
+                                    {{ profile_form.as_p }}
 
-                                <div id="submit-btn-wrap" style="text-align: center">
-                                    <input id="submit-btn" class="btn btn-success" type="submit" name="submit"
-                                           value="{% trans 'Sign Up' %}"/>
-                                </div>
-                            </form>
+                                    <p>
+                                        <input id="id-card-submit-btn" type="button"
+                                               value="{% trans 'Upload your Identification Card photo' %}"
+                                               class="registration-form-field btn btn-primary"
+                                               onclick="id_card_submit_btn()">
+                                    </p>
+
+                                    <div id="submit-btn-wrap" style="text-align: center">
+                                        <input id="continue-btn" class="btn btn-success" type="button" name="continue"
+                                               onclick="go()"
+                                               value="{% trans 'Continue >>' %}"/>
+                                    </div>
+                                    <div id="submit-btn-wrap" style="text-align: center; display:none;">
+                                        <input id="submit-btn" class="btn btn-success" type="submit" name="submit"
+                                               value="{% trans 'Sign Up' %}"/>
+                                    </div>
+                                </form>
+                            </div>
+
                             <a></a>
 
                             <div></div>
