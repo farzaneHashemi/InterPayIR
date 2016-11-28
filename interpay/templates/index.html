@@ -14,19 +14,38 @@
 </head>
 <body>
 <script>
-    function send_pin() {
-        $.ajax({
-            url: "{% url 'ajax_send_pin' %}",
-            type: "POST",
-            data: {mobile_number: $("#mobile_number").val()},
-        })
-                .done(function (data) {
-                    alert("PIN sent via SMS!");
-                })
-                .fail(function (jqXHR, textStatus, errorThrown) {
-                    alert(errorThrown + ' : ' + jqXHR.responseText);
+    {% block script %}
+        function forgot_pass() {
+            swal({
+                title: "Password Retrieval",
+                text: "Enter your phone number",
+                type: "input",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                animation: "slide-from-top",
+                inputPlaceholder: "Phone number"
+            }, function (inputValue) {
+                if (inputValue === "") {
+                    swal.showInputError("You need enter your number");
+                    return false
+                }
+                var postUrl = "/retrieve_pass/";
+                $.ajax({
+                    url: postUrl,
+                    type: 'POST',
+                    data: {'mobile_no': inputValue},
+                    traditional: true,
+                    dataType: 'html',
+                    success: function (result) {
+                        // for now, this method is the same as sending a common sms, but it has to be improved
+                        // to generating a more secure password and email it as well as SMSing #TODO
+                        swal(result, "A new password was sent to your phone.", "success");
+                    }
                 });
-    }
+            });
+        }
+    {% endblock %}
+
 </script>
 <header>
     <div class="top-bar">
@@ -81,16 +100,19 @@
                             {#                            <button class="btn" type="button" onClick="send_pin()"><i class="icon-share"></i> Get PIN#}
                             {#                            </button>#}
                             <div id="lgn-btn-div" style="text-align: center"><input
-                                    id="submit-btn"
+                                    id="login-btn"
                                     class="btn btn-info" type="submit"
                                     value="{% trans 'Login' %}"/></div>
                         </form>
+                        <div id="forgot-pass-div" style="text-align: center"><h6><a
+                                onclick="forgot_pass()">{% trans 'Forgot password or account disabled ?' %}</a></h6>
+                        </div>
                     </div>
-                    <div id="register-div">
+                    <div id="register-link-div">
                         <h6>{% trans "Don't have an account yet?" %}</h6>
-                        {% ifequal LANGUAGE_CODE  'en-gb' %}
+                        {% ifequal LANGUAGE_CODE 'en-gb' %}
                             <a id="register-link" href="/register/">
-                        {% else %}
+                            {% else %}
                             <a id="register-link" href="/fa-ir/register/">
                         {% endifequal %}
                         {% trans 'Create One!' %}

@@ -65,3 +65,11 @@ class CommonUser(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.customer_ID, self.user_ID.name)
+
+
+class VerificationCodes(models.Model):
+    user_code = models.IntegerField()
+    user = models.ForeignKey(UserProfile, null=False, related_name='verif_code_user')
+
+    def __str__(self):
+        return '{} - {}'.format(self.user, self.user.name)

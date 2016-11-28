@@ -44,12 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'session_security',
-    # 'django_otp',
-    # 'django_otp.plugins.otp_static',
-    # 'django_otp.plugins.otp_totp',
-    # 'two_factor',
-    # 'otp_yubikey',
-    'django_twilio',
+
 ]
 
 MIDDLEWARE = [
@@ -59,13 +54,10 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    # 'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'session_security.middleware.SessionSecurityMiddleware',
-    # twilio stuff
-    # 'django_otp.middleware.OTPMiddleware',
-    # 'two_factor.middleware.threadlocals.ThreadLocals',
+    # 'session_security.middleware.SessionSecurityMiddleware',
+
 ]
 
 # AUTO_LOGOUT_DELAY = 30
@@ -180,21 +172,9 @@ LOCALE_PATHS = (
 
 prefix_default_language = False
 
-# LOGIN_URL = '/login/'
-LOGIN_URL = 'two_factor:login'
+LOGIN_URL = '/login/'
+
 LOGOUT_URL = '/login/'
 # LOGIN_REDIRECTED_URL = '/'
 
 SITE_ID = 1
-
-# TWO_FACTOR_PATCH_ADMIN = True
-# TWO_FACTOR_CALL_GATEWAY = None
-# TWO_FACTOR_SMS_GATEWAY = 'two_factor.gateways.twilio.gateway.Twilio'
-# TWO_FACTOR_QR_FACTORY = 'qrcode.image.pil.PilImage'
-# TWO_FACTOR_TOTP_DIGITS = 6
-# PHONENUMBER_DEFAULT_REGION = None
-TWILIO_ACCOUNT_SID = 'AC64577be90f18648840b838dbfc375d0d'
-TWILIO_AUTH_TOKEN = 'b01bb07143fe36e7d4ab7c7e9a30a71d'
-TWILIO_DEFAULT_CALLERID = 555222
-DJANGO_TWILIO_FORGERY_PROTECTION = False
-DJANGO_TWILIO_BLACKLIST_CHECK = False
