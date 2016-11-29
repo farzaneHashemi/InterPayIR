@@ -19,12 +19,15 @@ from django.contrib import admin
 from interpay import views
 from django.conf.urls.i18n import i18n_patterns
 from django.views.generic.base import TemplateView
+
+# from two_factor.urls import urlpatterns as tf_urls
+# from two_factor.gateways.twilio.urls import urlpatterns as tf_twilio_urls
+
 admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^i18n/', include('django.conf.urls.i18n')),
     url(r'session_security/', include('session_security.urls')),
-    # url(r'^accounts/', include('registration.backends.hmac.urls')),
 
     # url(r'^$', TemplateView.as_view(template_name="main_page.html")),
     # url(r'^home/', TemplateView.as_view(template_name="home.html")),
@@ -45,6 +48,13 @@ urlpatterns = [
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
+
+    url(r'^verif/$', views.verify_user, name='verif'),
+    url(r'^sms/$', views.send_sms, name='sms'),
+    url(r'^retrieve_pass/$', views.retrieve_pass, name='retrieve_pass'),
+
+    url(r'^sms/$', views.send_sms, name='sms'),
+
 
 ]
 
@@ -74,4 +84,5 @@ urlpatterns += i18n_patterns(
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
+    url(r'^sms/$', views.send_sms, name='sms'),
 )
