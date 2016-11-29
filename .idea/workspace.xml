@@ -460,9 +460,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/locale/fa/LC_MESSAGES/django.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/manage.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/templates/b.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/InterPayIR.iml" afterPath="$PROJECT_DIR$/.idea/InterPayIR.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
     </list>
     <ignored path="InterPayIR.iws" />
     <ignored path=".idea/workspace.xml" />
