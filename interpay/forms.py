@@ -119,8 +119,6 @@ class AuthenticationForm(forms.Form):
             raise forms.ValidationError('Please enter the code which was sent to you.')
         return authentication_code
 
-
-
         # def verify_code(code):
         #     is_valid = False
         #
