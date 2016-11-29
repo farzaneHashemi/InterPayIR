@@ -17,5 +17,13 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Django default2" uuid="1beb142e-5eb5-424b-9bcc-310bc12ed264">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/InterPayIR/settings.py</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\InterPayIR\db.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
