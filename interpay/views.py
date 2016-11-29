@@ -77,16 +77,17 @@ def register(request):
 @csrf_exempt
 def send_sms(request, mobile_no):
     mobile_no = request.session['mobile_no']
-    print mobile_no
     request.session['try_counter'] = 0
     code = random_code_gen()
     request.session['code'] = code
     # redis_ds = ds.AuthCodeDataStructure()
     # redis_ds.set_code(mobile_no, code)
-    p = api.ParsGreenSmsServiceClient()
-    api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
+    # p = api.ParsGreenSmsServiceClient()
+    # api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
     user = models.User.objects.get(id=request.session['user_id'])
     user_profile = models.UserProfile.objects.get(user=user)
+    if models.VerificationCodes.objects.get(id=user_profile.id):
+        models.VerificationCodes.objects.get(id=user_profile.id).user_code = code
     # TODO check if there exists a code for this user and replace it
     models.VerificationCodes.objects.create(user_code=code, user=user_profile)
     msg = "A code has just been sent to your phone."

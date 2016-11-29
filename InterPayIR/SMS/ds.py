@@ -1,7 +1,7 @@
 import redis
 
 
-class AuthCodeDataStructure():
+class AuthCodeDataStructure:
     def __init__(self):
         pass
 
