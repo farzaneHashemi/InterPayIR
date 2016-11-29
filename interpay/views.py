@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 from django.shortcuts import render, render_to_response, redirect
+=======
+from django.http import HttpResponseRedirect, HttpResponse
+from django.shortcuts import render, render_to_response, redirect
+from django.views.generic import TemplateView, CreateView
+from interpay.forms import RegistrationForm, UserForm, AuthenticationForm
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import TemplateView, CreateView
 from django.contrib.auth.decorators import login_required
+<<<<<<< HEAD
 from interpay.forms import RegistrationForm, UserForm
 from django.views.decorators.csrf import csrf_exempt
 from InterPayIR.SMS import ds, api
 from interpay import models
 from random import randint
 import json
+=======
+from random import randint
+from InterPayIR.SMS import ds
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
 
 
 def main_page(request):
@@ -22,6 +34,7 @@ def register(request):
     if request.method == 'POST':
         user_form = UserForm(data=request.POST)
         registration_form = RegistrationForm(data=request.POST)
+        # authentication_form = AuthenticationForm(data=request.POST)
 
         if user_form.is_valid() and registration_form.is_valid():
             user = user_form.save()
@@ -32,8 +45,13 @@ def register(request):
             user_profile.email = user_form.cleaned_data['email']
             # user_profile.date_of_birth = user_profile.cleaned_data['date_of_birth']
             user_profile.password = user.password
+<<<<<<< HEAD
             # if user.is_active:
             #     user_profile.is_active = True
+=======
+            if user.is_active:
+                user_profile.is_active = True
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
             user_profile.user = user
 
             if 'picture' in request.FILES:
@@ -41,6 +59,19 @@ def register(request):
             if 'national_card_photo' in request.FILES:
                 user_profile.national_card_photo = request.FILES['national_card_photo']
             user_profile.save()
+<<<<<<< HEAD
+=======
+
+            mobile_no = registration_form.cleaned_data['mobile_number']
+            print("mob ", mobile_no)
+            send_sms(request, mobile_no)
+
+            registered = True
+
+            new_user = authenticate(username=user_form.cleaned_data['username'],
+                                    password=user_form.cleaned_data['password'], )
+            login(request, new_user)
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
 
             mobile_no = registration_form.cleaned_data['mobile_number']
             request.session['mobile_no'] = mobile_no
@@ -55,7 +86,11 @@ def register(request):
     else:
         user_form = UserForm()
         registration_form = RegistrationForm()
+<<<<<<< HEAD
     activated = False
+=======
+        # authentication_form = AuthenticationForm()
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     if request.LANGUAGE_CODE == 'en-gb':
         thanks_msg = "Thank You for Registering!"
         redirect_to_home_msg = 'Launch to your homepage'
@@ -63,7 +98,11 @@ def register(request):
         return render(request, 'registeration_form.html',
                       {'user_form': user_form, 'profile_form': registration_form,
                        'registered': registered,
+<<<<<<< HEAD
                        'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg, 'activated': activated})
+=======
+                       'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg})
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     else:
         thanks_msg = "???? ?????? ??? ?? ?????? ????? ??."
         redirect_to_home_msg = '???? ???? ??? ?? ??????.'
@@ -71,6 +110,7 @@ def register(request):
         return render(request, 'registeration_form.html',
                       {'user_form': user_form, 'profile_form': registration_form,
                        'registered': registered,
+<<<<<<< HEAD
                        'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg, 'activated': activated})
 
 
@@ -129,6 +169,28 @@ def retrieve_pass(request):
     mobile_no = request.POST.get('mobile_no', False)
     print mobile_no
     return HttpResponse("hi")
+=======
+                       'thanks_msg': thanks_msg, 'redirect_to_home_msg': redirect_to_home_msg})
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+
+
+def send_sms(request, mobile_no):
+    code = random_code_gen(request)
+    # redis_ds = ds.AuthCodeDataStructure()
+    # redis_ds.set_code(mobile_no, code)
+    # literally send sms :
+    # p = api.ParsGreenSmsServiceClient()
+    # api.ParsGreenSmsServiceClient.sendSms(p, code)
+
+    # msg = "Enter the code sent to your phone to continue!"
+    print("success")
+    # return HttpResponse(msg)
+
+
+# def done(request):
+#     new_user = authenticate(username=user_form.cleaned_data['username'],
+#                             password=user_form.cleaned_data['password'], )
+#     login(request, new_user)
 
 
 def user_login(request):
@@ -201,7 +263,11 @@ def general(request):
     return render(request, "general.html")
 
 
+<<<<<<< HEAD
 def random_code_gen():
+=======
+def random_code_gen(request):
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     verif_code = randint(100000, 999999)
     return verif_code
 

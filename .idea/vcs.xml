@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+<<<<<<< HEAD
     <mapping directory="D:/InterPayIR" vcs="Git" />
+=======
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
   </component>
 </project>

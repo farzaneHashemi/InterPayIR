@@ -64,8 +64,12 @@ class RegistrationForm(forms.ModelForm):
                 attrs={'class': 'registration-form-field', 'placeholder': 'National Code', 'id': 'national_code', }),
             'country': forms.Select(attrs={'class': 'registration-form-field', 'placeholder': 'Country'}),
             'mobile_number': forms.TextInput(
+<<<<<<< HEAD
                 attrs={'name': 'mobile_no', 'class': 'registration-form-field',
                        'placeholder': 'Mobile (Example: 09121234567)',
+=======
+                attrs={'class': 'registration-form-field', 'placeholder': 'Mobile (Example: 09121234567)',
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
                        'id': 'mob_no'}),
         }
 

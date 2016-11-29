@@ -48,9 +48,13 @@ urlpatterns = [
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
+<<<<<<< HEAD
     url(r'^verif/$', views.verify_user, name='verif'),
     url(r'^sms/$', views.send_sms, name='sms'),
     url(r'^retrieve_pass/$', views.retrieve_pass, name='retrieve_pass'),
+=======
+    url(r'^sms/$', views.send_sms, name='sms'),
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
 
 ]
 

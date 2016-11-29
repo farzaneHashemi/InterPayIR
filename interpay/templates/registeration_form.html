@@ -19,10 +19,18 @@
     {% block CSS %}
     {% endblock %}
 
+<<<<<<< HEAD
     <!-- JS -->
     <script src="../static/jquery/jquery-1.10.2.js"></script>
     <script src="../static/jquery/jquery-ui.js"></script>
     <script src="../static/js/sweetalert.min.js"></script>
+=======
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script src="../static/js/sweetalert.min.js"></script>
+
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     {% block JS %}
     {% endblock %}
 
@@ -138,6 +146,7 @@
         $('#id_national_card_photo').click();
     }
 
+<<<<<<< HEAD
     function verify_user() {
         var postUrl = "/verif/";
         code = $("#verification-code").val();
@@ -186,10 +195,16 @@
                 }
             });
         });
+=======
+
+    function send_sms() {
+        {#        $("#submit-btn").click();#}
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     }
 
     function go() {
         $("#submit-btn").click();
+<<<<<<< HEAD
 
         swal({
             title: "",
@@ -204,6 +219,34 @@
 
     {% block script %}
     {% endblock %}
+=======
+        $("div.login-register-div").css({"display": "none"});
+        $("div#registration_form_wrapper").css({"display": "none"});
+        var k =
+                {#                '<p><input id="verification-code" type="text" maxlength="6" class="registration-form-field" placeholder="Enter the code"></p> ' +#}
+                '<p><input id="send-sms-btn" onclick="send_sms()" type="submit" value="Submit and Sign Up" ' +
+                'class="registration-form-field btn btn-success"></p>';
+        var l = '{{ auth_form.as_p }}';
+        $("#authentication_form").html(l + k);
+
+        {#        var registration_form_wrapper = $("div#registration_form_wrapper");#}
+        {#        var authentication_form = $("#authentication_form");#}
+        {#        var xhttp = new XMLHttpRequest();#}
+        {#        xhttp.onreadystatechange = function () {#}
+        {#            if (xhttp.readyState == 4) {#}
+        {#                var s = xhttp.response;#}
+        {#                registration_form_wrapper.css({"display": "none"});#}
+        {#                authentication_form.html(l+k);#}
+        {#                console.log(s);#}
+        {#            }#}
+        {#        };#}
+        {##}
+        {#        xhttp.open("GET", '/sms/', true);#}
+        {#        xhttp.send();#}
+    }
+
+
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
 </script>
 <header>
     <div class="top-bar">
@@ -234,6 +277,7 @@
 <section>
     <div class="container">
         {% if registered %}
+<<<<<<< HEAD
         {% if activated %}
         <div class="row">
             <div class="col-xs-12" id="reg-wrap-wrap-div">
@@ -264,11 +308,29 @@
                                   placeholder="Enter the code"></p>
                         <p><input id="send-sms-btn" onclick="verify_user()" type="button" value="Submit and Sign Up"
                                   class="registration-form-field btn btn-success"></p>
+=======
+            <div class="row">
+                <div class="col-xs-12" id="reg-wrap-wrap-div">
+                    <div class="form-wrapper" style="text-align: center">
+                        <strong>{{ thanks_msg }}</strong>
+                        <hr>
+                        {#                        <a class="btn-link" href="/home">{% trans 'Launch to your homepage' %}</a><br/>#}
+
+                        {#                        {% ifequal LANGUAGE_CODE  'en-gb' %}#}
+                        <a class="btn-link" href="/home/">{{ redirect_to_home_msg }}
+                            {#                        {% else %}#}
+                            {#                            <a class="btn-link" href="/fa-ir/home/">#}
+                            {#                        {% endifequal %}#}
+                            {#                        {% trans 'Launch to your homepage' %}#}
+                        </a>
+                        <br/>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
                     </div>
                 </div>
                 <div id="resend-code"><h6>
                     <a onclick="resend_sms()">{% trans "Did'nt get any code? Re-send a code." %}</a></h6></div>
             </div>
+<<<<<<< HEAD
         </div>
         {% endif %}
         {#            <div class="row">#}
@@ -308,6 +370,27 @@
         {#                    </div>#}
         {#                </div>#}
         {#            </div>#}
+=======
+{#        {% elif registered == -1 %}#}
+{#            <div class="row">#}
+{#                <div class="col-xs-12" id="reg-wrap-wrap-div">#}
+{#                    <div class="form-wrapper" style="text-align: center">#}
+{#                        <div id="authentication_form_wrapper">#}
+{#                            <form enctype="multipart/form-data" id="authentication_form" method="post" action="/register/">#}
+{#                                {% csrf_token %}#}
+{#                                {{ auth_form.as_p }}#}
+{#                                <p>#}
+{#                                    <input id="send-sms-btn" onclick="send_sms()" type="submit"#}
+{#                                           value="Submit and Sign Up"#}
+{#                                           class="registration-form-field btn btn-success">#}
+{#                                </p>#}
+{##}
+{#                            </form>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
         {% else %}
         <div class="row">
             {% block main-cont %}
@@ -340,12 +423,52 @@
                                        onclick="go()"
                                        value="{% trans 'Continue >>' %}"/>
                             </div>
+<<<<<<< HEAD
                             <div id="submit-btn-wrap" style="text-align: center; display:none;">
                                 <input id="submit-btn" class="btn btn-success" type="submit" name="submit"
                                        value="{% trans 'Sign Up' %}"/>
                             </div>
                         </form>
 
+=======
+                            {% block message %}
+                            {% endblock %}
+                            <hr>
+                            <div id="registration_form_wrapper">
+                                <form enctype="multipart/form-data" id="registration_form" method="post"
+                                      action="/register/"> {% csrf_token %}
+                                    {{ user_form.as_p }}
+                                    {{ profile_form.as_p }}
+
+                                    <p>
+                                        <input id="id-card-submit-btn" type="button"
+                                               value="{% trans 'Upload your Identification Card photo' %}"
+                                               class="registration-form-field btn btn-primary"
+                                               onclick="id_card_submit_btn()">
+                                    </p>
+
+                                    <div id="submit-btn-wrap" style="text-align: center">
+                                        <input id="continue-btn" class="btn btn-success" type="button" name="continue"
+                                               onclick="go()"
+                                               value="{% trans 'Continue >>' %}"/>
+                                    </div>
+                                    <div id="submit-btn-wrap" style="text-align: center; display:none;">
+                                        <input id="submit-btn" class="btn btn-success" type="submit" name="submit"
+                                               value="{% trans 'Sign Up' %}"/>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <a></a>
+
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="login-register-div">
+                            <h6>{% trans 'Already have an account?' %}</h6>
+                            <a class="register-login-link" href="/login/">{% trans 'Sign In!' %}</a>
+                        </div>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
                     </div>
 
                     <div id="authentication_form">
