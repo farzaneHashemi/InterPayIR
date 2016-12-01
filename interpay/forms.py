@@ -122,8 +122,6 @@ class RechargeAccountForm(forms.Form):
 
 
 
-
-
         # def verify_code(code):
         #     is_valid = False
         #

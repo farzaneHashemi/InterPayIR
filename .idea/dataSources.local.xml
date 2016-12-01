@@ -6,10 +6,21 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
     </data-source>
     <data-source name="Django default2" uuid="1beb142e-5eb5-424b-9bcc-310bc12ed264">
+<<<<<<< HEAD
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
     <data-source name="Django default3" uuid="f1f0b6f5-9e09-4b19-8fb4-e153a52fe974">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+=======
+      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Django default3" uuid="f1f0b6f5-9e09-4b19-8fb4-e153a52fe974">
+      <database-info product="SQLite" version="3.8.11" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <auth-required>false</auth-required>
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
     </data-source>
   </component>
 </project>

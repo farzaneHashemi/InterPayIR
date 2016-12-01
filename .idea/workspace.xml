@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="450d8201-fa8e-4a6d-90cf-c369e1f2eab7" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/css/top_up.css" />
@@ -474,6 +476,489 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/base.html" afterPath="$PROJECT_DIR$/interpay/templates/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/home.html" afterPath="$PROJECT_DIR$/interpay/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/views.py" afterPath="$PROJECT_DIR$/interpay/views.py" />
+=======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bbeef7ce-e350-4a46-a084-bbf7e080a98c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bbeef7ce-e350-4a46-a084-bbf7e080a98c.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/models.py" afterPath="$PROJECT_DIR$/interpay/models.py" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/css/sweetalert.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/js/sweetalert.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/InterPayIR.iml" afterPath="$PROJECT_DIR$/.idea/InterPayIR.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/forms.py" afterPath="$PROJECT_DIR$/interpay/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/static/css/index.css" afterPath="$PROJECT_DIR$/interpay/static/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/index.html" afterPath="$PROJECT_DIR$/interpay/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/static/css/registeration_form.css" afterPath="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/registeration_form.html" afterPath="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterPayIR/urls.py" afterPath="$PROJECT_DIR$/InterPayIR/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/views.py" afterPath="$PROJECT_DIR$/interpay/views.py" />
+=======
+    <list default="true" id="df353b1f-be6e-4674-9aea-61b3770beeb4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/InterPayIR.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/dictionaries/Farzane.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/InterPayIR/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/InterPayIR/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/InterPayIR/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/InterPayIR/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/apps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/.hound.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/.htmlhintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/browser-bugs.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/browser-features.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/core-team.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/nav.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/showcase.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_data/translations.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/ads.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/callout-warning-color-assistive-technologies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/nav-docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/nav-home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_includes/page-headers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_layouts/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_layouts/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_layouts/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_layouts/simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_plugins/bridge.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_plugins/bugify.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_plugins/callout.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_plugins/highlight_alt.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/_plugins/markdown-block.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/about/brand.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/about/history.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/about/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/about/team.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/about/translations.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/brand/bootstrap-outline.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/brand/bootstrap-punchout.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/brand/bootstrap-solid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/css/docs-flexbox.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/css/docs-flexbox.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/css/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/css/docs.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/bs-themes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/components.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/devices.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/expo-lyft.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/expo-newsweek.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/expo-riot.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/expo-vogue.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/img/sass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/src/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/anchor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/clipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/holder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/jekyll-search.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/js/vendor/tether.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_ads.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_anchor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_booticon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_brand.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_browser-bugs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_callouts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_clipboard-js.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_component-examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_content.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_featured-sites.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_featurettes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_masthead.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_page-header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_responsive-tests.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_sidebar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_skiplink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_syntax.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/_team.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/docs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/assets/scss/flex-grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/browser-bugs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/alerts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/breadcrumb.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/button-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/buttons.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/card.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/carousel.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/collapse.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/dropdowns.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/forms.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/input-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/jumbotron.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/list-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/modal.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/navbar.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/navs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/pagination.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/popovers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/progress.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/scrollspy.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/tag.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/tooltips.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/components/utilities.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/code.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/figures.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/images.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/reboot.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/tables.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/content/typography.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/album/album.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/album/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/blog/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/carousel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/cover/cover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/cover/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/dashboard/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/dashboard/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/grid/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/grid/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/jumbotron/jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/justified-nav/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/justified-nav/justified-nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/narrow-jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/narrow-jumbotron/narrow-jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar-top-fixed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar-top-fixed/navbar-top-fixed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar-top/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar-top/navbar-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/navbar/navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/offcanvas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/offcanvas/offcanvas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/offcanvas/offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/album.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/blog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/carousel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/dashboard.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/equal-height-columns.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/grid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/jumbotron-narrow.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/jumbotron.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/justified-nav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/navbar-fixed.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/navbar-static.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/navbar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/non-responsive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/offcanvas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/sign-in.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/starter-template.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/sticky-footer-navbar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/sticky-footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/screenshots/theme.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/signin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/signin/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/starter-template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/starter-template/starter-template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/sticky-footer-navbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/sticky-footer/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/sticky-footer/sticky-footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/tooltip-viewport/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/tooltip-viewport/tooltip-viewport.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/examples/tooltip-viewport/tooltip-viewport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/extend/approach.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/extend/icon-fonts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/extend/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/accessibility.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/best-practices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/browsers-devices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/build-tools.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/download.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/flexbox.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/introduction.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/javascript.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/getting-started/options.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/layout/flexbox-grid.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/layout/grid.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/layout/media-object.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/layout/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/layout/responsive-utilities.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/migration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/docs/search.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/bs-sass-compile/libsass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/bs-sass-compile/sass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/change-version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/gcp-key.json.enc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/npm-shrinkwrap.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/postcss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/sauce_browsers.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/grunt/upload-preview.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/.eslintrc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/alert.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/button.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/carousel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/collapse.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/dropdown.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/modal.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/popover.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/scrollspy.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/tab.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/tooltip.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/dist/util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/src/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/phantom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/unit/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/vendor/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/vendor/tether.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/alert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/collapse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/dropdown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/modal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/popover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/scrollspy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/js/tests/visual/tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/nuget/MyGet.ps1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/nuget/bootstrap.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/nuget/bootstrap.sass.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/sache.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/.scss-lint.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_breadcrumb.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_button-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_card.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_close.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_code.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_custom-forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_custom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_images.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_input-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_jumbotron.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_media.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_popover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_reboot.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_responsive-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_tags.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/bootstrap-flex.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/bootstrap-grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/bootstrap-reboot.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_background-variant.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_breakpoints.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_grid-framework.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_hover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_nav-divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_navbar-align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_pulls.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_reset-filter.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_reset-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_resize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_tab-focus.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_table-row.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_tag.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_text-emphasis.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_text-hide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/mixins/_text-truncate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_background.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_display.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_flex.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_pulls.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_screenreaders.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_spacing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bootstrap/scss/utilities/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/css/font-awesome.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/animated.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/larger.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/list.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_animated.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/bower_components/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/css/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/jquery-1.10.2.min.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/css/jquery.contextmenu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/css/jquery.mCustomScrollbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/jquery.contextmenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/jquery.i18n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/jquery.mCustomScrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/static/jquery/plugins/jquery.tools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/templates/base.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/templates/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/templates/reports.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/templates/trans_history.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/templates/wallets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/interpay/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/locale/fa/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/locale/fa/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/locale/fa/LC_MESSAGES/django.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/templates/b.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/InterPayIR.iml" afterPath="$PROJECT_DIR$/.idea/InterPayIR.iml" />
+>>>>>>> master
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
     </list>
     <ignored path="InterPayIR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -496,7 +981,10 @@
     <favorites_list name="InterPayIR" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+<<<<<<< HEAD
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interpay/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -514,6 +1002,76 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
               <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+=======
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
+              <folding />
+=======
+    <leaf>
+      <file leaf-file-name="registeration_form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26881722">
+              <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1408">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interpay/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="ds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="314">
+              <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
               <folding />
             </state>
           </provider>
@@ -522,9 +1080,19 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+<<<<<<< HEAD
+            <state relative-caret-position="528">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#401#1111#0" expanded="false" />
+              </folding>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
             </state>
           </provider>
         </entry>
@@ -532,18 +1100,37 @@
       <file leaf-file-name="registeration_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="440">
               <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="1188">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+=======
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="319">
               <caret line="39" column="61" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="61" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
             </state>
           </provider>
@@ -552,8 +1139,21 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="374">
               <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+=======
+            <state relative-caret-position="528">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InterPayIR/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
             </state>
           </provider>
@@ -562,13 +1162,34 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="550">
               <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+=======
+            <state relative-caret-position="2904">
+              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
+=======
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state vertical-scroll-proportion="0.0">
+              <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+=======
+            <state relative-caret-position="2090">
+              <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+>>>>>>> master
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="top_up.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/templates/top_up.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -580,6 +1201,15 @@
                 <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#0;n#div#4;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2464">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+              <folding />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
             </state>
           </provider>
         </entry>
@@ -587,13 +1217,20 @@
       <file leaf-file-name="top_up.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/static/css/top_up.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="220">
               <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+=======
+            <state relative-caret-position="4180">
+              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -611,6 +1248,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/interpay/static/css/index.css" />
         <option value="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
         <option value="$PROJECT_DIR$/InterPayIR/SMS/redis.py" />
@@ -620,7 +1258,10 @@
         <option value="$PROJECT_DIR$/InterPayIR/settings.py" />
         <option value="$PROJECT_DIR$/interpay/templates/index.html" />
         <option value="$PROJECT_DIR$/interpay/templates/forgot_password.html" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
+        <option value="$PROJECT_DIR$/interpay/views.py" />
         <option value="$PROJECT_DIR$/interpay/models.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/InterPayIR/SMS/ds.py" />
         <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
         <option value="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
@@ -631,7 +1272,21 @@
         <option value="$PROJECT_DIR$/interpay/static/css/top_up.css" />
         <option value="$PROJECT_DIR$/interpay/templates/top_up.html" />
         <option value="$PROJECT_DIR$/interpay/forms.py" />
+=======
+=======
+        <option value="$PROJECT_DIR$/interpay/templates/index.html" />
+        <option value="$PROJECT_DIR$/interpay/static/css/index.css" />
+        <option value="$PROJECT_DIR$/InterPayIR/urls.py" />
+        <option value="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/redis.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/redis-ds.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/ds.py" />
+        <option value="$PROJECT_DIR$/interpay/forms.py" />
+        <option value="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         <option value="$PROJECT_DIR$/interpay/views.py" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
       </list>
     </option>
   </component>
@@ -642,10 +1297,19 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
+=======
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+<<<<<<< HEAD
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
   </component>
+<<<<<<< HEAD
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -664,8 +1328,16 @@
         </selected-state>
       </profile-state>
     </entry>
+=======
+>>>>>>> master
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+<<<<<<< HEAD
+=======
+=======
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -690,16 +1362,149 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="Scratches" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+=======
+      <pane id="Scratches" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+<<<<<<< HEAD
+        </subPane>
       </pane>
+      <pane id="Scratches" />
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InterPayIR" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+<<<<<<< HEAD
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
     </panes>
   </component>
   <component name="PropertiesComponent">
+=======
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> master
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -710,6 +1515,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\InterPayIR\interpay\static\bootstrap" />
       <recent name="C:\Users\HP\PycharmProjects\InterPayIR\interpay\static\jquery" />
+=======
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NewsAgency" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static\js" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static\css" />
     </key>
@@ -821,6 +1635,10 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
@@ -834,6 +1652,8 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+=======
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -950,11 +1770,16 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="InterPayIR.settings" />
+        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
+<<<<<<< HEAD
       <option name="SDK_HOME" value="C:\Users\HP\interpay-venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+=======
+      <option name="SDK_HOME" value="C:\Users\Farzane\interpay-venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -985,21 +1810,21 @@
       <changelist id="450d8201-fa8e-4a6d-90cf-c369e1f2eab7" name="Default" comment="" />
       <created>1478939225547</created>
       <option name="number" value="Default" />
+<<<<<<< HEAD
+<<<<<<< HEAD
       <option name="presentableId" value="Default" />
+=======
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
       <updated>1478939225547</updated>
+=======
+      <option name="presentableId" value="Default" />
+      <updated>1472985274404</updated>
+>>>>>>> master
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="0" width="976" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
@@ -1013,6 +1838,22 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20733105" sideWeight="0.4924812" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34994337" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13856068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20751634" sideWeight="0.5029762" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31257078" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25821066" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977092" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1021,8 +1862,55 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2412231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14806548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20751634" sideWeight="0.5029762" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15196079" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27124184" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16272825" sideWeight="0.49306932" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17973857" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2875817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20498301" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49702382" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18080357" sideWeight="0.5069307" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49019608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1037,21 +1925,103 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
     <breakpoint-manager>
       <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1078">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+          <folding />
+        </state>
+=======
+        <state relative-caret-position="0">
+          <caret line="464" column="8" selection-start-line="464" selection-start-column="8" selection-end-line="464" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm40/system/extLibs/http_code.jquery.com_ui_1.11.0_jquery-ui.js" />
+    <entry file="file://$PROJECT_DIR$/interpay/static/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+>>>>>>> master
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="4906">
+          <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
+=======
+        <state relative-caret-position="0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
     <entry file="file://C:/Python27/Lib/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="792">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/conf/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1782">
           <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
         </state>
@@ -1067,6 +2037,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
+=======
+>>>>>>> master
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
@@ -1074,40 +2046,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="440">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/management/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="6534">
           <caret line="315" column="0" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/forms.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2420">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="8" column="83" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="990">
           <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="0">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1760">
           <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
@@ -1120,35 +2120,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="242">
           <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+=======
+        <state relative-caret-position="0">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="484">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+<<<<<<< HEAD
+=======
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/forms.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2420">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="990">
           <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="0">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1606">
           <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
           <folding>
@@ -1159,27 +2187,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/static/js/sweetalert.min.js">
       <provider selected="true" editor-type-id="text-editor">
+=======
+>>>>>>> master
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="242">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+=======
+        <state relative-caret-position="0">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="792">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+=======
+        <state relative-caret-position="0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="242">
           <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+=======
+        <state relative-caret-position="0">
+          <caret line="160" column="14" selection-start-line="160" selection-start-column="14" selection-end-line="160" selection-end-column="14" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="440">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
@@ -1196,22 +2252,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+=======
+        <state relative-caret-position="0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/tset.py" />
+    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InterPayIR/settings.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="333">
           <caret line="81" column="20" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="20" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="22">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1220,42 +2296,83 @@
         <state relative-caret-position="217">
           <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/contrib/auth/models.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="324">
           <caret line="329" column="20" selection-start-line="329" selection-start-column="20" selection-end-line="329" selection-end-column="20" />
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="330">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/static/css/registeration_form.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="181">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="4" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/static/css/sweetalert.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="203">
           <caret line="133" column="13" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="13" />
+<<<<<<< HEAD
+=======
+=======
+        <state relative-caret-position="0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/static/jquery/jquery-1.10.2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+<<<<<<< HEAD
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+=======
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
@@ -1268,6 +2385,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/models.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="968">
           <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
@@ -1280,18 +2398,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="269">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+=======
+        <state relative-caret-position="0">
+          <caret line="162" column="4" selection-start-line="162" selection-start-column="4" selection-end-line="162" selection-end-column="4" />
+          <folding />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2376">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="154">
+          <caret line="235" column="8" selection-start-line="235" selection-start-column="8" selection-end-line="235" selection-end-column="8" />
+=======
+        <state relative-caret-position="0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#701#742#0" expanded="false" />
+          </folding>
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="528">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
@@ -1302,18 +2444,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2904">
           <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="396">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+=======
+        <state relative-caret-position="0">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2288">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+=======
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/interpay/static/js/sweetalert.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/interpay/static/css/sweetalert.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="2464">
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/http/request.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4180">
@@ -1326,34 +2514,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+=======
+    <entry file="file://E:/2. Work/دکتر مروستی/Interpay Iran/django-session-security-master/django-session-security-master/setup.py" />
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/session_security/templates/session_security/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.6311881">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+=======
+    <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-2.5972223">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="141" column="4" selection-start-line="141" selection-start-column="4" selection-end-line="141" selection-end-column="4" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/interpay/templates/wallets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/interpay/static/css/registeration_form.css">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.3989726">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/interpay/static/bootstrap/js/npm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+=======
+        <state relative-caret-position="0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+>>>>>>> master
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1361,17 +2606,40 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+          <folding />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="374">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="528">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
+=======
+    <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/-2103592297/datetime.py" />
+    <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1429,17 +2697,161 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
           <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+=======
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1188">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2376">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.0">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#401#1111#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="528">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/interpay/views.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1936">
           <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+=======
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+=======
+        <state relative-caret-position="0">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="2464">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/http/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="4180">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+=======
+        <state relative-caret-position="0">
+          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="314">
+          <caret line="52" column="72" selection-start-line="52" selection-start-column="72" selection-end-line="52" selection-end-column="72" />
+          <folding />
+=======
+        <state relative-caret-position="2090">
+          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="464">
+          <caret line="77" column="52" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+=======
+        <state vertical-scroll-proportion="0.26881722">
+          <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> f28809f773f4db14401c3fed94ef5759d4f1c837
+          </folding>
+=======
+        <state relative-caret-position="22">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+          <folding />
+>>>>>>> master
         </state>
       </provider>
     </entry>

@@ -73,4 +73,10 @@ class VerificationCodes(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.user, self.user.name)
+<<<<<<< HEAD
         #  ksflaksjdfhlakjshdflkjashdlfkashdljkh
+=======
+
+
+#         dfghjkjhgfdghjkoihugtfdghjukiohugytfdghjuk
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
