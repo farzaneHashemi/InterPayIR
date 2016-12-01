@@ -100,24 +100,27 @@ def check_id(id):
     return is_valid
 
 
-class AuthenticationForm(forms.Form):
-    code = forms.TextInput()
+CURRENCY_CHOICES = {
+    ('Rials', 'RLS'),
+    ('USDollar', 'USD')
+}
+
+
+class RechargeAccountForm(forms.Form):
+    currency = forms.ChoiceField(choices=CURRENCY_CHOICES, required=True, label='')
+    amount = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '0.00'}))
 
     def __init__(self, *args, **kwargs):
-        super(AuthenticationForm, self).__init__(*args, **kwargs)
-        self.fields['code'].required = True
+        super(RechargeAccountForm, self).__init__(*args, **kwargs)
+        self.fields['amount'].required = True
+        self.fields['currency'].required = True
 
     class Meta:
-        widgets = {
-            'code': forms.TextInput(
-                attrs={'id': 'verification-code', 'class': 'registration-form-field', 'placeholder': 'Enter the code',
-                       'type': 'text', 'maxlength': '6'})}
+        fields = ['currency', 'amount']
 
-    def clean_authentication_code(self):
-        authentication_code = self.cleaned_data.get('code', '')
-        if not authentication_code:
-            raise forms.ValidationError('Please enter the code which was sent to you.')
-        return authentication_code
+
+
+
 
 
 

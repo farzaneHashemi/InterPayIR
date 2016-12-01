@@ -56,6 +56,7 @@
         {#        <script type="text/javascript" src="../static/jquery/jquery.js"></script>#}
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+        <script src="../static/bootstrap/js/bootstrap.min.js"></script>
     {% endblock %}
     {% block CSS %}
     {% endblock %}
@@ -64,6 +65,8 @@
 
 </head>
 <script>
+    {% block script %}
+    {% endblock %}
     function to_en() {
         var en_url = window.location.href.replace("/fa-ir/", "/");
         window.location.assign(en_url);
@@ -87,12 +90,12 @@
                     <br>
                 </div>
                 <div id="translation-link">
-                    {% ifequal LANGUAGE_CODE  'en-gb' %}
+                    {% ifequal LANGUAGE_CODE 'en-gb' %}
                         <a id="to-fa-link" href='/fa-ir{{ request.path }}'>
                             {#                        <link rel="icon" href="http://127.0.0.1:8000/static/images/favicon.ico" />farsi#}
                             <img src="{% static 'images/irflag.png' %}" style="width: 50%;cursor: pointer">
                         </a>
-                    {% else %}
+                        {% else %}
                         <a id="to-en-link" class="trans-link" onclick="to_en()"><img
                                 src="{% static 'images/ukflag.png' %}" style="width: 50%;cursor: pointer"></a>
                     {% endifequal %}
@@ -101,37 +104,50 @@
             </div>
         </div>
     </header>
-    {% ifequal LANGUAGE_CODE  'en-gb' %}
+    {% ifequal LANGUAGE_CODE 'en-gb' %}
         <div id="sidebar" class="pull-left">
-    {% else %}
+        {% else %}
         <div id="sidebar" class="pull-right">
     {% endifequal %}
     <div id="sidebar-content">
         <ul id="sidebar-entries">
             <li class="sidebar-entry">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                {% ifequal LANGUAGE_CODE 'en-gb' %}
                     <a class="sidebar-links" href="/home">
-                {% else %}
+                    {% else %}
                     <a class="sidebar-links" href="/fa-ir/home">
                 {% endifequal %}
                 <i class="fa fa-home sidebar-ent-items" aria-hidden="true"></i> {% trans "Home" %}
                 </a>
             </li>
-            <li class="sidebar-entry">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
-                    <a class="sidebar-links" href="/wallets">
-                {% else %}
-                    <a class="sidebar-links" href="/fa-ir/wallets">
-                {% endifequal %}
-
-                <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"></i> {% trans "Wallets" %}
-
+            <li class="dropdown sidebar-entry ">
+                <a href="#" class="sidebar-links dropdown-toggle " data-toggle="dropdown">
+                    <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"></i> {% trans "Wallets" %}
+                    <span class="caret"></span>
                 </a>
+                <ul class="dropdown-menu">
+                    <li id="wallet_info">
+                        {% ifequal LANGUAGE_CODE 'en-gb' %}
+                            <a class="sidebar-links" href="/wallets">
+                            {% else %}
+                            <a class="sidebar-links" href="/fa-ir/wallets">
+                        {% endifequal %}
+                        <i><span>{% trans 'Wallet Info' %}</span></i>
+                        </a></li>
+                    <li id="top_up">
+                        {% ifequal LANGUAGE_CODE 'en-gb' %}
+                            <a class="sidebar-links" href="/top-up">
+                            {% else %}
+                            <a class="sidebar-links" href="/fa-ir/top-up">
+                        {% endifequal %}
+                        <i><span>{% trans 'Top Up by Creadit Card' %}</span></i>
+                        </a></li>
+                </ul>
             </li>
             <li class="sidebar-entry">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                {% ifequal LANGUAGE_CODE 'en-gb' %}
                     <a class="sidebar-links" href="/trans-history">
-                {% else %}
+                    {% else %}
                     <a class="sidebar-links" href="/fa-ir/trans-history">
                 {% endifequal %}
                 <i class="fa fa-history sidebar-ent-items" aria-hidden="true"></i>{% trans " Transaction History" %}
@@ -139,9 +155,9 @@
                 </a>
             </li>
             <li class="sidebar-entry">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                {% ifequal LANGUAGE_CODE 'en-gb' %}
                     <a class="sidebar-links" href="/reports">
-                {% else %}
+                    {% else %}
                     <a class="sidebar-links" href="/fa-ir/reports">
                 {% endifequal %}
 
@@ -150,9 +166,9 @@
                 </a>
             </li>
             <li class="sidebar-entry" style="border-bottom: double #f1f1f1">
-                {% ifequal LANGUAGE_CODE  'en-gb' %}
+                {% ifequal LANGUAGE_CODE 'en-gb' %}
                     <a class="sidebar-links" href="/general">
-                {% else %}
+                    {% else %}
                     <a class="sidebar-links" href="/fa-ir/general">
                 {% endifequal %}
 
@@ -168,7 +184,7 @@
             <span id="name">{% trans "Name" %}: {{ user.first_name }} {{ user.last_name }}</span>
             <span id="login-id">{% trans "Login ID" %}: {{ user.id }}</span>
             <span id="interpay-id">{% trans "InterPay ID" %}: </span>
-        <span id="logout">
+            <span id="logout">
             <a id="logout-link" href="/logout">
                 <i class="fa fa-power-off" aria-hidden="true"> {% trans "Logout" %}</i>
             </a>
@@ -191,9 +207,9 @@
         </section>
 
     </div>
-    <footer id="footer" class="footer">
-        <div id="footer-content">All rights reserved.</div>
-    </footer>
+{#    <footer id="footer" class="footer">#}
+{#        <div id="footer-content">All rights reserved.</div>#}
+{#    </footer>#}
     </div>
 </div>
 </body>

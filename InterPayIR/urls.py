@@ -51,6 +51,7 @@ urlpatterns = [
     url(r'^verif/$', views.verify_user, name='verif'),
     url(r'^sms/$', views.send_sms, name='sms'),
     url(r'^retrieve_pass/$', views.retrieve_pass, name='retrieve_pass'),
+    url(r'^top-up/', views.recharge_account, name='recharge_account'),
 
 ]
 
@@ -81,4 +82,6 @@ urlpatterns += i18n_patterns(
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),
     url(r'^sms/$', views.send_sms, name='sms'),
+    url(r'^retrieve_pass/$', views.retrieve_pass, name='retrieve_pass'),
+    url(r'^top-up/', views.recharge_account, name='recharge_account'),
 )

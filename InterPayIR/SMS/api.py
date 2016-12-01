@@ -35,9 +35,8 @@ class ParsGreenSmsServiceClient:
     def sendSms(self, code, mobile_no):
         strArr = self.sendSmsClient.factory.create('ArrayOfString')
         strArr.string = [mobile_no]
-        print "hiiiii"
-        print mobile_no
-        # code = "Your code for InterPayIR is: " + code
+        code = str(code) + " is your InterPay code."
+        print "sending sms done"
         self.sendSmsClient.service.SendGroupSmsSimple("765822D8-383F-444F-A363-3EC951448412", "", strArr, code,
                                                       False, self.success)
 

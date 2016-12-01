@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="450d8201-fa8e-4a6d-90cf-c369e1f2eab7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/static/css/top_up.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interpay/templates/top_up.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/InterPayIR.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/.idea/dictionaries/Farzane.xml" afterPath="" />
@@ -461,9 +465,15 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/manage.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/InterPayIR/templates/b.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/InterPayIR.iml" afterPath="$PROJECT_DIR$/.idea/InterPayIR.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/models.py" afterPath="$PROJECT_DIR$/interpay/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterPayIR/SMS/api.py" afterPath="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InterPayIR/urls.py" afterPath="$PROJECT_DIR$/InterPayIR/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/forms.py" afterPath="$PROJECT_DIR$/interpay/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/base.html" afterPath="$PROJECT_DIR$/interpay/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/templates/home.html" afterPath="$PROJECT_DIR$/interpay/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpay/views.py" afterPath="$PROJECT_DIR$/interpay/views.py" />
     </list>
     <ignored path="InterPayIR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -487,12 +497,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interpay/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2024">
-              <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="1936">
+              <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -500,15 +512,9 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-              <folding>
-                <marker date="1480235378398" expanded="false" signature="701:901" ph="import ..." />
-                <marker date="1480235378398" expanded="true" signature="903:1031" ph="..." />
-                <marker date="1480235378398" expanded="true" signature="1069:2503" ph="..." />
-                <marker date="1480235378398" expanded="true" signature="1232:1894" ph="..." />
-                <marker date="1480235378398" expanded="true" signature="2540:3369" ph="..." />
-              </folding>
+            <state relative-caret-position="322">
+              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -516,101 +522,73 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpay/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="1408">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registeration_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="39" column="61" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top_up.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/templates/top_up.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
               <folding>
-                <marker date="1479209836661" expanded="false" signature="0:341" ph="import ..." />
-                <marker date="1479209836661" expanded="true" signature="376:2459" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="392:1111" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="509:547" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="568:1110" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="1394:1541" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="1586:1787" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="1815:2150" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="2189:2459" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="2502:3789" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="2605:3259" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="2740:3258" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="3081:3246" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="3295:3789" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="3582:3759" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="3838:4242" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="3959:4030" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="4353:4463" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="4480:4715" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="4500:4714" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="4561:4712" ph="..." />
-                <marker date="1479209836661" expanded="true" signature="4757:5635" ph="..." />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#4;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registeration_form.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
+      <file leaf-file-name="top_up.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interpay/static/css/top_up.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="229" column="10" selection-start-line="229" selection-start-column="10" selection-end-line="229" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csrf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/views/decorators/csrf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2376">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exception.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/exception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deprecation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/utils/deprecation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2904">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/core/handlers/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2464">
-              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/http/request.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4180">
-              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -623,6 +601,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -636,18 +615,23 @@
         <option value="$PROJECT_DIR$/interpay/static/css/registeration_form.css" />
         <option value="$PROJECT_DIR$/InterPayIR/SMS/redis.py" />
         <option value="$PROJECT_DIR$/InterPayIR/SMS/redis-ds.py" />
-        <option value="$PROJECT_DIR$/InterPayIR/SMS/ds.py" />
         <option value="$PROJECT_DIR$/InterpayIR/settings.py" />
         <option value="$PROJECT_DIR$/InterpayIR/wsgi.py" />
         <option value="$PROJECT_DIR$/InterPayIR/settings.py" />
-        <option value="$PROJECT_DIR$/interpay/forms.py" />
-        <option value="$PROJECT_DIR$/InterPayIR/urls.py" />
         <option value="$PROJECT_DIR$/interpay/templates/index.html" />
         <option value="$PROJECT_DIR$/interpay/templates/forgot_password.html" />
-        <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
-        <option value="$PROJECT_DIR$/interpay/views.py" />
         <option value="$PROJECT_DIR$/interpay/models.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/ds.py" />
+        <option value="$PROJECT_DIR$/InterPayIR/SMS/api.py" />
         <option value="$PROJECT_DIR$/interpay/templates/registeration_form.html" />
+        <option value="$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/interpay/templates/home.html" />
+        <option value="$PROJECT_DIR$/InterPayIR/urls.py" />
+        <option value="$PROJECT_DIR$/interpay/templates/base.html" />
+        <option value="$PROJECT_DIR$/interpay/static/css/top_up.css" />
+        <option value="$PROJECT_DIR$/interpay/templates/top_up.html" />
+        <option value="$PROJECT_DIR$/interpay/forms.py" />
+        <option value="$PROJECT_DIR$/interpay/views.py" />
       </list>
     </option>
   </component>
@@ -658,10 +642,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -707,27 +690,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InterPayIR" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -738,9 +704,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\InterPayIR\interpay\static\bootstrap" />
       <recent name="C:\Users\HP\PycharmProjects\InterPayIR\interpay\static\jquery" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static\js" />
       <recent name="C:\Users\Farzane\PycharmProjects\InterPayIR\interpay\static\css" />
@@ -1032,16 +1000,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="0" width="976" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31257078" sideWeight="0.50751877" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31257078" sideWeight="0.4924812" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2412231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760596" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32302406" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20733105" sideWeight="0.4924812" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34994337" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1052,7 +1021,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2412231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1070,86 +1038,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/interpay-venv/Lib/site-packages/django/http/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4180">
-          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2046">
-          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding>
-            <marker date="1479209836661" expanded="false" signature="0:341" ph="import ..." />
-            <marker date="1479209836661" expanded="true" signature="376:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="392:1111" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="509:547" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="568:1110" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1394:1541" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1586:1787" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1815:2150" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2189:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2502:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2605:3259" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2740:3258" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3081:3246" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3295:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3582:3759" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3838:4242" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3959:4030" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4353:4463" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4480:4715" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4500:4714" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4561:4712" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4757:5635" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4906">
-          <caret line="223" column="24" selection-start-line="223" selection-start-column="24" selection-end-line="223" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -1197,30 +1090,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2420">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <marker date="1479209836661" expanded="false" signature="0:341" ph="import ..." />
-            <marker date="1479209836661" expanded="true" signature="376:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="392:1111" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="509:547" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="568:1110" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1394:1541" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1586:1787" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1815:2150" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2189:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2502:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2605:3259" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2740:3258" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3081:3246" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3295:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3582:3759" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3838:4242" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3959:4030" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4353:4463" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4480:4715" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4500:4714" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4561:4712" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4757:5635" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,7 +1105,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
           <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,30 +1136,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2420">
           <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <marker date="1479209836661" expanded="false" signature="0:341" ph="import ..." />
-            <marker date="1479209836661" expanded="true" signature="376:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="392:1111" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="509:547" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="568:1110" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1394:1541" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1586:1787" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1815:2150" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2189:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2502:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2605:3259" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2740:3258" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3081:3246" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3295:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3582:3759" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3838:4242" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3959:4030" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4353:4463" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4480:4715" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4500:4714" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4561:4712" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4757:5635" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1302,7 +1151,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1606">
           <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1310,13 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1383,6 +1227,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="329" column="20" selection-start-line="329" selection-start-column="20" selection-end-line="329" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,24 +1259,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interpay/templates/forgot_password.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1440,7 +1271,7 @@
         <state relative-caret-position="968">
           <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1449,7 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1457,7 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2376">
           <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1493,64 +1322,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/ds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-          <folding>
-            <marker date="1480235378398" expanded="false" signature="701:901" ph="import ..." />
-            <marker date="1480235378398" expanded="true" signature="903:1031" ph="..." />
-            <marker date="1480235378398" expanded="true" signature="1069:2503" ph="..." />
-            <marker date="1480235378398" expanded="true" signature="1232:1894" ph="..." />
-            <marker date="1480235378398" expanded="true" signature="2540:3369" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+    <entry file="file://$PROJECT_DIR$/InterPayIR/SMS/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="660">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/wallets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/static/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/static/bootstrap/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="5" column="11409" selection-start-line="5" selection-start-column="11409" selection-end-line="5" selection-end-column="11409" />
           <folding>
-            <marker date="1479209836661" expanded="false" signature="0:341" ph="import ..." />
-            <marker date="1479209836661" expanded="true" signature="376:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="392:1111" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="509:547" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="568:1110" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1394:1541" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1586:1787" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="1815:2150" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2189:2459" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2502:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2605:3259" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="2740:3258" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3081:3246" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3295:3789" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3582:3759" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3838:4242" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="3959:4030" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4353:4463" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4480:4715" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4500:4714" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4561:4712" ph="..." />
-            <marker date="1479209836661" expanded="true" signature="4757:5635" ph="..." />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterPayIR/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="39" column="61" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/static/css/top_up.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interpay/templates/registeration_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="229" column="10" selection-start-line="229" selection-start-column="10" selection-end-line="229" selection-end-column="10" />
+        <state relative-caret-position="440">
+          <caret line="80" column="11" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/templates/top_up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#4;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpay/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="88" column="33" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

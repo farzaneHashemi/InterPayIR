@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import TemplateView, CreateView
 from django.contrib.auth.decorators import login_required
-from interpay.forms import RegistrationForm, UserForm
+from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm
 from django.views.decorators.csrf import csrf_exempt
 from InterPayIR.SMS import ds, api
 from interpay import models
@@ -82,12 +82,12 @@ def send_sms(request, mobile_no):
     request.session['code'] = code
     # redis_ds = ds.AuthCodeDataStructure()
     # redis_ds.set_code(mobile_no, code)
-    # p = api.ParsGreenSmsServiceClient()
-    # api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
+    p = api.ParsGreenSmsServiceClient()
+    api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
     user = models.User.objects.get(id=request.session['user_id'])
     user_profile = models.UserProfile.objects.get(user=user)
-    if models.VerificationCodes.objects.get(id=user_profile.id):
-        models.VerificationCodes.objects.get(id=user_profile.id).user_code = code
+    # if models.VerificationCodes.objects.get(id=user_profile.id):
+    #     models.VerificationCodes.objects.get(id=user_profile.id).user_code = code
     # TODO check if there exists a code for this user and replace it
     models.VerificationCodes.objects.create(user_code=code, user=user_profile)
     msg = "A code has just been sent to your phone."
@@ -165,6 +165,19 @@ def user_login(request):
                 return render(request, 'index.html', {'msg': fa_wrong_info_msg})
     else:
         return render(request, 'index.html', {})
+
+
+@login_required()
+def recharge_account(request):
+    if request.method == 'POST':
+        recharge_form = RechargeAccountForm(data=request.POST)
+        if recharge_form.is_valid():
+            cur = recharge_form.cleaned_data['currency']
+            amnt = recharge_form.cleaned_data['amount']
+            print amnt,cur
+    recharge_form = RechargeAccountForm()
+
+    return render(request, "top_up.html", {'form': recharge_form})
 
 
 @login_required
