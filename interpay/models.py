@@ -1,14 +1,16 @@
 from django.contrib.auth.base_user import BaseUserManager
-from django.core.mail import send_mail
-from django.core.validators import RegexValidator, int_list_validator
-from django.utils.encoding import force_text
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.auth.models import User
-from django.db import models
-from django.forms import ChoiceField
 from django_countries.fields import CountryField
-from datetime import datetime
-import unicodedata
+from django.contrib.auth.models import User
+from django.utils.formats import get_format
+from datetime import datetime, timedelta
+from django.core.mail import send_mail
+from collections import defaultdict
+from django.db import models
+from decimal import Decimal
+import convert
+import random
+import time
 
 
 class Manager(BaseUserManager):
@@ -73,3 +75,149 @@ class VerificationCodes(models.Model):
 
     def __str__(self):
         return '{} - {}'.format(self.user, self.user.name)
+
+
+class Rule(models.Model):
+    my_formats = get_format('DATETIME_INPUT_FORMATS')
+    start_date = models.DateField()  # (required=False, input_formats=('%d/%m/%Y',))#(input_formats="%d-%b-%Y")
+    end_date = models.DateField()  # (input_formats="%d-%b-%Y")
+    # end_date = models.DateField()
+    cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
+    deposit_charge_percent = models.FloatField(default=2)
+    credit_percent = models.FloatField(default=98)
+
+    @staticmethod
+    def on_date(_date, _code='USD'):
+        return Rule.objects.get(start_date__lte=_date, end_date__gte=_date, cur_code=_code)
+
+
+START_TIME = 0x0
+
+
+def make_id():
+    '''
+    inspired by http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram
+        '''
+
+    t = int(time.time() * 1000) - START_TIME
+    u = random.SystemRandom().getrandbits(22)
+    id = (t << 22) | u
+
+    return id
+
+
+def reverse_id(id):
+    t = id >> 22
+    return t + START_TIME
+
+
+class BankAccount(models.Model):
+    LEGAL = 1
+    INDIVIDUAL = 2
+
+    DEBIT = 1
+    CREDIT = 2
+
+    # owner_type = models.PositiveSmallIntegerField(choices=(
+    #     (LEGAL, 'Legal'),
+    #     (INDIVIDUAL, 'INDIVIDUAL'),
+    # ), default=INDIVIDUAL)
+
+    method = models.PositiveSmallIntegerField(choices=(
+        (DEBIT, 'Debit'),
+        (CREDIT, 'Credit'),
+    ), default=DEBIT)
+
+    name = models.CharField(max_length=254)
+    account_id = models.BigIntegerField(default=make_id, primary_key=True)
+    owner = models.ForeignKey(User, related_name='w_accounts')
+    spectators = models.ManyToManyField(User, related_name='r_accounts')
+    when_opened = models.DateField(_("Date"), default=datetime.now)
+    cur_code = models.CharField(_('cur_code'), max_length=3, default='IRR')
+
+    def totalValue(self):
+        tValue = Decimal(0)
+        totalEstimate = defaultdict(lambda: Decimal(0.0))
+        qset = BankAccount.objects.filter(owner=self.owner)
+        for account in qset:
+            totalEstimate[account.cur_code] += Decimal(convert(account.balance, account.cur_code, 'USD'))
+            tValue += totalEstimate[account.cur_code]
+
+        return tValue.quantize(Decimal("0.01"), rounding=Decimal.ROUND_UP)
+        # todo define total value
+
+    @property
+    def balance(self):
+        assert self.method == self.DEBIT
+        today = datetime.today()
+        # print 'started balance22'
+        rule = Rule.on_date(self.when_opened)
+        current_date = self.when_opened
+        # print 'started while'
+        result = 0
+        while current_date <= datetime.date(today):
+            #   print 'count of sets'
+            print self.income_transfers.on_date(current_date).count()
+            print self.deposit_set.on_date(current_date).count()
+            result -= sum(x.total for x in self.cashing_set.on_date(current_date))
+            result -= sum(x.total for x in self.outcome_transfers.on_date(current_date))
+            result += sum(x.total for x in self.deposit_set.on_date(current_date))
+            # for c,x in groupby(self.deposit_set.on_date(current_date), lambda x: x.cur_code):
+            #     result[c]+= sum(y.total for y in x)
+            result += sum(x.total for x in self.income_transfers.on_date(current_date))
+
+            current_date += timedelta(days=1)
+            print rule.deposit_charge_percent
+
+            #   print current_date
+        result *= 1 - (rule.deposit_charge_percent * 0.01)
+        return result
+
+    @property
+    def debt(self):
+        assert self.method == self.CREDIT
+        today = time.timezone.now()
+        rule = Rule.on_date(self.when_opened)
+        result = 0
+        current_date = self.when_opened
+        while current_date <= today:
+            result += sum(x.total for x in self.cashing_set.on_date(current_date))
+            result += sum(x.total for x in self.outcome_transfers.on_date(current_date))
+            result -= sum(x.total for x in self.deposit_set.on_date(current_date))
+            result -= sum(x.total for x in self.income_transfers.on_date(current_date))
+            result *= rule.credit_percent
+            current_date += timedelta(days=1)
+        return result
+
+
+class OperationManager(models.Manager):
+    def on_date(self, date):
+        return (super(OperationManager, self).get_queryset()).filter(when__gte=date, when__lte=date)
+
+
+class MoneyTransfer(models.Model):
+    sender = models.ForeignKey(BankAccount, related_name='outcome_transfers')
+    receiver = models.ForeignKey(BankAccount, related_name='income_transfers')
+    when = models.DateTimeField()
+    total = models.FloatField()
+    comment = models.CharField(max_length=255)
+    cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
+    objects = OperationManager()
+
+
+class Deposit(models.Model):
+    account = models.ForeignKey(BankAccount, related_name='deposit_set')
+    total = models.FloatField()
+    banker = models.ForeignKey(User)
+    when = models.DateTimeField(default=datetime.now)
+    cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
+    objects = OperationManager()
+
+
+class Cashing(models.Model):
+    account = models.ForeignKey(BankAccount, related_name='cashing_set')
+    total = models.FloatField()
+    banker = models.ForeignKey(User)
+    when = models.DateTimeField()
+    cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
+    objects = OperationManager()
