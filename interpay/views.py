@@ -176,8 +176,6 @@ def recharge_account(request):
             cur = recharge_form.cleaned_data['currency']
             amnt = recharge_form.cleaned_data['amount']
             print amnt, cur, request.user, request.user.id, request.user.username
-            # print models.UserProfile.objects.get(
-            #     user__username=request.user.username).id
             user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
             user_b_account, created = models.BankAccount.objects.get_or_create(
                 owner=user_profile,
