@@ -114,7 +114,6 @@ def reverse_id(id):
 class BankAccount(models.Model):
     LEGAL = 1
     INDIVIDUAL = 2
-
     DEBIT = 1
     CREDIT = 2
 
@@ -130,21 +129,21 @@ class BankAccount(models.Model):
 
     name = models.CharField(max_length=254)
     account_id = models.BigIntegerField(default=make_id, primary_key=True)
-    owner = models.ForeignKey(User, related_name='w_accounts')
-    spectators = models.ManyToManyField(User, related_name='r_accounts')
+    owner = models.ForeignKey(UserProfile, related_name='w_accounts')
+    spectators = models.ManyToManyField(UserProfile, related_name='r_accounts')
     when_opened = models.DateField(_("Date"), default=datetime.now)
     cur_code = models.CharField(_('cur_code'), max_length=3, default='IRR')
 
-    def totalValue(self):
-        tValue = Decimal(0)
-        totalEstimate = defaultdict(lambda: Decimal(0.0))
-        qset = BankAccount.objects.filter(owner=self.owner)
-        for account in qset:
-            totalEstimate[account.cur_code] += Decimal(convert(account.balance, account.cur_code, 'USD'))
-            tValue += totalEstimate[account.cur_code]
+    def total_value(self):
+        t_value = Decimal(0)
+        total_estimate = defaultdict(lambda: Decimal(0.0))
+        accounts = BankAccount.objects.filter(owner=self.owner)
+        for account in accounts:
+            total_estimate[account.cur_code] += Decimal(convert(account.balance, account.cur_code, 'USD'))
+            t_value += total_estimate[account.cur_code]
 
-        return tValue.quantize(Decimal("0.01"), rounding=Decimal.ROUND_UP)
-        # todo define total value
+        return t_value.quantize(Decimal("0.01"), rounding=Decimal.ROUND_UP)
+        # TODO define total value
 
     @property
     def balance(self):
@@ -208,7 +207,7 @@ class MoneyTransfer(models.Model):
 class Deposit(models.Model):
     account = models.ForeignKey(BankAccount, related_name='deposit_set')
     total = models.FloatField()
-    banker = models.ForeignKey(User)
+    banker = models.ForeignKey(UserProfile)
     when = models.DateTimeField(default=datetime.now)
     cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
     objects = OperationManager()

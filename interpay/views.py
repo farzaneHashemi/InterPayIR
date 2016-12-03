@@ -1,9 +1,9 @@
+from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm
 from django.shortcuts import render, render_to_response, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import TemplateView, CreateView
 from django.contrib.auth.decorators import login_required
-from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm
 from django.views.decorators.csrf import csrf_exempt
 from InterPayIR.SMS import ds, api
 from interpay import models
@@ -76,6 +76,7 @@ def register(request):
 
 @csrf_exempt
 def send_sms(request, mobile_no):
+    # TODO : make mobile_no an optional input argument
     mobile_no = request.session['mobile_no']
     request.session['try_counter'] = 0
     code = random_code_gen()
@@ -174,7 +175,19 @@ def recharge_account(request):
         if recharge_form.is_valid():
             cur = recharge_form.cleaned_data['currency']
             amnt = recharge_form.cleaned_data['amount']
-            print amnt,cur
+            print amnt, cur, request.user, request.user.id, request.user.username
+            # print models.UserProfile.objects.get(
+            #     user__username=request.user.username).id
+            user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+            user_b_account, created = models.BankAccount.objects.get_or_create(
+                owner=user_profile,
+                cur_code=cur,
+                method=models.BankAccount.DEBIT,
+                name=request.user.username + '_' + cur + '_account'
+            )
+            deposit = models.Deposit(account=user_b_account, total=amnt, banker=user_profile,
+                                     when=user_b_account.when_opened, cur_code=cur)
+            deposit.save()
     recharge_form = RechargeAccountForm()
 
     return render(request, "top_up.html", {'form': recharge_form})
