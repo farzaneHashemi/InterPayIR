@@ -6,6 +6,7 @@ from django.views.generic import TemplateView, CreateView
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from InterPayIR.SMS import ds, api
+from suds.client import Client
 from interpay import models
 from random import randint
 import json
@@ -170,8 +171,8 @@ def user_login(request):
 
 @login_required()
 def recharge_account(request):
+    recharge_form = RechargeAccountForm(data=request.POST)
     if request.method == 'POST':
-        recharge_form = RechargeAccountForm(data=request.POST)
         if recharge_form.is_valid():
             cur = recharge_form.cleaned_data['currency']
             amnt = recharge_form.cleaned_data['amount']
@@ -186,8 +187,27 @@ def recharge_account(request):
             deposit = models.Deposit(account=user_b_account, total=amnt, banker=user_profile,
                                      when=user_b_account.when_opened, cur_code=cur)
             deposit.save()
-    recharge_form = RechargeAccountForm()
 
+            MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
+            ZARINPAL_WEBSERVICE = 'https://sandbox.zarinpal.com/pg/services/WebGate/wsdl'
+            description = "this is a test"
+            email = 'user@user.com'
+            mobile = '09123456789'
+            callBackUrl = 'http://www.interpayafrica.com'  # this should be
+
+            client = Client(ZARINPAL_WEBSERVICE)
+            result = client.service.PaymentRequest(MMERCHANT_ID,
+                                                   amnt,
+                                                   description,
+                                                   email,
+                                                   mobile,
+                                                   callBackUrl)
+            if result.Status == 100:
+                return redirect('https://sandbox.zarinpal.com/pg/StartPay/' + result.Authority)
+            else:
+                return 'Error'
+
+    recharge_form = RechargeAccountForm()
     return render(request, "top_up.html", {'form': recharge_form})
 
 

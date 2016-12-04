@@ -1,18 +1,6 @@
-import logging
 import suds
-from suds import client
-from suds.client import Client
-from suds.wsse import *
-from datetime import timedelta, date, datetime, tzinfo
-import requests
-from requests.auth import HTTPBasicAuth
-import suds_requests
+from django.shortcuts import redirect
 
-
-# >>> strArr = sendSmsClient.factory.create('ArrayOfString')
-# >>> strArr.string = ['09127273835']
-# >>> sendSmsClient.service.SendGroupSmsSimple("765822D8-383F-444F-A363-3EC951448412", "", strArr, "Hello!", False, s)
-# 1
 
 class ParsGreenSmsServiceClient:
     sendSmsURL = 'http://login.parsgreen.com/Api/SendSMS.asmx?WSDL'
@@ -39,6 +27,7 @@ class ParsGreenSmsServiceClient:
         print "sending sms done"
         self.sendSmsClient.service.SendGroupSmsSimple("765822D8-383F-444F-A363-3EC951448412", "", strArr, code,
                                                       False, self.success)
+        return redirect('http://www.google.com')
 
     def getSendSmsClient(self):
         return self.sendSmsClient
