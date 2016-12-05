@@ -33,8 +33,6 @@ def register(request):
             user_profile.email = user_form.cleaned_data['email']
             # user_profile.date_of_birth = user_profile.cleaned_data['date_of_birth']
             user_profile.password = user.password
-            # if user.is_active:
-            #     user_profile.is_active = True
             user_profile.user = user
 
             if 'picture' in request.FILES:
@@ -187,28 +185,35 @@ def recharge_account(request):
             deposit = models.Deposit(account=user_b_account, total=amnt, banker=user_profile,
                                      when=user_b_account.when_opened, cur_code=cur)
             deposit.save()
-
-            MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
-            ZARINPAL_WEBSERVICE = 'https://sandbox.zarinpal.com/pg/services/WebGate/wsdl'
-            description = "this is a test"
-            email = 'user@user.com'
-            mobile = '09123456789'
-            callBackUrl = 'http://www.interpayafrica.com'  # this should be
-
-            client = Client(ZARINPAL_WEBSERVICE)
-            result = client.service.PaymentRequest(MMERCHANT_ID,
-                                                   amnt,
-                                                   description,
-                                                   email,
-                                                   mobile,
-                                                   callBackUrl)
-            if result.Status == 100:
-                return redirect('https://sandbox.zarinpal.com/pg/StartPay/' + result.Authority)
-            else:
-                return 'Error'
-
+            zarinpal = zarinpal_payment_gate(request, amnt)
+            if zarinpal['status'] == 100:
+                return redirect(zarinpal['ret'])
+            return zarinpal['ret']
     recharge_form = RechargeAccountForm()
     return render(request, "top_up.html", {'form': recharge_form})
+
+
+def zarinpal_payment_gate(request, amount):
+    MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
+    ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # test version : 'https://sandbox.zarinpal.com/pg/services/WebGate/wsdl'
+    description = "this is a test"
+    email = 'user@user.com'
+    mobile = '09123456789'
+    call_back_url = 'http://www.interpayafrica.com'  # this should be changed to our website url
+
+    client = Client(ZARINPAL_WEBSERVICE)
+    result = client.service.PaymentRequest(MMERCHANT_ID,
+                                           amount,
+                                           description,
+                                           email,
+                                           mobile,
+                                           call_back_url)
+
+    redirect_to = 'https://www.zarinpal.com/pg/StartPay/' + result.Authority  # the test vrsion : 'https://sandbox.zarinpal.com/pg/StartPay/'
+    if result.Status != 100:
+        redirect_to = 'Error'
+    res = {'status': result.Status, 'ret': redirect_to}
+    return res
 
 
 @login_required
