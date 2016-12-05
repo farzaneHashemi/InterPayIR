@@ -32,6 +32,11 @@
             });
         });
 
+        function showZPTrust() {
+            var thewindow = window.open("https://www.zarinpal.com/webservice/verifyWebsite/" + window.location.hostname,
+                    null, "width=656, height=500, scrollbars=no, resizable=no");
+        }
+
     {% endblock %}
 </script>
 
@@ -46,13 +51,18 @@
             <form id="recharge-form" class="form-horizontal" method="post">
                 {% csrf_token %}
                 <div class="form-group recharge-form-parts">
-                    <label class="col-sm-3 recharge-form-label"
-                           style="margin-top: 8px">{% trans 'Payment Type' %}</label>
-                    <span><script src="https://www.zarinpal.com/webservice/TrustCode"
-                                  type="text/javascript"></script></span>
                     <div class="col-sm-9">
                         <div class="control-group">
                             <div class="radio">
+                                <label for="payment-gateway" class="col-sm-3 recharge-form-label"
+                                       style="margin-top: 8px">{% trans 'Payment Type' %}</label>
+                                <input type="radio" name="payment-gateway" checked>
+                                <a href="javascript:showZPTrust();"
+                                   title="دروازه پرداخت معتبر"><img src="{% static 'images/Zarinpal.png' %}"
+                                                                    alt="دروازه پرداخت معتبر"></a>
+                                <script src="https://www.zarinpal.com/webservice/TrustCode"
+                                        type="text/javascript"></script>
+
                             </div>
                         </div>
                     </div>

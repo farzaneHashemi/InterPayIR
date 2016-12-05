@@ -107,6 +107,8 @@ CURRENCY_CHOICES = {
 
 
 class RechargeAccountForm(forms.Form):
+    #  we do not need this part right now since the only gateway which we use is Zarinpal
+    # payment_gateway = forms.ChoiceField(widget=forms.RadioSelect)
     currency = forms.ChoiceField(choices=CURRENCY_CHOICES, required=True, label='')
     amount = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '0.00'}))
 
@@ -122,9 +124,6 @@ class RechargeAccountForm(forms.Form):
 
 
 
-        # def verify_code(code):
-        #     is_valid = False
-        #
         # def send_email(self, datas):
         #     link = "http://127.0.0.1:8000//activate/" + datas['activation_key']
         #     c = Context({'activation_link': link, 'username': datas['username']})
