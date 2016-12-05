@@ -42,7 +42,7 @@
 
 {% block cont-header %}
     <div id="topup_title">
-        <h3 class="page-title"> {% trans "Topup using credit card" %}</h3>
+        <h3 class="page-title"> {% trans "Recharge wallet using credit card" %}</h3>
     </div>
 {% endblock %}
 {% block cont-body %}
@@ -51,17 +51,18 @@
             <form id="recharge-form" class="form-horizontal" method="post">
                 {% csrf_token %}
                 <div class="form-group recharge-form-parts">
+                    <label for="payment-gateway" class="col-sm-3 recharge-form-label"
+                           style="margin-top: 8px">{% trans 'Payment Type' %}</label>
                     <div class="col-sm-9">
                         <div class="control-group">
                             <div class="radio">
-                                <label for="payment-gateway" class="col-sm-3 recharge-form-label"
-                                       style="margin-top: 8px">{% trans 'Payment Type' %}</label>
+
                                 <input type="radio" name="payment-gateway" checked>
                                 <a href="javascript:showZPTrust();"
                                    title="دروازه پرداخت معتبر"><img src="{% static 'images/Zarinpal.png' %}"
                                                                     alt="دروازه پرداخت معتبر"></a>
-                                <script src="https://www.zarinpal.com/webservice/TrustCode"
-                                        type="text/javascript"></script>
+                                {#                                <script src="https://www.zarinpal.com/webservice/TrustCode"#}
+                                {#                                        type="text/javascript"></script>#}
 
                             </div>
                         </div>
@@ -97,6 +98,82 @@
                     </div>
                 </div>
             </form>
+        </div>
+    </div>
+    <hr>
+    <div class="page-header">
+        <h3 class="page-title">{% trans 'Recharge Wallet History' %}</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="tab-wrapper" style="margin-right: 0 !important;margin-left: 0 !important" class="row tab-wrapper">
+                <div id="wal-tab-searchbar" class="row ">
+                <span id="display-records" class="col-sm-6">
+                    <i class="fa fa-eye" aria-hidden="true">
+                        <select>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="500">500</option>
+                        </select>
+                    </i>
+                </span>
+                    <span id="search" class="col-sm-6">
+                    <i class="fa fa-search" aria-hidden="true">
+                            <input type="text" id="search-txtbox">
+                    </i>
+                </span>
+                </div>
+                <table id="wal-tab">
+                    <thead>
+                    <tr class="table-header-row">
+                        <th class="table-header-cell">
+                            {% trans 'Recharge ID' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Date' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Wallet Code' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Currenncy' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Card Type' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Amount' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Status' %}
+                        </th>
+                        <th class="table-header-cell"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {#                {% for e in entries %}#}
+                    <tr>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                        <td class="table-cell"></td>
+                    </tr>
+                    {#                {% endfor %}#}
+
+                    </tbody>
+                </table>
+                <div id="wal-tab-footer" class="row" style="margin-left: 0 !important;margin-right: 0 !important;">
+                    <h5 style="padding-left: 20px" class="col-sm-8">Showing {{ 1 }} to {{ x }} of entries</h5>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
