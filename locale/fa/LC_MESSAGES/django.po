@@ -23,7 +23,7 @@ msgstr "صفحه اصلی"
 
 #: .\interpay\templates\base.html:78
 msgid "'s Profile"
-msgstr "پروفایل "
+msgstr " حساب کاربری "
 
 #: .\interpay\templates\base.html:109
 msgid "Home"
