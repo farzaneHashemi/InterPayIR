@@ -118,7 +118,7 @@ msgstr "ساخت حساب کاربری"
 
 #: .\interpay\templates\registeration_form.html:113
 msgid "Already have an account?"
-msgstr ""
+msgstr "در این سایت حساب کاربری دارم."
 
 #: .\interpay\templates\registeration_form.html:114
 msgid "Sign In!"

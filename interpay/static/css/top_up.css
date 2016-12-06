@@ -63,3 +63,20 @@
 .page-title {
     color: rgb(46, 98, 164);
 }
+
+#id_currency, #id_amount {
+    width: 100%;
+}
+
+.recharge-form-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .recharge-form-btn {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
