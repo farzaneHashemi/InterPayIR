@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -27,23 +27,23 @@ msgstr " حساب کاربری "
 
 #: .\interpay\templates\base.html:109
 msgid "Home"
-msgstr "صفحه اصلی"
+msgstr " صفحه اصلی "
 
 #: .\interpay\templates\base.html:119
 msgid "Wallets"
-msgstr "کیف پول من"
+msgstr " کیف پول من "
 
 #: .\interpay\templates\base.html:129
 msgid " Transaction History"
-msgstr "پیشینه تراکنش"
+msgstr " پیشینه تراکنش "
 
 #: .\interpay\templates\base.html:140
 msgid " Reports"
-msgstr "گزارش های مالی"
+msgstr " گزارش های مالی "
 
 #: .\interpay\templates\base.html:151
 msgid " General"
-msgstr "اطلاعات عمومی حساب"
+msgstr " اطلاعات عمومی حساب"
 
 #: .\interpay\templates\base.html:160
 msgid "Name"
@@ -85,13 +85,13 @@ msgstr ""
 "تراکنش های مالی و خریدهای اینترتی خود را انجام دهید."
 
 #: .\interpay\templates\index.html:37
-#, fuzzy
+
 #| msgid "Welcome to interpay"
 msgid "Welcome to Interpay Iran"
 msgstr "به interpay خوش آمدید"
 
 #: .\interpay\templates\index.html:42
-#, fuzzy
+
 #| msgid "Welcome to interpay"
 msgid "Login to Interpay"
 msgstr "به interpay خوش آمدید"
@@ -183,7 +183,7 @@ msgid "USD"
 msgstr "دلار"
 
 #: .\interpay\templates\wallets.html:11
-#, fuzzy
+
 #| msgid "Wallet Info"
 msgid "Wallet Info "
 msgstr "کیف پول من"
@@ -215,3 +215,7 @@ msgstr "مانده ارز"
 #: .\interpay\templates\wallets.html:69
 msgid "Wallet Description"
 msgstr "توضیحات"
+
+#: .\interpay\templates\base.html:145
+msgid "Top Up by Credit Card"
+msgstr "افزایش اعتبار کیف پول"

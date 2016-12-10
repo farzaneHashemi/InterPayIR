@@ -56,7 +56,7 @@
         {#        <script type="text/javascript" src="../static/jquery/jquery.js"></script>#}
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-        <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% endblock %}
     {% block JS %}
     {% endblock %}
@@ -68,6 +68,10 @@
 </head>
 <script>
     {% block script %}
+        $(document).ready(function () {
+            console.log(navigator.language);
+            console.log(navigator.userLanguage);
+        });
     {% endblock %}
     function to_en() {
         var en_url = window.location.href.replace("/fa-ir/", "/");
@@ -122,8 +126,8 @@
                 <i class="fa fa-home sidebar-ent-items" aria-hidden="true"></i> {% trans "Home" %}
                 </a>
             </li>
-            <li class="dropdown sidebar-entry ">
-                <a href="#" class="sidebar-links dropdown-toggle " data-toggle="dropdown">
+            <li class="dropdown sidebar-entry">
+                <a href="#" class="sidebar-links dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-credit-card sidebar-ent-items" aria-hidden="true"></i> {% trans "Wallets" %}
                     <span class="caret"></span>
                 </a>
@@ -142,7 +146,7 @@
                         {% else %}
                             <a class="sidebar-links" href="/fa-ir/top-up">
                         {% endifequal %}
-                        <i><span>{% trans 'Top Up by Creadit Card' %}</span></i>
+                        <i><span>{% trans 'Top Up by Credit Card' %}</span></i>
                         </a></li>
                 </ul>
             </li>
@@ -153,7 +157,6 @@
                     <a class="sidebar-links" href="/fa-ir/trans-history">
                 {% endifequal %}
                 <i class="fa fa-history sidebar-ent-items" aria-hidden="true"></i>{% trans " Transaction History" %}
-
                 </a>
             </li>
             <li class="sidebar-entry">
