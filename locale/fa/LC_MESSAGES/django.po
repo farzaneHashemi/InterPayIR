@@ -219,3 +219,48 @@ msgstr "توضیحات"
 #: .\interpay\templates\base.html:145
 msgid "Top Up by Credit Card"
 msgstr "افزایش اعتبار کیف پول"
+
+#: .\interpay\templates\top_up.html:66
+msgid "Payment Type"
+msgstr "نوع درگاه پرداخت"
+
+#: .\interpay\templates\top_up.html:56
+msgid "Recharge wallet using credit card"
+msgstr "افزایش اعتبار کیف پول با استفاده از کارت اعتباری"
+
+#: .\interpay\templates\top_up.html:93
+msgid "Recharge Amount"
+msgstr "مبلغ"
+
+#: .\interpay\templates\top_up.html:104
+msgid "Charge"
+msgstr "افزایش اعتبار"
+
+#: .\interpay\templates\top_up.html:109
+msgid "Reset"
+msgstr "ریست"
+
+#: .\interpay\templates\top_up.html:118
+msgid "Recharge Wallet History"
+msgstr "پیشینه ی افزایش اعتبار حساب"
+
+#: .\interpay\templates\top_up.html:148
+msgid "Recharge ID"
+msgstr "شناسه تراکنش"
+
+#: .\interpay\templates\top_up.html:151
+msgid "Date"
+msgstr "تاریخ"
+
+
+#: .\interpay\templates\top_up.html:157
+msgid "Currency"
+msgstr "ارز"
+
+#: .\interpay\templates\top_up.html:160
+msgid "Card Type"
+msgstr "نوع کارت"
+
+#: .\interpay\templates\top_up.html:166
+msgid "Status"
+msgstr "وضعیت"
