@@ -208,11 +208,13 @@ class MoneyTransfer(models.Model):
 class Deposit(models.Model):
     # Receiving money; Charging account.
     account = models.ForeignKey(BankAccount, related_name='deposit_set')
-    total = models.FloatField()
+    amount = models.FloatField()
     banker = models.ForeignKey(UserProfile)
-    when = models.DateTimeField(default=datetime.now)
+    date = models.DateTimeField(default=datetime.now)
     cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
     objects = OperationManager()
+    tracking_code = models.IntegerField(default='123')
+    status = models.BooleanField(default=False)
 
 
 class Withdraw(models.Model):

@@ -205,7 +205,7 @@ msgid "Currency Name"
 msgstr "نام ارز"
 
 #: .\interpay\templates\wallets.html:63
-msgid "Currenncy Symbol"
+msgid "Currency Symbol"
 msgstr "نماد واحد ارز"
 
 #: .\interpay\templates\wallets.html:66

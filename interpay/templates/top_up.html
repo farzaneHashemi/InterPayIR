@@ -35,7 +35,7 @@
                 console.log("hey");
                 $(".recharge-form-input").addClass('pull-right');
                 $(".recharge-form-label").addClass('pull-right');
-                $(".recharge-form-label").css({'text-align' : 'left'});
+                $(".recharge-form-label").css({'text-align': 'left'});
                 console.log($(".recharge-form-label").className);
             {% endifequal %}
 
@@ -169,17 +169,17 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {#                {% for e in entries %}#}
-                    <tr>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                        <td class="table-cell"></td>
-                    </tr>
-                    {#                {% endfor %}#}
+                    {% for d in deposit_set %}
+                        <tr>
+                            <td class="table-cell">{{ d.id }}</td>
+                            <td class="table-cell">{{ d.date }}</td>
+                            <td class="table-cell">{{ d.account.account_id }}</td>
+                            <td class="table-cell">{{ d.cur_code }}</td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell">{{ d.amount }}</td>
+                            <td class="table-cell"></td>
+                        </tr>
+                    {% endfor %}
 
                     </tbody>
                 </table>

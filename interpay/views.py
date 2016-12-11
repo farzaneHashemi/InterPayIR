@@ -190,7 +190,10 @@ def recharge_account(request):
                 return redirect(zarinpal['ret'])
             return zarinpal['ret']
     recharge_form = RechargeAccountForm()
-    return render(request, "top_up.html", {'form': recharge_form})
+
+    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    deposit_set = models.Deposit.objects.filter(banker=user_profile)
+    return render(request, "top_up.html", {'form': recharge_form, 'deposit_set': deposit_set})
 
 
 def zarinpal_payment_gate(request, amount):
@@ -214,6 +217,13 @@ def zarinpal_payment_gate(request, amount):
         redirect_to = 'Error'
     res = {'status': result.Status, 'ret': redirect_to}
     return res
+
+
+def deposit_history_table(request):
+    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    deposit_set = models.Deposit.objects.filter(banker=user_profile)
+
+    return deposit_set
 
 
 @login_required
