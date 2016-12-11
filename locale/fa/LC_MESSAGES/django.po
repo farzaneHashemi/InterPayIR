@@ -264,3 +264,7 @@ msgstr "نوع کارت"
 #: .\interpay\templates\top_up.html:166
 msgid "Status"
 msgstr "وضعیت"
+
+#: .\interpay\templates\home.html:13
+msgid "Home Page"
+msgstr "صفحه اصلی"

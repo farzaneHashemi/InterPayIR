@@ -158,7 +158,7 @@ class BankAccount(models.Model):
             #   print 'count of sets'
             print self.income_transfers.on_date(current_date).count()
             print self.deposit_set.on_date(current_date).count()
-            result -= sum(x.total for x in self.cashing_set.on_date(current_date))
+            result -= sum(x.total for x in self.withdraw_set.on_date(current_date))
             result -= sum(x.total for x in self.outcome_transfers.on_date(current_date))
             result += sum(x.total for x in self.deposit_set.on_date(current_date))
             # for c,x in groupby(self.deposit_set.on_date(current_date), lambda x: x.cur_code):
@@ -180,7 +180,7 @@ class BankAccount(models.Model):
         result = 0
         current_date = self.when_opened
         while current_date <= today:
-            result += sum(x.total for x in self.cashing_set.on_date(current_date))
+            result += sum(x.total for x in self.withdraw_set.on_date(current_date))
             result += sum(x.total for x in self.outcome_transfers.on_date(current_date))
             result -= sum(x.total for x in self.deposit_set.on_date(current_date))
             result -= sum(x.total for x in self.income_transfers.on_date(current_date))
@@ -195,6 +195,7 @@ class OperationManager(models.Manager):
 
 
 class MoneyTransfer(models.Model):
+    # Inter-bank-account money transfer
     sender = models.ForeignKey(BankAccount, related_name='outcome_transfers')
     receiver = models.ForeignKey(BankAccount, related_name='income_transfers')
     when = models.DateTimeField()
@@ -205,6 +206,7 @@ class MoneyTransfer(models.Model):
 
 
 class Deposit(models.Model):
+    # Receiving money; Charging account.
     account = models.ForeignKey(BankAccount, related_name='deposit_set')
     total = models.FloatField()
     banker = models.ForeignKey(UserProfile)
@@ -213,8 +215,8 @@ class Deposit(models.Model):
     objects = OperationManager()
 
 
-class Cashing(models.Model):
-    account = models.ForeignKey(BankAccount, related_name='cashing_set')
+class Withdraw(models.Model):
+    account = models.ForeignKey(BankAccount, related_name='withdraw_set')
     total = models.FloatField()
     banker = models.ForeignKey(User)
     when = models.DateTimeField()

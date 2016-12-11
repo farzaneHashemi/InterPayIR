@@ -169,7 +169,6 @@ MEDIA_URL = '/media/'
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
-print LOCALE_PATHS
 prefix_default_language = False
 
 LOGIN_URL = '/login/'
