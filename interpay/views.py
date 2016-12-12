@@ -182,8 +182,8 @@ def recharge_account(request):
                 method=models.BankAccount.DEBIT,
                 name=request.user.username + '_' + cur + '_account'
             )
-            deposit = models.Deposit(account=user_b_account, total=amnt, banker=user_profile,
-                                     when=user_b_account.when_opened, cur_code=cur)
+            deposit = models.Deposit(account=user_b_account, amount=amnt, banker=user_profile,
+                                     date=user_b_account.when_opened, cur_code=cur)
             deposit.save()
             zarinpal = zarinpal_payment_gate(request, amnt)
             if zarinpal['status'] == 100:
@@ -202,7 +202,7 @@ def zarinpal_payment_gate(request, amount):
     description = "this is a test"
     email = 'user@user.com'
     mobile = '09123456789'
-    call_back_url = 'http://www.interpayafrica.com'  # this should be changed to our website url
+    call_back_url = 'http://www.interpayafrica.com'  # TODO this should be changed to our website url
 
     client = Client(ZARINPAL_WEBSERVICE)
     result = client.service.PaymentRequest(MMERCHANT_ID,
@@ -211,19 +211,31 @@ def zarinpal_payment_gate(request, amount):
                                            email,
                                            mobile,
                                            call_back_url)
-
-    redirect_to = 'https://www.zarinpal.com/pg/StartPay/' + result.Authority  # the test vrsion : 'https://sandbox.zarinpal.com/pg/StartPay/'
+    redirect_to = 'https://www.zarinpal.com/pg/StartPay/' + str(
+        result.Authority)  # the test version : 'https://sandbox.zarinpal.com/pg/StartPay/'
     if result.Status != 100:
         redirect_to = 'Error'
     res = {'status': result.Status, 'ret': redirect_to}
+    # verify(request, amount)
     return res
 
 
-def deposit_history_table(request):
-    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
-    deposit_set = models.Deposit.objects.filter(banker=user_profile)
-
-    return deposit_set
+# def verify(request, amount):
+#     MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
+#     ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
+#     client = Client(ZARINPAL_WEBSERVICE)
+#     if request.GET.get('Status') == 'OK':
+#         result = client.service.PaymentVerifition(MMERCHANT_ID,
+#                                                   request.args['Authority'],
+#                                                   amount)
+#         if result.Status == 100:
+#             print 'Transaction success. RefID: ' + str(result.RefID)
+#         elif result.Status == 101:
+#             print 'Transaction submitted : ' + str(result.Status)
+#         else:
+#             print 'Transaction failed. Status: ' + str(result.Status)
+#     else:
+#         print 'Transaction failed or canceled by user'
 
 
 @login_required

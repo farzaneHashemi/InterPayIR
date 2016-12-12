@@ -27,7 +27,6 @@ class ParsGreenSmsServiceClient:
         print "sending sms done"
         self.sendSmsClient.service.SendGroupSmsSimple("765822D8-383F-444F-A363-3EC951448412", "", strArr, code,
                                                       False, self.success)
-        return redirect('http://www.google.com')
 
     def getSendSmsClient(self):
         return self.sendSmsClient

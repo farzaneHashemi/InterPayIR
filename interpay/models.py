@@ -158,12 +158,12 @@ class BankAccount(models.Model):
             #   print 'count of sets'
             print self.income_transfers.on_date(current_date).count()
             print self.deposit_set.on_date(current_date).count()
-            result -= sum(x.total for x in self.withdraw_set.on_date(current_date))
-            result -= sum(x.total for x in self.outcome_transfers.on_date(current_date))
-            result += sum(x.total for x in self.deposit_set.on_date(current_date))
+            result -= sum(x.amount for x in self.withdraw_set.on_date(current_date))
+            result -= sum(x.amount for x in self.outcome_transfers.on_date(current_date))
+            result += sum(x.amount for x in self.deposit_set.on_date(current_date))
             # for c,x in groupby(self.deposit_set.on_date(current_date), lambda x: x.cur_code):
-            #     result[c]+= sum(y.total for y in x)
-            result += sum(x.total for x in self.income_transfers.on_date(current_date))
+            #     result[c]+= sum(y.amount for y in x)
+            result += sum(x.amount for x in self.income_transfers.on_date(current_date))
 
             current_date += timedelta(days=1)
             print rule.deposit_charge_percent
@@ -180,10 +180,10 @@ class BankAccount(models.Model):
         result = 0
         current_date = self.when_opened
         while current_date <= today:
-            result += sum(x.total for x in self.withdraw_set.on_date(current_date))
-            result += sum(x.total for x in self.outcome_transfers.on_date(current_date))
-            result -= sum(x.total for x in self.deposit_set.on_date(current_date))
-            result -= sum(x.total for x in self.income_transfers.on_date(current_date))
+            result += sum(x.amount for x in self.withdraw_set.on_date(current_date))
+            result += sum(x.amount for x in self.outcome_transfers.on_date(current_date))
+            result -= sum(x.amount for x in self.deposit_set.on_date(current_date))
+            result -= sum(x.amount for x in self.income_transfers.on_date(current_date))
             result *= rule.credit_percent
             current_date += timedelta(days=1)
         return result
@@ -198,8 +198,8 @@ class MoneyTransfer(models.Model):
     # Inter-bank-account money transfer
     sender = models.ForeignKey(BankAccount, related_name='outcome_transfers')
     receiver = models.ForeignKey(BankAccount, related_name='income_transfers')
-    when = models.DateTimeField()
-    total = models.FloatField()
+    date = models.DateTimeField()
+    amount = models.FloatField()
     comment = models.CharField(max_length=255)
     cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
     objects = OperationManager()
@@ -219,8 +219,8 @@ class Deposit(models.Model):
 
 class Withdraw(models.Model):
     account = models.ForeignKey(BankAccount, related_name='withdraw_set')
-    total = models.FloatField()
+    amount = models.FloatField()
     banker = models.ForeignKey(User)
-    when = models.DateTimeField()
+    date = models.DateTimeField()
     cur_code = models.CharField(_('cur_code'), max_length=3, default='USD')
     objects = OperationManager()
