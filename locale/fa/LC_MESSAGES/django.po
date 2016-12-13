@@ -72,7 +72,7 @@ msgstr "این صفحه همچنان در دست آماده سازی است. ا�
 
 #: .\interpay\templates\home.html:20
 msgid "Welcome to interpay"
-msgstr "به interpay خوش آمدید"
+msgstr "به ریزپرداخت خوش آمدید"
 
 #: .\interpay\templates\home.html:26
 msgid ""
@@ -88,13 +88,13 @@ msgstr ""
 
 #| msgid "Welcome to interpay"
 msgid "Welcome to Interpay Iran"
-msgstr "به interpay خوش آمدید"
+msgstr "به ریزپرداخت خوش آمدید"
 
 #: .\interpay\templates\index.html:42
 
 #| msgid "Welcome to interpay"
 msgid "Login to Interpay"
-msgstr "به interpay خوش آمدید"
+msgstr "ورود به سایت"
 
 #: .\interpay\templates\index.html:69
 msgid "Don't have an account yet?"
@@ -268,3 +268,16 @@ msgstr "وضعیت"
 #: .\interpay\templates\home.html:13
 msgid "Home Page"
 msgstr "صفحه اصلی"
+
+#: .\interpay\templates\base.html:173
+msgid " Bank Accounts"
+msgstr " حسابهای بانکی "
+
+#: .\interpay\templates\index.html:108
+msgid "Forgot password or account disabled ?"
+msgstr "در ورود به سایت مشکل دارم"
+
+#: .\interpay\templates\index.html:105
+msgid "Login"
+msgstr "ورود"
+

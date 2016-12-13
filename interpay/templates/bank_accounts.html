@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block CSS %}
+        <link rel="stylesheet" href="{% static 'css/top_up.css' %}">
+    {% endblock %}
+    {% block JS %}
+    {% endblock %}
+    <meta charset="UTF-8">
+    <title>{% block title %}
+        {% trans 'Bank Accounts' %}
+    {% endblock %}</title>
+</head>
+<body>
+{% block cont-header %}
+
+{% endblock %}
+{% block cont-body %}
+
+{% endblock %}
+</body>
+</html>

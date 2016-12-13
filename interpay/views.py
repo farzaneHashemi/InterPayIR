@@ -237,6 +237,8 @@ def zarinpal_payment_gate(request, amount):
 #     else:
 #         print 'Transaction failed or canceled by user'
 
+def bank_accounts(request):
+    return
 
 @login_required
 def user_logout(request):
