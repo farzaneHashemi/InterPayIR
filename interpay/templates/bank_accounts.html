@@ -7,10 +7,12 @@
 <head>
     {% block CSS %}
         <link rel="stylesheet" href="{% static 'css/bank_accounts.css' %}">
-        <link rel="stylesheet" href="{% static 'css/sweetalert.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'bower_components/sweetalert2/sweetalert2.min.css' %}">
     {% endblock %}
     {% block JS %}
         <script src="../static/js/sweetalert.min.js"></script>
+        <script src="{% static 'bower_components/sweetalert2/sweetalert2.js' %}"></script>
+        <script src="{% static 'bower_components/sweetalert2/sweetalert2.min.js' %}"></script>
     {% endblock %}
     <meta charset="UTF-8">
     <title>{% block title %}
@@ -22,41 +24,55 @@
     {% block script %}
 
         function create_bank_acc() {
-                    swal({
-                        title: "create account",
-                        text: '<br /><form method="post" id="" name=""><input id="" class="form-control " type="text"></form>',
-                        type: "warning",
-                        showCancelButton: false,
-                        confirmButtonText: "Thanks",
-                        closeOnConfirm: false
-                    }, function () {
-                        swal("Deleted!", "Your imaginary file has been deleted.", "success");
-                    });
-{#            swal({#}
-{#                title: 'Submit email to run ajax request',#}
-{#                input: 'email',#}
-{#                showCancelButton: true,#}
-{#                confirmButtonText: 'Submit',#}
-{#                showLoaderOnConfirm: true,#}
-{#                preConfirm: function (email) {#}
-{#                    return new Promise(function (resolve, reject) {#}
-{#                        setTimeout(function () {#}
-{#                            if (email === 'taken@example.com') {#}
-{#                                reject('This email is already taken.')#}
-{#                            } else {#}
-{#                                resolve()#}
-{#                            }#}
-{#                        }, 2000)#}
-{#                    })#}
-{#                },#}
-{#                allowOutsideClick: false#}
-{#            }).then(function (email) {#}
-{#                swal({#}
-{#                    type: 'success',#}
-{#                    title: 'Ajax request finished!',#}
-{#                    html: 'Submitted email: ' + email#}
-{#                })#}
-{#            });#}
+            {#                    swal({#}
+            {#                        title: "create account",#}
+            {#                        text: '<br /><form method="post" id="" name=""><input id="" class="form-control " type="text"></form>',#}
+            {#                        type: "warning",#}
+            {#                        showCancelButton: false,#}
+            {#                        confirmButtonText: "Thanks",#}
+            {#                        closeOnConfirm: false#}
+            {#                    }, function () {#}
+            {#                        swal("Deleted!", "Your imaginary file has been deleted.", "success");#}
+            {#                    });#}
+            {#            swal({#}
+            {#                title: 'Submit email to run ajax request',#}
+            {#                input: 'email',#}
+            {#                showCancelButton: true,#}
+            {#                confirmButtonText: 'Submit',#}
+            {#                showLoaderOnConfirm: true,#}
+            {#                preConfirm: function (email) {#}
+            {#                    return new Promise(function (resolve, reject) {#}
+            {#                        setTimeout(function () {#}
+            {#                            if (email === 'taken@example.com') {#}
+            {#                                reject('This email is already taken.')#}
+            {#                            } else {#}
+            {#                                resolve()#}
+            {#                            }#}
+            {#                        }, 2000)#}
+            {#                    })#}
+            {#                },#}
+            {#                allowOutsideClick: false#}
+            {#            }).then(function (email) {#}
+            {#                swal({#}
+            {#                    type: 'success',#}
+            {#                    title: 'Ajax request finished!',#}
+            {#                    html: 'Submitted email: ' + email#}
+            {#                })#}
+            {#            });#}
+            console.log("hi");
+            swal({
+                title: "Aggiornamento profilo",
+                text: '<br /><form method="post" id="taxcode-update" name="taxcodeUpdate">' +
+                '<input>' +
+                '<input id="admin-tax-code" minlength="3" class="form-control wedding-input-text wizard-input-pad" type="text" name="taxCode" placeholder="Codice fiscale">' +
+                '</form>',
+                type: "warning",
+                showCancelButton: false,
+                confirmButtonText: "Aggiorna il mio profilo",
+                closeOnConfirm: false
+            }, function () {
+                swal("Deleted!", "Your imaginary file has been deleted.", "success");
+            });
         }
     {% endblock %}
 </script>
