@@ -216,29 +216,31 @@ def zarinpal_payment_gate(request, amount):
     if result.Status != 100:
         redirect_to = 'Error'
     res = {'status': result.Status, 'ret': redirect_to}
-    # verify(request, amount)
+    verify(request, amount)
     return res
 
 
-# def verify(request, amount):
-#     MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
-#     ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'
-#     client = Client(ZARINPAL_WEBSERVICE)
-#     if request.GET.get('Status') == 'OK':
-#         result = client.service.PaymentVerifition(MMERCHANT_ID,
-#                                                   request.args['Authority'],
-#                                                   amount)
-#         if result.Status == 100:
-#             print 'Transaction success. RefID: ' + str(result.RefID)
-#         elif result.Status == 101:
-#             print 'Transaction submitted : ' + str(result.Status)
-#         else:
-#             print 'Transaction failed. Status: ' + str(result.Status)
-#     else:
-#         print 'Transaction failed or canceled by user'
+def verify(request, status, authority, amount, MMERCHANT_ID, ZARINPAL_WEBSERVICE):
+    client = Client(ZARINPAL_WEBSERVICE)
+    if request.args.get('Status') == 'OK':
+        result = client.service.PaymentVerification(MMERCHANT_ID,
+                                                    authority,
+                                                    amount)
+        if result.Status == 100:
+            return 'Transaction success. RefID: ' + str(result.RefID)
+        elif result.Status == 101:
+            return 'Transaction submitted : ' + str(result.Status)
+        else:
+            return 'Transaction failed. Status: ' + str(result.Status)
+    else:
+        return 'Transaction failed or canceled by user'
+
 
 def bank_accounts(request):
-    return
+    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    bank_accounts_set = models.BankAccount.objects.filter(owner=user_profile)
+    return render(request, "bank_accounts.html", {'bank_accounts_set': bank_accounts_set})
+
 
 @login_required
 def user_logout(request):

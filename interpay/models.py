@@ -121,13 +121,17 @@ class BankAccount(models.Model):
     #     (LEGAL, 'Legal'),
     #     (INDIVIDUAL, 'INDIVIDUAL'),
     # ), default=INDIVIDUAL)
-
+    BANK_NAMES = {
+        ('Amin', 'Amin Investment Bank'),
+        ('Ayandeh', 'Ayande Bank'),
+        ('Day', 'Day Bank')
+    }
     method = models.PositiveSmallIntegerField(choices=(
         (DEBIT, 'Debit'),
         (CREDIT, 'Credit'),
     ), default=DEBIT)
 
-    name = models.CharField(max_length=254)
+    name = models.CharField(max_length=254, choices=BANK_NAMES)
     account_id = models.BigIntegerField(default=make_id, primary_key=True)
     owner = models.ForeignKey(UserProfile, related_name='w_accounts')
     spectators = models.ManyToManyField(UserProfile, related_name='r_accounts')

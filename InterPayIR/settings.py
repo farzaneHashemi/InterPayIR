@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'interpay',
+    'InterPayIR',
     'django.contrib.sites',
     'allauth',
     'allauth.account',

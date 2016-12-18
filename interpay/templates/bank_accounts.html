@@ -6,9 +6,11 @@
 <html lang="en">
 <head>
     {% block CSS %}
-        <link rel="stylesheet" href="{% static 'css/top_up.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bank_accounts.css' %}">
+        <link rel="stylesheet" href="{% static 'css/sweetalert.css' %}"/>
     {% endblock %}
     {% block JS %}
+        <script src="../static/js/sweetalert.min.js"></script>
     {% endblock %}
     <meta charset="UTF-8">
     <title>{% block title %}
@@ -16,11 +18,121 @@
     {% endblock %}</title>
 </head>
 <body>
-{% block cont-header %}
+<script>
+    {% block script %}
 
+        function create_bank_acc() {
+                    swal({
+                        title: "create account",
+                        text: '<br /><form method="post" id="" name=""><input id="" class="form-control " type="text"></form>',
+                        type: "warning",
+                        showCancelButton: false,
+                        confirmButtonText: "Thanks",
+                        closeOnConfirm: false
+                    }, function () {
+                        swal("Deleted!", "Your imaginary file has been deleted.", "success");
+                    });
+{#            swal({#}
+{#                title: 'Submit email to run ajax request',#}
+{#                input: 'email',#}
+{#                showCancelButton: true,#}
+{#                confirmButtonText: 'Submit',#}
+{#                showLoaderOnConfirm: true,#}
+{#                preConfirm: function (email) {#}
+{#                    return new Promise(function (resolve, reject) {#}
+{#                        setTimeout(function () {#}
+{#                            if (email === 'taken@example.com') {#}
+{#                                reject('This email is already taken.')#}
+{#                            } else {#}
+{#                                resolve()#}
+{#                            }#}
+{#                        }, 2000)#}
+{#                    })#}
+{#                },#}
+{#                allowOutsideClick: false#}
+{#            }).then(function (email) {#}
+{#                swal({#}
+{#                    type: 'success',#}
+{#                    title: 'Ajax request finished!',#}
+{#                    html: 'Submitted email: ' + email#}
+{#                })#}
+{#            });#}
+        }
+    {% endblock %}
+</script>
+{% block cont-header %}
+    <div id="bank_accounts_title">
+        <h3 class="page-title"> {% trans "My Bank Accounts" %}</h3>
+    </div>
 {% endblock %}
 {% block cont-body %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="tab-wrapper" style="margin-right: 0 !important;margin-left: 0 !important" class="row tab-wrapper">
+                <div id="tab-searchbar" class="row ">
+                <span id="display-records" class="col-sm-4">
+                    <i class="fa fa-eye" aria-hidden="true">
+                        <select>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </i>
+                </span>
+                    <span id="search" class="col-sm-4">
+                    <i class="fa fa-search" aria-hidden="true">
+                            <input type="text" id="search-txtbox">
+                    </i>
+                </span>
+                </div>
+                <table id="bank-tab">
+                    <thead>
+                    <tr class="table-header-row">
+                        <th class="table-header-cell">
+                            {% trans 'Index' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Bank Name' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Account Owner' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Account Number' %}
+                        </th>
+                        <th class="table-header-cell">
+                            {% trans 'Currency' %}
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for b in bank_accounts_set %}
+                        <tr>
+                            <td class="table-cell">{{ forloop.counter }}</td>
+                            <td class="table-cell">{{ b.name }}</td>
+                            <td class="table-cell">{{ b.owner.user.username }}</td>
+                            <td class="table-cell">{{ b.account_id }}</td>
+                            <td class="table-cell">{{ b.cur_code }}</td>
+                        </tr>
+                    {% endfor %}
 
+                    </tbody>
+                </table>
+                <div id="tab-footer" class="row" style="margin-left: 0 !important;margin-right: 0 !important;">
+                    <h5 style="padding-left: 20px" class="col-sm-8">Showing {{ m }} to {{ x }} of {{ y }}entries</h5>
+                </div>
+            </div>
+            <div id="create_acc" style="margin-top: 40px;text-align: center" class="">
+                <button class="btn btn-info" onclick="create_bank_acc()"><i class="fa fa-plus"
+                                                                            aria-hidden="true"></i> {% trans 'Create new account' %}
+                </button>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 </body>
 </html>
