@@ -1,4 +1,5 @@
 from django.contrib.auth.base_user import BaseUserManager
+from django.core.validators import RegexValidator
 from django.utils.translation import ugettext_lazy as _
 from django_countries.fields import CountryField
 from django.contrib.auth.models import User
@@ -126,9 +127,10 @@ class BankAccount(models.Model):
         (DEBIT, 'Debit'),
         (CREDIT, 'Credit'),
     ), default=DEBIT)
-
+    alphanumeric = RegexValidator(r'^[0-9a-zA-Z]*$', 'Only alphanumeric characters are allowed.')
+    # TODO : this validator should be placed in js as well, so the user can not type other kinds of inputs
     name = models.CharField(max_length=254)
-    account_id = models.BigIntegerField(primary_key=True)
+    account_id = models.CharField(primary_key=True, max_length=24, validators=[alphanumeric])
     owner = models.ForeignKey(UserProfile, related_name='w_accounts')
     spectators = models.ManyToManyField(UserProfile, related_name='r_accounts')
     when_opened = models.DateField(_("Date"), default=datetime.now)

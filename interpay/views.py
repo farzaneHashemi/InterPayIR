@@ -256,7 +256,6 @@ def bank_accounts(request):
             )
             new_account.save()
     bank_account_form = CreateBankAccountForm()
-    print request.method
     bank_accounts_set = models.BankAccount.objects.filter(owner=user_profile)
     return render(request, "bank_accounts.html", {'bank_accounts_set': bank_accounts_set, 'form': bank_account_form})
 
