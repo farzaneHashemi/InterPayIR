@@ -62,10 +62,8 @@
             console.log("hi");
             swal({
                 title: "Aggiornamento profilo",
-                text: '<br /><form method="post" id="taxcode-update" name="taxcodeUpdate">' +
-                '<input>' +
-                '<input id="admin-tax-code" minlength="3" class="form-control wedding-input-text wizard-input-pad" type="text" name="taxCode" placeholder="Codice fiscale">' +
-                '</form>',
+                text: 'hi',
+                {#                        '<form id="create-bank-acc-form" class="form-horizontal" method="post">{% csrf_token %}<div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Bank" %}</label>{{ form.name }}</div><div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Currency" %}</label>{{ form.cur_code }}</div><div class="form-group"></div><div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Account Number" %}</label>{{ form.account_id }}</div><div class="form-group"><input type="submit" value="submit"><input type="reset" value="cancel"></div></form>',#}
                 type: "warning",
                 showCancelButton: false,
                 confirmButtonText: "Aggiorna il mio profilo",
@@ -78,12 +76,70 @@
 </script>
 {% block cont-header %}
     <div id="bank_accounts_title">
-        <h3 class="page-title"> {% trans "My Bank Accounts" %}</h3>
+        <h3 class="page-title"> {% trans "My Financial Accounts" %}</h3>
     </div>
 {% endblock %}
 {% block cont-body %}
     <div class="row">
+        <!---#TODO the ideal form is to transform this part into a message box like fancy box or sweetalert,
+         which pops up by clicking a button (which is below this page and commented out right now--->
         <div class="col-sm-12">
+            <div class="page-header">
+                <h4 class="page-title">{% trans 'Creating a Bank Account' %}</h4>
+            </div>
+
+            <div>
+                {#TODO this part is not working - errors are not shown to the user properly#}
+                {% if form.errors %}
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div>
+                <form id="create-bank-acc-form" class="form-horizontal" method="post">{% csrf_token %}
+
+                    <div class="form-group">
+                        <label class="col-sm-3 create-acc-form-label">{% trans "Bank" %}</label>
+                        <div class="col-sm-9">
+                            <div class="col-xs-6">{{ form.name }}</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 create-acc-form-label">{% trans "Currency" %}</label>
+                        <div class="col-sm-9">
+                            <div class="col-xs-6">{{ form.cur_code }}</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 create-acc-form-label">{% trans "Account Number" %}</label>
+                        <div class="col-sm-9">
+                            <div class="col-xs-6">{{ form.account_id }}</div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="form-btn-div">
+                        <button type="submit" class="btn btn-success"
+                                style="margin-left: 10px;margin-right: 10px;"><i
+                                class="fa fa-check"></i> {% trans 'Done' %}</button>
+                        <button type="reset" class="btn"
+                                style="margin-left: 10px;margin-right: 10px;"><i
+                                class="fa fa-undo"></i> {% trans 'Cancel' %}</button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div class="page-header">
+                <h4 class="page-title">{% trans 'My Bank Accounts' %}</h4>
+            </div>
             <div id="tab-wrapper" style="margin-right: 0 !important;margin-left: 0 !important" class="row tab-wrapper">
                 <div id="tab-searchbar" class="row ">
                 <span id="display-records" class="col-sm-4">
@@ -142,11 +198,13 @@
                     <h5 style="padding-left: 20px" class="col-sm-8">Showing {{ m }} to {{ x }} of {{ y }}entries</h5>
                 </div>
             </div>
-            <div id="create_acc" style="margin-top: 40px;text-align: center" class="">
-                <button class="btn btn-info" onclick="create_bank_acc()"><i class="fa fa-plus"
-                                                                            aria-hidden="true"></i> {% trans 'Create new account' %}
-                </button>
-            </div>
+            <!---this button should be activated in future --->
+            {#            <div id="create_acc" style="margin-top: 40px;text-align: center" class="">#}
+            {#                <button class="btn btn-info" onclick="create_bank_acc()"><i class="fa fa-plus"#}
+            {#                                                                            aria-hidden="true"></i>#}
+            {#                    {% trans 'Create new account' %}#}
+            {#                </button>#}
+            {#            </div>#}
         </div>
     </div>
 {% endblock %}

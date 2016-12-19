@@ -1,4 +1,4 @@
-from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm
+from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm, CreateBankAccountForm
 from django.shortcuts import render, render_to_response, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
@@ -197,7 +197,7 @@ def recharge_account(request):
 
 
 def zarinpal_payment_gate(request, amount):
-    MMERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
+    MERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
     ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # test version : 'https://sandbox.zarinpal.com/pg/services/WebGate/wsdl'
     description = "this is a test"
     email = 'user@user.com'
@@ -205,7 +205,7 @@ def zarinpal_payment_gate(request, amount):
     call_back_url = 'http://www.interpayafrica.com'  # TODO this should be changed to our website url
 
     client = Client(ZARINPAL_WEBSERVICE)
-    result = client.service.PaymentRequest(MMERCHANT_ID,
+    result = client.service.PaymentRequest(MERCHANT_ID,
                                            amount,
                                            description,
                                            email,
@@ -220,10 +220,10 @@ def zarinpal_payment_gate(request, amount):
     return res
 
 
-def verify(request, status, authority, amount, MMERCHANT_ID, ZARINPAL_WEBSERVICE):
+def verify(request, status, authority, amount, merchant_id, ZARINPAL_WEBSERVICE):
     client = Client(ZARINPAL_WEBSERVICE)
     if request.args.get('Status') == 'OK':
-        result = client.service.PaymentVerification(MMERCHANT_ID,
+        result = client.service.PaymentVerification(merchant_id,
                                                     authority,
                                                     amount)
         if result.Status == 100:
@@ -236,10 +236,29 @@ def verify(request, status, authority, amount, MMERCHANT_ID, ZARINPAL_WEBSERVICE
         return 'Transaction failed or canceled by user'
 
 
+@login_required()
 def bank_accounts(request):
     user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    bank_account_form = CreateBankAccountForm(data=request.POST)
+    if request.method == 'POST':
+        print bank_account_form.errors
+        if bank_account_form.is_valid():
+            cur = bank_account_form.cleaned_data['cur_code']
+            bank_name = bank_account_form.cleaned_data['name']
+            account_no = bank_account_form.cleaned_data['account_id']
+            print bank_name, cur, request.user, request.user.id, request.user.username
+            new_account = models.BankAccount(
+                owner=user_profile,
+                cur_code=cur,
+                method=1,
+                name=bank_name,
+                account_id=account_no,
+            )
+            new_account.save()
+    bank_account_form = CreateBankAccountForm()
+    print request.method
     bank_accounts_set = models.BankAccount.objects.filter(owner=user_profile)
-    return render(request, "bank_accounts.html", {'bank_accounts_set': bank_accounts_set})
+    return render(request, "bank_accounts.html", {'bank_accounts_set': bank_accounts_set, 'form': bank_account_form})
 
 
 @login_required

@@ -101,8 +101,8 @@ def check_id(id):
 
 
 CURRENCY_CHOICES = {
-    ('Rials', 'RLS'),
-    ('USDollar', 'USD')
+    ('RLS', 'Rials'),
+    ('USD', 'Dollar')
 }
 
 
@@ -121,6 +121,30 @@ class RechargeAccountForm(forms.Form):
         fields = ['currency', 'amount']
 
 
+BANK_CHOICES = {
+    ('Amin', 'Amin Investment Bank'),
+    ('Ayandeh', 'Ayande Bank'),
+    ('Day', 'Day Bank'),
+    ('Maskan', 'Maskan Bank'),
+    ('Mellat', 'Mellat Bank'),
+    ('Melli', 'Iran Melli Bank'),
+    ('Bank of Industry and Mine', 'Bank of Industry and Mine'),
+    ('Pasargad', 'Bank Pasargad')
+}
+
+
+class CreateBankAccountForm(forms.ModelForm):
+    class Meta:
+        model = BankAccount
+        exclude = ['spectators', 'when_opened', 'owner', 'method']
+        widgets = {
+            'name': forms.Select(choices=BANK_CHOICES,
+                                 attrs={'class': 'create_b_acc_form_field', 'id': 'bank_name', }),
+            # TODO : these currency choices have to be customized and checked whether the related bank supports them.
+            'cur_code': forms.Select(choices=CURRENCY_CHOICES,
+                                     attrs={'class': 'create_b_acc_form_field'}),
+            'account_id': forms.TextInput(
+                attrs={'class': 'create_b_acc_form_field'})}
 
 
 
