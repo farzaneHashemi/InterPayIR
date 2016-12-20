@@ -98,12 +98,11 @@ START_TIME = 0x0
 def make_id():
     '''
     inspired by http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram
-        '''
+    '''
 
     t = int(time.time() * 1000) - START_TIME
     u = random.SystemRandom().getrandbits(22)
     id = (t << 22) | u
-
     return id
 
 
@@ -130,11 +129,11 @@ class BankAccount(models.Model):
     alphanumeric = RegexValidator(r'^[0-9a-zA-Z]*$', 'Only alphanumeric characters are allowed.')
     # TODO : this validator should be placed in js as well, so the user can not type other kinds of inputs
     name = models.CharField(max_length=254)
-    account_id = models.CharField(primary_key=True, max_length=24, validators=[alphanumeric])
-    owner = models.ForeignKey(UserProfile, related_name='w_accounts')
-    spectators = models.ManyToManyField(UserProfile, related_name='r_accounts')
     when_opened = models.DateField(_("Date"), default=datetime.now)
+    owner = models.ForeignKey(UserProfile, related_name='w_accounts')
     cur_code = models.CharField(_('cur_code'), max_length=3, default='RLS')
+    spectators = models.ManyToManyField(UserProfile, related_name='r_accounts')
+    account_id = models.CharField(primary_key=True, max_length=24, validators=[alphanumeric])
 
     def total_value(self):
         t_value = Decimal(0)

@@ -154,6 +154,12 @@ BANK_CHOICES = {
 
 
 class CreateBankAccountForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(CreateBankAccountForm, self).__init__(*args, **kwargs)
+        self.fields['account_id'].widget = TextInput(attrs={
+            'class': 'create_b_acc_form_field',
+            'placeholder': 'Enter your account No.'})
+
     class Meta:
         model = BankAccount
         exclude = ['spectators', 'when_opened', 'owner', 'method']
@@ -162,9 +168,10 @@ class CreateBankAccountForm(forms.ModelForm):
                                  attrs={'class': 'create_b_acc_form_field', 'id': 'bank_name', }),
             # TODO : these currency choices have to be customized and checked whether the related bank supports them.
             'cur_code': forms.Select(choices=CURRENCY_CHOICES,
-                                     attrs={'class': 'create_b_acc_form_field'}),
-            'account_id': forms.TextInput(
-                attrs={'class': 'create_b_acc_form_field'})}
+                                     attrs={'class': 'create_b_acc_form_field'}), }
+        # 'account_id': forms.TextInput(
+        #     attrs={'class': 'create_b_acc_form_field', 'placeholder': 'Enter your account No.'})}
+
 
 
 

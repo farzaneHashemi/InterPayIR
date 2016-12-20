@@ -9,7 +9,9 @@ from InterPayIR.SMS import ds, api
 from suds.client import Client
 from interpay import models
 from random import randint
+import random
 import json
+import time
 
 
 def main_page(request):
@@ -176,11 +178,13 @@ def recharge_account(request):
             amnt = recharge_form.cleaned_data['amount']
             print amnt, cur, request.user, request.user.id, request.user.username
             user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+            # TODO : this part should be edited to check whether there is already an account with this name; if so, increament the account's total
             user_b_account, created = models.BankAccount.objects.get_or_create(
                 owner=user_profile,
                 cur_code=cur,
                 method=models.BankAccount.DEBIT,
-                name=request.user.username + '_' + cur + '_account'
+                name=request.user.username + '_' + cur + '_InterPay-account',
+                account_id=make_id()
             )
             deposit = models.Deposit(account=user_b_account, amount=amnt, banker=user_profile,
                                      date=user_b_account.when_opened, cur_code=cur)
@@ -194,6 +198,20 @@ def recharge_account(request):
     user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
     deposit_set = models.Deposit.objects.filter(banker=user_profile)
     return render(request, "top_up.html", {'form': recharge_form, 'deposit_set': deposit_set})
+
+
+START_TIME = 0x0
+
+
+def make_id():
+    '''
+    inspired by http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram
+    '''
+
+    t = int(time.time() * 1000) - START_TIME
+    u = random.SystemRandom().getrandbits(22)
+    id = (t << 22) | u
+    return id
 
 
 def zarinpal_payment_gate(request, amount):
@@ -216,24 +234,29 @@ def zarinpal_payment_gate(request, amount):
     if result.Status != 100:
         redirect_to = 'Error'
     res = {'status': result.Status, 'ret': redirect_to}
-    verify(request, amount)
+    verify(request, result.Status, result.Authority, amount, MERCHANT_ID, ZARINPAL_WEBSERVICE)
     return res
 
 
-def verify(request, status, authority, amount, merchant_id, ZARINPAL_WEBSERVICE):
-    client = Client(ZARINPAL_WEBSERVICE)
-    if request.args.get('Status') == 'OK':
-        result = client.service.PaymentVerification(merchant_id,
-                                                    authority,
-                                                    amount)
-        if result.Status == 100:
-            return 'Transaction success. RefID: ' + str(result.RefID)
-        elif result.Status == 101:
-            return 'Transaction submitted : ' + str(result.Status)
-        else:
-            return 'Transaction failed. Status: ' + str(result.Status)
+def verify(request, status, authority, amount, merchant_id, zarinpal_webservice):
+    client = Client(zarinpal_webservice)
+    print request.GET.get
+    result2 = client.service.PaymentVerificationWithExtra(merchant_id,
+                                                          authority,
+                                                          amount)
+    print result2.RefID, result2.Status, result2.ExtraDetail
+    # if request.GET.get('Status') == 'OK':
+    #     result = client.service.PaymentVerification(merchant_id,
+    #                                                 authority,
+    #                                                 amount)
+    if result2.Status == 100:
+        print 'Transaction success. RefID: ' + str(result2.RefID)
+    elif result2.Status == 101:
+        print 'Transaction submitted : ' + str(result2.Status)
     else:
-        return 'Transaction failed or canceled by user'
+        print 'Transaction failed. Status: ' + str(result2.Status)
+        # else:
+        #     return 'Transaction failed or canceled by user'
 
 
 @login_required()

@@ -59,10 +59,9 @@
             {#                    html: 'Submitted email: ' + email#}
             {#                })#}
             {#            });#}
-            console.log("hi");
             swal({
                 title: "Aggiornamento profilo",
-                text: 'hi',
+                text: 'type something',
                 {#                        '<form id="create-bank-acc-form" class="form-horizontal" method="post">{% csrf_token %}<div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Bank" %}</label>{{ form.name }}</div><div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Currency" %}</label>{{ form.cur_code }}</div><div class="form-group"></div><div class="form-group"><label class="col-sm-3 create-acc-form-label" style="margin-top: 8px">{% trans "Account Number" %}</label>{{ form.account_id }}</div><div class="form-group"><input type="submit" value="submit"><input type="reset" value="cancel"></div></form>',#}
                 type: "warning",
                 showCancelButton: false,
@@ -179,6 +178,9 @@
                         <th class="table-header-cell">
                             {% trans 'Currency' %}
                         </th>
+                        <th class="table-header-cell">
+                            {% trans 'Total Inventory' %}
+                        </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -189,6 +191,7 @@
                             <td class="table-cell">{{ b.owner.user.username }}</td>
                             <td class="table-cell">{{ b.account_id }}</td>
                             <td class="table-cell">{{ b.cur_code }}</td>
+                            <td class="table-cell">{{ b.total_value }}</td>
                         </tr>
                     {% endfor %}
 
