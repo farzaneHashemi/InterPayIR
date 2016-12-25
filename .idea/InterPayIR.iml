@@ -15,6 +15,12 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 2.7.10 virtualenv at C:\Users\HP\interpay-venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
+    <orderEntry type="library" name="jquery-1.10.2" level="application" />
+    <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+=======
+>>>>>>> 31fd48f00b116854d5e19611d38af94d646a0d72
   </component>
   <component name="TemplatesService">
 <<<<<<< HEAD

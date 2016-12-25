@@ -47,14 +47,14 @@
 
 }
 
-@media only screen and (max-device-width: 480px) {
+    @media only screen and (max-device-width: 480px) {
 
-    #tab-wrapper {
-        width: 700px;
+        #tab-wrapper {
+            /*width: 700px;*/
+        }
+
+        #wal-tab-searchbar {
+            /*background-color: red;*/
+
+        }
     }
-
-    #wal-tab-searchbar {
-        background-color: red;
-
-    }
-}

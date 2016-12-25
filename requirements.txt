@@ -1,3 +1,5 @@
+convert
+currencies
 redis
 suds
 Django==1.10.1

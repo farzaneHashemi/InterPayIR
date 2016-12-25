@@ -1,14 +1,17 @@
+from interpay.forms import RegistrationForm, UserForm, RechargeAccountForm, CreateBankAccountForm
 from django.shortcuts import render, render_to_response, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.generic import TemplateView, CreateView
 from django.contrib.auth.decorators import login_required
-from interpay.forms import RegistrationForm, UserForm
 from django.views.decorators.csrf import csrf_exempt
 from InterPayIR.SMS import ds, api
+from suds.client import Client
 from interpay import models
 from random import randint
+import random
 import json
+import time
 
 
 def main_page(request):
@@ -32,8 +35,6 @@ def register(request):
             user_profile.email = user_form.cleaned_data['email']
             # user_profile.date_of_birth = user_profile.cleaned_data['date_of_birth']
             user_profile.password = user.password
-            # if user.is_active:
-            #     user_profile.is_active = True
             user_profile.user = user
 
             if 'picture' in request.FILES:
@@ -76,8 +77,8 @@ def register(request):
 
 @csrf_exempt
 def send_sms(request, mobile_no):
+    # TODO : make mobile_no an optional input argument
     mobile_no = request.session['mobile_no']
-    print mobile_no
     request.session['try_counter'] = 0
     code = random_code_gen()
     request.session['code'] = code
@@ -85,8 +86,9 @@ def send_sms(request, mobile_no):
     # redis_ds.set_code(mobile_no, code)
     p = api.ParsGreenSmsServiceClient()
     api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
-    user = models.User.objects.get(id=request.session['user_id'])
-    user_profile = models.UserProfile.objects.get(user=user)
+    user_profile = models.UserProfile.objects.get(id=request.session['user_id'])
+    # if models.VerificationCodes.objects.get(id=user_profile.id):
+    #     models.VerificationCodes.objects.get(id=user_profile.id).user_code = code
     # TODO check if there exists a code for this user and replace it
     models.VerificationCodes.objects.create(user_code=code, user=user_profile)
     msg = "A code has just been sent to your phone."
@@ -106,8 +108,7 @@ def verify_user(request):
         sent_code = request.session['code']
         print entered_code, sent_code
         if int(entered_code) == sent_code:
-            user = models.User.objects.get(id=request.session['user_id'])
-            user_profile = models.UserProfile.objects.get(user=user)
+            user_profile = models.UserProfile.objects.get(id=request.session['user_id'])
             user_profile.is_active = True
             user_profile.save()
 
@@ -164,6 +165,120 @@ def user_login(request):
                 return render(request, 'index.html', {'msg': fa_wrong_info_msg})
     else:
         return render(request, 'index.html', {})
+
+
+@login_required()
+def recharge_account(request):
+    recharge_form = RechargeAccountForm(data=request.POST)
+    if request.method == 'POST':
+        if recharge_form.is_valid():
+            cur = recharge_form.cleaned_data['currency']
+            amnt = recharge_form.cleaned_data['amount']
+            print amnt, cur, request.user, request.user.id, request.user.username
+            user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+            # TODO : this part should be edited to check whether there is already an account with this name; if so, increament the account's total
+            user_b_account, created = models.BankAccount.objects.get_or_create(
+                owner=user_profile,
+                cur_code=cur,
+                method=models.BankAccount.DEBIT,
+                name=request.user.username + '_' + cur + '_InterPay-account',
+                account_id=make_id()
+            )
+            deposit = models.Deposit(account=user_b_account, amount=amnt, banker=user_profile,
+                                     date=user_b_account.when_opened, cur_code=cur)
+            deposit.save()
+            zarinpal = zarinpal_payment_gate(request, amnt)
+            if zarinpal['status'] == 100:
+                return redirect(zarinpal['ret'])
+            return zarinpal['ret']
+    recharge_form = RechargeAccountForm()
+
+    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    deposit_set = models.Deposit.objects.filter(banker=user_profile)
+    return render(request, "top_up.html", {'form': recharge_form, 'deposit_set': deposit_set})
+
+
+START_TIME = 0x0
+
+
+def make_id():
+    '''
+    inspired by http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram
+    '''
+
+    t = int(time.time() * 1000) - START_TIME
+    u = random.SystemRandom().getrandbits(22)
+    id = (t << 22) | u
+    return id
+
+
+def zarinpal_payment_gate(request, amount):
+    MERCHANT_ID = 'd5dd997c-595e-11e6-b573-000c295eb8fc'
+    ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # test version : 'https://sandbox.zarinpal.com/pg/services/WebGate/wsdl'
+    description = "this is a test"
+    email = 'user@user.com'
+    mobile = '09123456789'
+    call_back_url = 'http://www.interpayafrica.com'  # TODO this should be changed to our website url
+
+    client = Client(ZARINPAL_WEBSERVICE)
+    result = client.service.PaymentRequest(MERCHANT_ID,
+                                           amount,
+                                           description,
+                                           email,
+                                           mobile,
+                                           call_back_url)
+    redirect_to = 'https://www.zarinpal.com/pg/StartPay/' + str(
+        result.Authority)  # the test version : 'https://sandbox.zarinpal.com/pg/StartPay/'
+    if result.Status != 100:
+        redirect_to = 'Error'
+    res = {'status': result.Status, 'ret': redirect_to}
+    verify(request, result.Status, result.Authority, amount, MERCHANT_ID, ZARINPAL_WEBSERVICE)
+    return res
+
+
+def verify(request, status, authority, amount, merchant_id, zarinpal_webservice):
+    client = Client(zarinpal_webservice)
+    print request.GET.get
+    result2 = client.service.PaymentVerificationWithExtra(merchant_id,
+                                                          authority,
+                                                          amount)
+    print result2.RefID, result2.Status, result2.ExtraDetail
+    # if request.GET.get('Status') == 'OK':
+    #     result = client.service.PaymentVerification(merchant_id,
+    #                                                 authority,
+    #                                                 amount)
+    if result2.Status == 100:
+        print 'Transaction success. RefID: ' + str(result2.RefID)
+    elif result2.Status == 101:
+        print 'Transaction submitted : ' + str(result2.Status)
+    else:
+        print 'Transaction failed. Status: ' + str(result2.Status)
+        # else:
+        #     return 'Transaction failed or canceled by user'
+
+
+@login_required()
+def bank_accounts(request):
+    user_profile = models.UserProfile.objects.get(user=models.User.objects.get(id=request.user.id))
+    bank_account_form = CreateBankAccountForm(data=request.POST)
+    if request.method == 'POST':
+        print bank_account_form.errors
+        if bank_account_form.is_valid():
+            cur = bank_account_form.cleaned_data['cur_code']
+            bank_name = bank_account_form.cleaned_data['name']
+            account_no = bank_account_form.cleaned_data['account_id']
+            print bank_name, cur, request.user, request.user.id, request.user.username
+            new_account = models.BankAccount(
+                owner=user_profile,
+                cur_code=cur,
+                method=1,
+                name=bank_name,
+                account_id=account_no,
+            )
+            new_account.save()
+    bank_account_form = CreateBankAccountForm()
+    bank_accounts_set = models.BankAccount.objects.filter(owner=user_profile)
+    return render(request, "bank_accounts.html", {'bank_accounts_set': bank_accounts_set, 'form': bank_account_form})
 
 
 @login_required

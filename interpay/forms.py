@@ -100,28 +100,81 @@ def check_id(id):
     return is_valid
 
 
-class AuthenticationForm(forms.Form):
-    code = forms.TextInput()
+CURRENCY_CHOICES = {
+    ('RLS', 'Rials'),
+    ('USD', 'Dollar')
+}
+
+
+class RechargeAccountForm(forms.Form):
+    #  we do not need this part right now since the only gateway which we use is Zarinpal
+    # payment_gateway = forms.ChoiceField(widget=forms.RadioSelect)
+    currency = forms.ChoiceField(choices=CURRENCY_CHOICES, required=True, label='')
+    amount = forms.CharField(widget=forms.TextInput(attrs={'placeholder': '0.00'}))
 
     def __init__(self, *args, **kwargs):
-        super(AuthenticationForm, self).__init__(*args, **kwargs)
-        self.fields['code'].required = True
+        super(RechargeAccountForm, self).__init__(*args, **kwargs)
+        self.fields['amount'].required = True
+        self.fields['currency'].required = True
 
     class Meta:
+        fields = ['currency', 'amount']
+
+
+BANK_CHOICES = {
+    ('Amin', 'Amin Investment Bank'),
+    ('Ayandeh', 'Ayande Bank'),
+    ('Day', 'Day Bank'),
+    ('Maskan', 'Maskan Bank'),
+    ('Mellat', 'Mellat Bank'),
+    ('Melli', 'Bank Melli Iran'),
+    ('Bank of Industry and Mine', 'Bank of Industry and Mine'),
+    ('Pasargad', 'Bank Pasargad'),
+    ('Saderat', 'Bank Saderat Iran'),
+    ('Sepah', 'Bank Sepah'),
+    ('Eghtesad-e-Novin', 'EN Bank'),
+    ('Export Development Bank of Iran', 'Export Development Bank of Iran'),
+    ('Ghavamin', 'Ghavamin Bank'),
+    ('Persia', 'Imperial Bank of Persia'),
+    ('Iran Zamin', 'Iran Zamin Bank'),
+    ('Karafarin', 'Karafarin Bank'),
+    ('Kardan', 'Kardan Investment Bank'),
+    ('Keshavarzi', 'Keshavarzi Bank'),
+    ('Mellat', 'Mellat Investment Bank'),
+    ('Parsian', 'Parsian Bank'),
+    ('Persia', 'Persia International Bank'),
+    ('Post Bank', 'Post Bank of Iran'),
+    ('Qarzol-Hasaneh Mehr', 'Qarzol-Hasaneh Mehr Iran Bank'),
+    ('Refah', 'Refah Bank'),
+    ('Saman', 'Saman Bank'),
+    ('Sarmayeh', 'Sarmayeh Bank'),
+    ('Sina', 'Sina Bank'),
+    ('Tejarat', 'Tejarat Bank'),
+}
+
+
+class CreateBankAccountForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        super(CreateBankAccountForm, self).__init__(*args, **kwargs)
+        self.fields['account_id'].widget = TextInput(attrs={
+            'class': 'create_b_acc_form_field',
+            'placeholder': 'Enter your account No.'})
+
+    class Meta:
+        model = BankAccount
+        exclude = ['spectators', 'when_opened', 'owner', 'method']
         widgets = {
-            'code': forms.TextInput(
-                attrs={'id': 'verification-code', 'class': 'registration-form-field', 'placeholder': 'Enter the code',
-                       'type': 'text', 'maxlength': '6'})}
+            'name': forms.Select(choices=BANK_CHOICES,
+                                 attrs={'class': 'create_b_acc_form_field', 'id': 'bank_name', }),
+            # TODO : these currency choices have to be customized and checked whether the related bank supports them.
+            'cur_code': forms.Select(choices=CURRENCY_CHOICES,
+                                     attrs={'class': 'create_b_acc_form_field'}), }
+        # 'account_id': forms.TextInput(
+        #     attrs={'class': 'create_b_acc_form_field', 'placeholder': 'Enter your account No.'})}
 
-    def clean_authentication_code(self):
-        authentication_code = self.cleaned_data.get('code', '')
-        if not authentication_code:
-            raise forms.ValidationError('Please enter the code which was sent to you.')
-        return authentication_code
 
-        # def verify_code(code):
-        #     is_valid = False
-        #
+
+
         # def send_email(self, datas):
         #     link = "http://127.0.0.1:8000//activate/" + datas['activation_key']
         #     c = Context({'activation_link': link, 'username': datas['username']})
