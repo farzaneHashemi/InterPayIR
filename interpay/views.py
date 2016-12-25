@@ -86,8 +86,7 @@ def send_sms(request, mobile_no):
     # redis_ds.set_code(mobile_no, code)
     p = api.ParsGreenSmsServiceClient()
     api.ParsGreenSmsServiceClient.sendSms(p, code=code, mobile_no=mobile_no)
-    user = models.User.objects.get(id=request.session['user_id'])
-    user_profile = models.UserProfile.objects.get(user=user)
+    user_profile = models.UserProfile.objects.get(id=request.session['user_id'])
     # if models.VerificationCodes.objects.get(id=user_profile.id):
     #     models.VerificationCodes.objects.get(id=user_profile.id).user_code = code
     # TODO check if there exists a code for this user and replace it
@@ -109,8 +108,9 @@ def verify_user(request):
         sent_code = request.session['code']
         print entered_code, sent_code
         if int(entered_code) == sent_code:
-            user = models.User.objects.get(id=request.session['user_id'])
-            user_profile = models.UserProfile.objects.get(user=user)
+            # user = models.User.objects.get(id=request.session['user_id'])
+            # user_profile = models.UserProfile.objects.get(user=user)
+            user_profile = models.UserProfile.objects.get(id=request.session['user_id'])
             user_profile.is_active = True
             user_profile.save()
 
