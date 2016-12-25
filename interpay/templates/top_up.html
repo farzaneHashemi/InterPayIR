@@ -32,7 +32,6 @@
             });
 
             {% ifequal LANGUAGE_CODE 'fa-ir' %}
-                console.log("hey");
                 $(".recharge-form-input").addClass('pull-right');
                 $(".recharge-form-label").addClass('pull-right');
                 $(".recharge-form-label").css({'text-align': 'left'});
@@ -45,9 +44,6 @@
             var thewindow = window.open("https://www.zarinpal.com/webservice/verifyWebsite/" + window.location.hostname,
                     null, "width=656, height=500, scrollbars=no, resizable=no");
         }
-
-
-
     {% endblock %}
 </script>
 

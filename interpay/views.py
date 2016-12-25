@@ -108,8 +108,6 @@ def verify_user(request):
         sent_code = request.session['code']
         print entered_code, sent_code
         if int(entered_code) == sent_code:
-            # user = models.User.objects.get(id=request.session['user_id'])
-            # user_profile = models.UserProfile.objects.get(user=user)
             user_profile = models.UserProfile.objects.get(id=request.session['user_id'])
             user_profile.is_active = True
             user_profile.save()

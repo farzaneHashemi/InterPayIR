@@ -281,3 +281,43 @@ msgstr "در ورود به سایت مشکل دارم"
 msgid "Login"
 msgstr "ورود"
 
+#: .\interpay\templates\bank_accounts.html:78
+msgid "My Financial Accounts"
+msgstr "حسابهای مالی من"
+
+#: .\interpay\templates\bank_accounts.html:87
+msgid "Creating a Bank Account"
+msgstr "ایجاد حساب بانکی جدید"
+
+#: .\interpay\templates\bank_accounts.html:111
+msgid "Bank"
+msgstr "بانک"
+
+#: .\interpay\templates\bank_accounts.html:123
+msgid "Account Number"
+msgstr "شماره حساب"
+
+#: .\interpay\templates\bank_accounts.html:131
+msgid "Done"
+msgstr "ایجاد حساب"
+
+#: .\interpay\templates\bank_accounts.html:134
+msgid "Cancel"
+msgstr "انصراف"
+
+#: .\interpay\templates\bank_accounts.html:140
+msgid "My Bank Accounts"
+msgstr "حسابهای بانکی من"
+
+#: .\interpay\templates\bank_accounts.html:167
+msgid "Index"
+msgstr "ردیف"
+
+
+#: .\interpay\templates\bank_accounts.html:173
+msgid "Account Owner"
+msgstr "صاحب حساب"
+
+#: .\interpay\templates\bank_accounts.html:182
+msgid "Total Inventory"
+msgstr "کل موجودی حساب"
